@@ -1,0 +1,14 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.l-inner {
+ // background-color: yellow;
+ max-width: 940px;
+ width: 100%;
+ padding-inline: 3rem;
+ margin: 0 auto;
+ text-align: center;
+ @include sp {
+  padding-inline: 2rem;
+ }
+}

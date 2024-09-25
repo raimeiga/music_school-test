@@ -1,0 +1,44 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-flow__inner {
+  background-color: yellow;
+  padding-block: 5.4rem;
+  @include sp {
+    padding-block: 4.6rem 0;
+  }
+}
+
+.p-flow__lists {
+  background-color: aqua;
+  padding-top: 5.3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.8rem;
+  position: relative;
+  @include sp {
+    padding-top: 3.6rem;
+    row-gap: 3.6rem;
+  }
+}
+
+//　矢印の先端の描画
+.p-flow__lists::before {
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+  border-right: 0.4rem solid $color-red;
+  border-bottom: 0.4rem solid $color-red;
+  position: absolute;
+  left: 5rem;
+  bottom: 3.2rem;
+  transform: translateY(186%) rotate(45deg);
+  @include sp {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 5.8rem;
+    transform: translateY(186%) rotate(45deg);
+  }
+}

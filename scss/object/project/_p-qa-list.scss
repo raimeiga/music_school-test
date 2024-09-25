@@ -1,0 +1,102 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-qa-list__q { 
+ position: relative;  
+ display: flex;
+ //padding: 17px 0 13px 0;
+ padding: 1.7rem 0 1.3rem 0;
+ cursor: pointer; 
+ @include sp {
+  // padding: 14px 0 11px 0;
+  padding: 1.4rem 0 1.1rem 0;
+  display: flex;  
+ }
+}
+
+.p-qa-list__q::after{
+ position: absolute;
+ top: 48%;
+ right: 3rem;
+ display: block;
+ content: "";
+ width: 1.2rem;
+ height: 1.2rem;
+ border-top: solid 0.01rem #222;  
+ border-right: solid 0.01rem #222;
+ transform: translate(0, -50%) rotate(-45deg);
+ transform-origin: center;
+ @include sp {
+  right: 1.5rem;
+ }
+}
+
+.p-qa-list__q.active::after{
+ transform:translate(0, -50%) rotate(135deg);
+}
+
+.p-qa-list__circle {
+ width: 3.5rem; /* サイズはお好みで調整 */ 
+ height: 3.5rem; /* サイズはお好みで調整 */ 
+ border-radius: 50%; /* 丸くする */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ // margin-block: -1px -1px; 
+ margin-block: auto;
+ margin-inline: 2rem; 
+ color: #fff;
+ font-size: 2rem;
+ line-height: calc(30 / 20);
+  @include sp {
+  // margin-block: 12px 12px;
+  margin-block: auto;
+  margin-inline: 0 2rem;
+ }
+}
+
+.p-qa-list__circle-Q {
+ background-color: #000;
+}
+.p-qa-list__circle-A {
+ background-color: $color-red;
+}
+
+.p-qa-list__a { 
+ background-color: rgba(203, 0, 0, 0.098);
+ color: $color-red; 
+ display: none;
+ display: flex;
+ //padding: 17px 0 13px 0;
+ padding: 1.7rem 0 1.3rem 0;
+ @include sp {
+  // padding: 15px 0 10px 0;
+  padding: 1.5rem 0 1.0rem 0;
+  display: flex;  
+ } 
+}
+
+.p-qa-list__text {
+ font-size: 1.7rem;
+ font-weight: 600;
+ line-height: calc(30 / 17);
+ text-align: left;
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   width: 24rem;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

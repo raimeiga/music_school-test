@@ -1,0 +1,24 @@
+@mixin pc {
+  @media only screen and (min-width: 768px) { //768pxは変数を使用しても良い
+    @content;
+  }
+}
+
+@mixin sp {
+  @media only screen and (max-width: 767px) { //767pxは変数を使用しても良い
+    @content;
+  }
+}
+
+@mixin min($width) {
+  @media only screen and (min-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin max($width) {
+  @media only screen and (max-width: #{$width}) {
+    @content;
+  }
+}
+

@@ -1,0 +1,90 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-footer__inner {
+ padding-block: 4.4rem 5rem;
+ color: #fff; 
+}
+
+.p-footer-nav {
+ width: 30rem;
+ height: 3.3rem;
+ margin-inline: auto;
+ @include sp {
+  width: 290px;
+ }
+}
+
+.p-footer-nav__lists {
+ width: 30rem;
+ height: 3.3rem;
+ display: flex;
+ justify-content: space-between;
+ @include sp {
+  width: 290px;
+ }
+}
+
+.p-footer-nav__list a {
+  font-size: 1.7rem;
+  line-height: calc(33 / 17);
+}
+
+.p-footer__logo { 
+ display: block;
+ width: 3.2rem;
+ height: 4.9rem;
+ margin-block: 2.25rem;
+ margin-inline: auto;
+ @include sp {
+   margin-block: 1.8rem 2.9rem;   
+ }
+}
+
+.p-footer__copyright {
+ width: 36rem;
+ font-size: 1.5rem;
+  line-height: calc(33 / 15);
+  letter-spacing: -0.05em;
+  margin-inline: auto;
+  text-align: center;
+  @include sp {
+   width: 32.5rem;
+    font-size: 1.3rem;
+    line-height: calc(20 / 13);
+    letter-spacing: 0.02em;
+  }
+}
+
+.p-footer__icon-wrap {
+ width: 12rem;
+ height: 2.3rem;
+ display: flex;
+ align-items: center;
+ column-gap: 1.25rem;
+ // margin-top: 2.2rem;
+ margin-inline: auto;
+ @include sp {
+  margin-top: 1.6rem;   
+ }
+}
+
+.p-footer__icon-wrap ul:nth-of-type(1) li {
+ width: 2.2rem;
+}
+
+.p-footer__icon-wrap ul:nth-of-type(2) li {
+ width: 2.2rem;
+}
+
+.p-footer__icon-wrap ul:nth-of-type(3) li {
+ width: 2.2rem;
+}
+
+.p-footer__icon-wrap ul:nth-of-type(4) li {
+ width: 2.2rem;
+ height: 2rem;
+}
+
+

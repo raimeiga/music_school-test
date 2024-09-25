@@ -1,0 +1,187 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+//-------p-contact-form----------
+.p-contact-form {
+ padding-block: 6.7rem 10rem; 
+ @include sp {
+  padding-block: 4.7rem 5rem; 
+ }
+}
+
+.p-contact-form__inner p {
+ background-color: yellow;
+ padding-bottom: 6.5rem;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   text-align: left;
+ }
+}
+
+.p-contact__group {
+ background-color: yellow;
+ display: flex;
+ align-items: flex-start;
+ text-align: left;
+ padding-bottom: 3rem;
+}
+
+
+.p-contact__group:nth-of-type(4) {
+padding-bottom: 2.6rem;
+}
+
+.p-contact__group:nth-of-type(5) {
+ padding-bottom: 0rem;
+ }
+
+.p-contact__group dt {
+ width: 17rem;
+}
+
+.p-contact__label {
+ display: inline-block;
+ padding-top: 0.7rem;
+ font-size: 2rem;
+ background-color: aqua;
+ line-height: calc(33 / 20);
+}
+
+.p-contact__input {
+ background-color: aqua;
+ flex: 1; 
+}
+
+.p-contact__group:last-of-type {
+ padding-bottom: 0; /* 最後のグループの下部余白を削除 */
+ margin-bottom: 0;
+}
+
+
+.p-contact__control {
+ width: 100%;
+ height: 4rem;
+ background: #fff;
+ padding: 0 2rem;
+ border: solid 0.05rem #000;
+}
+
+.p-contact__textarea,
+.p-contact__control::placeholder {  
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: calc(33 / 15);
+}
+
+.p-contact__textarea {
+ width: 100%;
+ min-height: 30rem; //最小の高さを設定
+ resize: vertical; //縦方向だけリサイズを許可
+ background: #fff;
+ padding: 1.5rem 2rem;
+ border: solid 0.05rem #000; 
+}
+
+
+//check-box----------------------
+.p-contact__label--pad {
+ display: inline-block; 
+ font-size: 2rem;
+ background-color: aqua;
+ line-height: calc(33 / 20);
+}
+
+.p-contact__checkboxes {
+ display: flex; 
+ align-items: flex-start;
+ flex-direction: column; 
+ row-gap: 0.9rem;
+ padding-bottom: 2.7rem;
+}
+
+.p-contact__checkbox {
+ display: flex;
+ justify-content: left;
+}
+
+.p-contact__checkbox input[type="checkbox"] + span {
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ position: relative;
+ padding-left: 4rem;
+}
+
+.p-contact__checkbox input[type="checkbox"] + span::before {
+ content: '';
+ width: 2rem;
+ height: 2rem;
+ background: #fff;
+ border: 0.05rem solid #000;
+ position: absolute; 
+ top: 50%;
+ left: 0;
+ transform: translateY(-50%);
+ z-index: 9;
+}
+
+.p-contact__checkbox input[type="checkbox"] + span::after { // 疑似要素でチェック時のマークをつくり、チェック前は非表示に
+ content: '';
+ width: 1.7rem;
+ height: 0.9rem;
+ // ↓ 長方形のleftとbottomだけ線にして、rotate(-55deg)で傾ける
+ border-left: 0.3rem solid $color-red;
+ border-bottom: 0.4rem solid $color-red;
+ position: absolute;
+ top: 45%;
+ left: 0;
+ transform: translateY(-50%) rotate(-55deg);
+ display: none;
+ z-index: 10;
+}
+
+.p-contact__checkbox input[type="checkbox"]:checked + span::after {
+ display: block; // チェックされたときに表示する
+}
+//----------------------------------------
+
+.p-contact__submit {
+margin-top: 4.4rem;
+}
+
+
+
+.p-contact-send {
+padding-block: 6.7rem 9rem; 
+@include sp {
+ padding-block: 4.7rem 5rem; 
+}
+}
+
+.p-contact-send__inner p {
+ background-color: yellow;
+ padding-bottom: 4rem;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   text-align: left;
+ }
+}
+
+.p-contact-send__inner404 p {
+  background-color: yellow;
+  padding-bottom: 4rem;
+  font-size: 1.8rem;
+  line-height: calc(30 / 18);
+  @include sp {
+   padding-bottom: 9px;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    text-align: left;
+  }
+}

@@ -1,0 +1,37 @@
+
+// ↓ケンタローさんの中級編課題ライブコーディング動画
+// の中で_variable.scssに定義されていた関数をコピペしとく
+
+// // font
+// $font-serif: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+
+// // color
+// $color-green: #4D9600;
+
+// // vw関数
+// @function vw($pixelSize, $baseWidth: 1080) {
+//   @return calc($pixelSize / $baseWidth * 100vw);
+// }
+
+// @function hvw($pixelSize) {
+//   @return min(calc($pixelSize / 1080 * 100vw), $pixelSize * 1px);
+// }
+
+//-------------------------------------------------------
+
+  
+//color
+$color-red: #CB0000;
+
+// vw関数
+@function vw($pixelSize, $baseWidth: 1080) {
+  @return calc($pixelSize / $baseWidth * 100vw);
+}
+
+
+// $pixelSizeにfont-sizeの拡大最大値を入れると、その値以上に拡大しない
+@function hvw($pixelSize) {
+  @return min(calc($pixelSize / 940 * 100vw), $pixelSize * 1px);
+}
+
+

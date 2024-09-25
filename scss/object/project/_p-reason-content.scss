@@ -1,0 +1,25 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-reason__content {
+ background-color: aqua; 
+ display: flex; 
+ @include sp {
+  display: block;
+ }
+}
+
+.p-reason-content__image {
+ //width: calc(350 / 1080 * 100vw);
+ width: 35rem;
+ @include sp {
+  width: 33.5rem;
+ }
+}
+
+.p-reason-content__textarea {
+ width: 53rem;
+ @include sp {
+   width: 100%;
+ }
+}

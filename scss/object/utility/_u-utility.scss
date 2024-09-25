@@ -1,0 +1,13 @@
+// @use '../../foundation/variable' as *;
+// @use '../../foundation/mixin' as *;
+
+
+.u-flex-1 {
+ flex: 1;
+}
+
+.u-scroll-show.active {
+ opacity: 1;
+ visibility: visible;
+}
+

@@ -1,0 +1,12 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.l-red-inner {
+ width: 100%;
+ background-color: $color-red; 
+ margin: 0 auto;
+ text-align: center; 
+ @include sp {
+  padding-inline: 2rem;
+ }
+}

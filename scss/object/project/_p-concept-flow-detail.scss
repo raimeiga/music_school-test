@@ -1,0 +1,73 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-concept-flow-detail__en {
+ background-color: aqua;
+ color: $color-red;
+ font-size: 2.5rem;
+ font-weight: 600;
+ line-height: calc(50 / 25);  
+ display: flex;
+ justify-content: flex-end;
+ @include sp {
+  font-size: 2rem;
+  line-height: calc(50 / 20);  
+ }
+}
+
+.p-concept-flow-detail:nth-of-type(2) .p-concept-flow-detail__en {
+padding-left: 4rem;
+@include sp {
+ padding-left: 3.2rem;
+}
+}
+.p-concept-flow-detail:nth-of-type(3) .p-concept-flow-detail__en {
+padding-left: 3.2rem;
+@include sp {
+ padding-left: 2.6rem;
+}
+}
+
+.p-concept-flow-detail__circle {
+color: $color-red;
+font-size: 2.3rem;
+margin-inline: 2.9rem;
+margin-top: 0.5rem;
+position: relative;
+}
+
+// 矢印の直線（柄の部分）の描画
+.p-concept-flow-detail:nth-of-type(3) .p-concept-flow-detail__circle::after {
+ content: ''; /* 直線を表示するため */
+ position: absolute; /* 円の上に配置 */
+ width: 0.3rem; /* 直線の長さ */
+ height: 19.5rem; /* 直線の太さ */
+ background-color: $color-red; /* 直線の色 */
+ top: 0%; /* 円の中央に配置 */
+ left: 50%; /* 円の中央に配置 */
+ transform: translate(-50%, -86%); /* 直線の中心を円の中心に合わせる */
+}
+
+//　矢印の先端の描画
+.p-concept-flow-detail:nth-of-type(1) .p-concept-flow-detail__circle::before {
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+  // ↓ 長方形のleftとtopだけ線にして、rotateで傾ける
+  border-top: 0.4rem solid $color-red;
+  border-left: 0.4rem solid $color-red;
+  position: absolute;
+  top: 0%;
+  left: -0.1rem;
+  transform: translateY(-134%) rotate(45deg);
+ }
+
+.p-concept-flow-detail__ja {
+ font-size: 2.3rem;
+ line-height: calc(50 / 23); 
+ @include sp {
+  font-size: 2rem;
+  line-height: calc(50 / 20);  
+ }   
+}

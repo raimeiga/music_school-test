@@ -1,0 +1,79 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-voice__inner {
+  padding-block: 6.4rem 6rem;
+  position: relative;
+  @include sp {
+   padding-block: 4.8rem 5rem;
+   position: static;
+  }
+}
+
+.p-voice__inner h2 {
+  color: #fff;  
+}
+
+.p-voice__lists {
+  width: vw(915,1080); 
+  padding-top: 3.6rem;
+  margin: auto; 
+  overflow: hidden; // スライドしない部分を隠す 
+  @include sp {
+    width: 100%; 
+    padding-top: 3.7rem;
+    margin: 0 auto; 
+  }
+}
+
+//----slick関係--------------------
+.slick-slider {
+  position: static;
+  @include sp {
+    position: relative;
+  }
+}
+// ↑.slick-sliderはプラグインにデフォルトで
+// 書かれていて、↓の矢印（.slick-prev, .slick-next）の
+// 親だったが、.slick-sliderの範囲の外に配置したいから、
+// 親を一番外枠の.p-voiceにしたかった。なので、static;
+// で打ち消し、.p-voiceにrelativeを記述し、.slick-prev, 
+// .slick-nextのabsoluteで配置を調整。sp画面では元に戻す。
+
+.slick-prev, .slick-next {
+  background: transparent; /* 背景を透明に */
+  border: none; /* ボーダーを消す */
+  outline: none; /* アウトラインを消す */
+  cursor: pointer; /* カーソルをポインターに */
+  position: absolute; /* 矢印を絶対位置に */
+  top: 53%; /* 縦位置を中央に */
+  transform: translateY(-50%); /* 中央に合わせる */
+  @include sp {
+    top: 40%;
+    transform: translateY(-50%); /* 中央に合わせる */
+    z-index: 10; //これないとprev矢印が見えない。
+  }
+}
+
+.slick-prev {
+  left: 5.6rem; /* 左矢印の位置 */
+  @include sp {
+    left: 0;
+  }
+}
+
+.slick-next {
+  right: 5.6rem; /* 右矢印の位置 */
+  @include sp {
+    right: 0;
+  }
+}
+
+.slick-prev img, .slick-next img {
+  width: 2.8rem; /* 矢印のサイズを調整 */
+  height: auto; /* 高さを自動調整 */
+}
+
+
+

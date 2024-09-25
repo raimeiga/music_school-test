@@ -1,0 +1,18 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-concept-flow {
+ width: 100%; 
+}
+
+.p-concept-flow-detail {
+ background-color: yellow;
+ width: 37rem; 
+ margin: 1.9rem auto;
+ display: flex; 
+ @include sp {
+  width: 31rem; 
+  margin: 1.8rem auto;
+ }
+}

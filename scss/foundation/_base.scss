@@ -1,0 +1,81 @@
+@use './variable' as *;  // @use './variable' ; でも読み見込めた
+@use './mixin' as *;    // @use './mixin' ; でも読み見込めた
+
+// ↓で読み込むとエラーがでるから↑で読み込む
+// @use 'foundation/variable' as *;
+// @use 'foundation/mixin' as *;
+
+
+html {
+ -webkit-appearance: none;
+ -webkit-text-size-adjust: 100%;
+ scroll-behavior: smooth;
+ word-break: break-all;
+ font-size: 10px;
+ @media (min-width: 768px) and (max-width: 940px) { 
+   // font-size: calc(10 / 940 * 100vw);   
+   font-size: vw(10, 940);
+   // ↑ FV以外の各セクションでは画面幅940px以下から
+   // 全てのサイズ・距離がvw(10, 940)の比率で縮小。941以上では縮小・拡大どちらもしない。
+ }
+ @include sp {   
+   font-size: vw(10, 375);
+   // spなので、_mixin.scssに書いた関数で、@media (max-width: 767px)って意味なので、
+   // 画面幅768px以下からvw(10, 375)で縮小。768px以上では縮小・拡大どちらもしないが、
+   // 768px以上は、↑で指定している768～940pxの比率で縮小・拡大する。
+ }
+}
+
+body {
+  font-family: "Yu Gothic","游ゴシック","YuGothic","游ゴシック体","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN","MS PGothic","ＭＳ Ｐゴシック","Arial", sans-serif;
+  font-size: 1.8rem;
+  line-height: calc(30 / 18);
+  font-weight: 500;  //weightは「Medium」=500px,「Bold」＝700px,  
+  letter-spacing: 0; 
+  padding-top: 8rem; //ヘッダーをfixedで固定したので、浮いた分（8rem)を追加
+  @include sp {
+    padding-top: 5rem; //ヘッダーをfixedで固定したので、浮いた分（5rem)を追加
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+// /* 表示領域外へのスクロール防止 */
+// .no_scroll {
+//   overflow: hidden;
+// }
+
+img {
+ width: 100%;
+ height: auto;
+ display: block;
+}
+
+
+a {
+ cursor: pointer;
+}
+
+// .inner {
+//   width: 88rem;
+//   margin: 0 auto;
+// }
+// カンプは画面幅1080px時に左右の余白が100pxずつなので、
+// コンテンツ幅は880px。そこで、htmlで画面幅940px以下か
+// ら全ての縮小が始まるように設定しておくと、画面幅が940px
+// 以下では常に左右の余白が30pxずつ維持される。
+
+// PC、SPの非表示 とりあえず記述し、あとでhtmlで使う感じか？*/
+@media (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
