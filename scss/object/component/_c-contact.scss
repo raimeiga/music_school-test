@@ -21,7 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1.1rem;   
+  padding-top: 0.15rem;  
+  // ↑カンプの上下中央がズレてるので、上下中央揃えが整った数値
   position: fixed;
   bottom: 27.7rem;
   right: 0;  

@@ -97,15 +97,15 @@
          <form action="" class="p-contact__form">
            <dl class="p-contact__group">
              <dt>
-               <label for="" class="p-contact__label">会社名</label>
+               <label for="company-name" class="p-contact__label">会社名</label>
              </dt>
              <dd class="p-contact__input">
-               <input type="text" name="name" id="name" class="p-contact__control" placeholder="きたむらミュージックスクール">
+               <input type="text" name="company-name" id="company-name" class="p-contact__control" placeholder="きたむらミュージックスクール">
              </dd>
            </dl>
            <dl class="p-contact__group">
              <dt>
-               <label for="" class="p-contact__label">お名前</label>
+               <label for="name" class="p-contact__label">お名前</label>
              </dt>
              <dd class="p-contact__input">
                <input type="text" name="name" id="name" class="p-contact__control" placeholder="北村　翔平">
@@ -113,40 +113,40 @@
            </dl>
            <dl class="p-contact__group">
              <dt>
-               <label for="" class="p-contact__label">メールアドレス</label>
+               <label for="your-mail" class="p-contact__label">メールアドレス</label>
              </dt>
              <dd class="p-contact__input">
-               <input type="text" name="name" id="name" class="p-contact__control" placeholder="info@kitamura.musicschool.jp">
+               <input type="text" name="your-mail" id="your-mail" class="p-contact__control" placeholder="info@kitamura.musicschool.jp">
              </dd>
            </dl>
            <dl class="p-contact__group">
              <dt>
-               <label for="" class="p-contact__label">電話番号</label>
+               <label for="tel" class="p-contact__label">電話番号</label>
              </dt>
              <dd class="p-contact__input">
-               <input type="text" name="name" id="name" class="p-contact__control" placeholder="090-1234-5678">
+               <input type="text" name="tel" id="tel" class="p-contact__control" placeholder="090-1234-5678">
              </dd>
            </dl>
            <!-- チェックボックスの部分 -->
            <dl class="p-contact__group">
              <dt>
-               <label for="" class="p-contact__label--pad">目　的<br>(複数選択可)</label>
+               <label class="p-contact__label--pad">目　的<br class="pc"><span class="sp">　</span>(複数選択可)</label>
              </dt>
              <dd class="p-contact__checkboxes">
-               <label class="p-contact__checkbox">
-                 <input type="checkbox" name="how-know" value="プランについてのお問い合わせ">
+               <label for="inquiry_plan" class="p-contact__checkbox">
+                 <input type="checkbox" name="inquiry_plan" id="inquiry_plan" value="プランについてのお問い合わせ">
                  <span>プランについてのお問い合わせ</span>
                </label>
-               <label class="p-contact__checkbox">
-                 <input type="checkbox" name="how-know" value="ヒアリングのご予約">
+               <label for="reservation_hearing" class="p-contact__checkbox">
+                 <input type="checkbox" name="reservation_hearing" id="reservation_hearing" value="ヒアリングのご予約">
                  <span>ヒアリングのご予約</span>
                </label>
-               <label class="p-contact__checkbox">
-                 <input type="checkbox" name="how-know" value="資料請求">
+               <label for="request_material" class="p-contact__checkbox">
+                 <input type="checkbox" name="request_material" id="request_material" value="資料請求">
                  <span>資料請求</span>
                </label>
-               <label class="p-contact__checkbox">
-                 <input type="checkbox" name="how-know" value="その他">
+               <label for="other_requests" class="p-contact__checkbox">
+                 <input type="checkbox" name="other_requests" id="other_requests" value="その他">
                  <span>その他</span>
                </label>
              </dd>
@@ -155,9 +155,9 @@
              <dt>
                <label for="content" class="p-contact__label">内　容</label>
              </dt>
-             <dd class="p-contact__input">
+             <!-- <dd class="p-contact__input"> -->
               <textarea name="content" id="content" class="p-contact__textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
-            </dd>
+            <!-- </dd> -->
            </dl>
            <div class="c-btn c-btn--detail p-contact__submit">
              <button type="submit">送 信</button>

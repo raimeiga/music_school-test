@@ -196,7 +196,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1.1rem;
+  padding-top: 0.15rem;
   position: fixed;
   bottom: 27.7rem;
   right: 0;
@@ -1461,7 +1461,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-contact-form {
-    padding-block: 4.7rem 5rem;
+    padding-block: 4.7rem 10.8rem;
   }
 }
 
@@ -1473,6 +1473,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-contact-form__inner p {
+    padding-bottom: 3.2rem;
     font-size: 1.6rem;
     line-height: 1.875;
     text-align: left;
@@ -1482,17 +1483,33 @@ a {
 .p-contact__group {
   background-color: yellow;
   display: flex;
-  align-items: flex-start;
   text-align: left;
   padding-bottom: 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.3rem;
+  }
 }
 
 .p-contact__group:nth-of-type(4) {
   padding-bottom: 2.6rem;
 }
+@media only screen and (max-width: 767px) {
+  .p-contact__group:nth-of-type(4) {
+    padding-bottom: 1.3rem;
+  }
+}
 
 .p-contact__group:nth-of-type(5) {
   padding-bottom: 0rem;
+}
+
+.p-contact__group:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .p-contact__group dt {
@@ -1506,15 +1523,17 @@ a {
   background-color: aqua;
   line-height: 1.65;
 }
+@media only screen and (max-width: 767px) {
+  .p-contact__label {
+    padding-block: 0 0.2rem;
+    font-size: 1.6rem;
+    line-height: 2.0625;
+  }
+}
 
 .p-contact__input {
   background-color: aqua;
   flex: 1;
-}
-
-.p-contact__group:last-of-type {
-  padding-bottom: 0; /* 最後のグループの下部余白を削除 */
-  margin-bottom: 0;
 }
 
 .p-contact__control {
@@ -1531,20 +1550,46 @@ a {
   line-height: 2.2;
 }
 
-.p-contact__textarea,
 .p-contact__control::placeholder {
   color: #B2B2B2;
   font-size: 1.5rem;
   line-height: 2.2;
 }
 
+.p-contact__textarea::-moz-placeholder {
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: 2.2;
+}
+
+.p-contact__textarea::placeholder {
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: 2.2;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__textarea::-moz-placeholder {
+    line-height: 1.6666666667;
+  }
+  .p-contact__textarea::placeholder {
+    line-height: 1.6666666667;
+  }
+}
+
 .p-contact__textarea {
-  width: 100%;
+  width: 71.1rem;
   min-height: 30rem;
   resize: vertical;
   background: #fff;
   padding: 1.5rem 2rem;
   border: solid 0.05rem #000;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__textarea {
+    width: 100%;
+    min-height: 19rem;
+    padding: 1rem 2rem;
+  }
 }
 
 .p-contact__label--pad {
@@ -1553,6 +1598,12 @@ a {
   background-color: aqua;
   line-height: 1.65;
 }
+@media only screen and (max-width: 767px) {
+  .p-contact__label--pad {
+    font-size: 1.6rem;
+    line-height: 2.0625;
+  }
+}
 
 .p-contact__checkboxes {
   display: flex;
@@ -1560,6 +1611,11 @@ a {
   flex-direction: column;
   row-gap: 0.9rem;
   padding-bottom: 2.7rem;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__checkboxes {
+    padding-bottom: 0.9rem;
+  }
 }
 
 .p-contact__checkbox {
@@ -1572,6 +1628,13 @@ a {
   line-height: 1.6666666667;
   position: relative;
   padding-left: 4rem;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__checkbox input[type=checkbox] + span {
+    font-size: 1.6rem;
+    line-height: 1.875;
+    padding-left: 3rem;
+  }
 }
 
 .p-contact__checkbox input[type=checkbox] + span::before {
@@ -1595,7 +1658,7 @@ a {
   border-bottom: 0.4rem solid #CB0000;
   position: absolute;
   top: 45%;
-  left: 0;
+  left: 0.2rem;
   transform: translateY(-50%) rotate(-55deg);
   display: none;
   z-index: 10;
@@ -1605,8 +1668,9 @@ a {
   display: block;
 }
 
-.p-contact__submit {
-  margin-top: 4.4rem;
+.p-contact__submit button {
+  display: block;
+  padding-top: 0.1rem;
 }
 
 .p-contact-send {
