@@ -55,9 +55,9 @@
 
 
 .p-plan-table { 
- table-layout: fixed; /* 各列の幅を均等に固定 */
  width: 100%;
  border-bottom: 0.05rem solid #000; 
+ table-layout: fixed; /* 各列の幅を均等に固定 */
 }
 
 .p-plan-table__head {
@@ -70,20 +70,19 @@
  font-size: 2rem;
  font-weight: 600;
  line-height: calc(33 / 20);  
- vertical-align: bottom; /* 下に寄せる */
+ vertical-align: bottom;         // ←←←1
 }
 
 .p-plan-table__head--bg-blk {
  background-color: #000;
- display: block; 
- margin-top: 3rem; 
- // padding: 10px 0 7px;
- padding-block: 1rem 0.7rem;
+ display: block;                  // ←←←2
+ margin-top: 3rem;                // ←←←3
+ padding-block: 1rem 0.7rem;      // ←←←4
  }
 
 .p-plan-table__head--bg-red { 
  background-color: $color-red; 
- padding-bottom: 5px;
+ padding-bottom: 5px;             // ←←←5
 }
 
 .p-plan-table__head--recommend {

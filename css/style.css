@@ -1482,9 +1482,9 @@ a {
 }
 
 .p-plan-table {
-  table-layout: fixed; /* 各列の幅を均等に固定 */
   width: 100%;
   border-bottom: 0.05rem solid #000;
+  table-layout: fixed; /* 各列の幅を均等に固定 */
 }
 
 .p-plan-table__head {
@@ -1497,7 +1497,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.65;
-  vertical-align: bottom; /* 下に寄せる */
+  vertical-align: bottom;
 }
 
 .p-plan-table__head--bg-blk {
