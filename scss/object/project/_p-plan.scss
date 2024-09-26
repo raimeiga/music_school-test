@@ -1,0 +1,131 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-plan__inner {
+ padding-block: 6.7rem 22.3rem; 
+}
+
+.p-plan__text {
+ font-size: 1.8rem;
+ line-height: calc(30 / 18); 
+ text-align: left;
+ margin-bottom: 5.7rem;
+}
+
+.p-plan__btns {
+ display: flex;
+ column-gap: 8rem;
+ justify-content: center;
+ position: relative;
+ padding-block: 3.8rem 4.8rem;
+}
+
+.p-plan__btn {
+ margin: 0;
+ width: 21rem;
+ height: 6rem; 
+}
+
+.p-plan__btn::after {
+  content: '+'; /* プラスマークを表示 */
+  font-size: 30px; /* プラスマークのサイズを指定 */
+  font-weight: bold; /* 太さを指定 */
+  position: absolute;
+  top: 29%; /* 垂直中央に配置 */
+  left: 48.7%; /* ボタンの右側に配置 */  
+  width: 18.5px; /* 幅を指定 */
+  height: 18.5px; /* 高さを指定 */  
+  color: #000;
+}
+
+.p-plan__btn p {
+ color: #fff;
+ font-size: 2rem;
+ font-weight: 600;
+ line-height: calc(33 / 20);  
+}
+
+.p-plan__title {
+ margin-bottom: 5rem;
+}
+
+
+//-----table-----
+
+
+
+.p-plan__table {
+ width: 100%;
+}
+
+.p-plan-table-head {
+  height: 8rem;
+  border-bottom: 0.05rem solid #000;
+}
+
+.p-plan-table-head__th {
+ color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: calc(33 / 20);
+}
+
+.plan-table__black {
+ background-color: #000;
+ display: block;
+ margin-top: 3rem;
+}
+
+.plan-table__recommend {
+ background-color: $color-red;
+}
+
+.plan-table__recd-text {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 11px;
+}
+
+.plan-table__chapter {
+ text-align: left;
+ padding-left: 20px;
+ font-size: 1.7rem;
+ font-weight: normal;
+}
+
+.plan-table__item {
+ font-size: 1.7rem;
+ font-weight: normal;
+ text-align: center;
+ border-left:0.5px solid #000;
+}
+
+.plan-table__item--top {
+ font-size: 22px;
+ font-weight: bold;
+}
+
+.plan-table__item--red {
+ color: $color-red;
+}
+
+&__item {
+ font-size: 1.7rem;
+ font-weight: normal;
+ text-align: center;
+ border-left:0.5px solid #000;
+ &--top {
+     font-size: 22px;
+     font-weight: bold;
+ }
+ &--red {
+     color: variable.$red;
+ }
+}
+&__chapter {
+ text-align: left;
+ padding-left: 20px;
+ font-size: 1.7rem;
+ font-weight: normal;
+}

@@ -54,10 +54,14 @@
 @use 'object/project/p-footer'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-footer-nav'; // プロジェクトのスタイル（layout の後）
 
+@use 'object/project/p-plan'; // プロジェクトのスタイル（layout の後）
+
+
 @use 'object/project/p-result-details'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-result-list';    // プロジェクトのスタイル（layout の後）
 
 @use 'object/project/p-mv';    // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-contact'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-contact-send'; // プロジェクトのスタイル（layout の後）
 
 

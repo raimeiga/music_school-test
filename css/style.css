@@ -213,17 +213,24 @@ a {
   }
 }
 
-.c-section-title {
+.c-section-title30 {
   margin: 0 auto;
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.6666666667;
 }
 @media only screen and (max-width: 767px) {
-  .c-section-title {
+  .c-section-title30 {
     font-size: 2.5rem;
     line-height: 1.6;
   }
+}
+
+.c-section-title25 {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .c-top-back-btn {
@@ -1425,6 +1432,186 @@ a {
   line-height: 1.9411764706;
 }
 
+.p-plan__inner {
+  padding-block: 6.7rem 22.3rem;
+}
+
+.p-plan__text {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  text-align: left;
+  margin-bottom: 5.7rem;
+}
+
+.p-plan__btns {
+  display: flex;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+  justify-content: center;
+  position: relative;
+  padding-block: 3.8rem 4.8rem;
+}
+
+.p-plan__btn {
+  margin: 0;
+  width: 21rem;
+  height: 6rem;
+}
+
+.p-plan__btn::after {
+  content: "+"; /* プラスマークを表示 */
+  font-size: 30px; /* プラスマークのサイズを指定 */
+  font-weight: bold; /* 太さを指定 */
+  position: absolute;
+  top: 29%; /* 垂直中央に配置 */
+  left: 48.7%; /* ボタンの右側に配置 */
+  width: 18.5px; /* 幅を指定 */
+  height: 18.5px; /* 高さを指定 */
+  color: #000;
+}
+
+.p-plan__btn p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.p-plan__title {
+  margin-bottom: 5rem;
+}
+
+.plan-table-area {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.plan-table-row {
+  height: 85px;
+}
+.plan-table-row__head {
+  height: 80px;
+  border-bottom: 0.5px solid #000;
+}
+.plan-table-row--gray {
+  background: rgba(80, 80, 80, 0.15);
+}
+.plan-table-row--bottom {
+  border-bottom: 0.5px solid #000;
+}
+.plan-table__head {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+}
+.plan-table__def {
+  display: block;
+  margin-top: 30px;
+  line-height: 2.5;
+}
+.plan-table__recd {
+  background: #CB0000;
+}
+.plan-table__recd-text {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 11px;
+}
+.plan-table__item {
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-align: center;
+  border-left: 0.5px solid #000;
+}
+.plan-table__item--top {
+  font-size: 22px;
+  font-weight: bold;
+}
+.plan-table__item--red {
+  color: #CB0000;
+}
+.plan-table__chapter {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.plan-table-attention {
+  font-size: 1.7rem;
+}
+
+.content-area--plan-table {
+  padding: 0 30px 229px;
+}
+
+.head-lower--plan-table {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .plan-structure-table {
+    display: block;
+    margin-bottom: 42px;
+  }
+  .plan-structure-table__item {
+    display: block;
+    margin: 0 auto;
+  }
+  .plan-structure-table__sign {
+    margin: 19px;
+    text-align: center;
+  }
+  .plan-structure-text {
+    font-size: 1.6rem;
+    line-height: 1.88;
+  }
+  .plan-table-wrap {
+    overflow-x: scroll;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  .plan-table-area {
+    width: 670px;
+    margin-bottom: 17.5px;
+    cursor: default;
+  }
+  .plan-table__head {
+    line-height: 1.25;
+    padding: 10px 0;
+  }
+  .plan-table__def {
+    margin-top: 36px;
+  }
+  .plan-table__chapter {
+    width: 25%;
+    font-size: 1.6rem;
+    padding-left: 10px;
+  }
+  .plan-table__item {
+    width: 25%;
+  }
+  .plan-table-attention {
+    font-size: 1.6rem;
+    line-height: 1.88;
+  }
+  .plan-table ::-webkit-scrollbar {
+    height: 25px;
+    background: rgba(80, 80, 80, 0.15);
+  }
+  .plan-table ::-webkit-scrollbar-thumb {
+    height: 23px;
+    background: rgba(80, 80, 80, 0.25);
+  }
+  .content-area--plan-about {
+    padding: 50px 0 42px;
+  }
+  .content-area--plan-table {
+    padding: 0 0 190px;
+  }
+  .head-lower--plan-table {
+    margin-bottom: 6px;
+  }
+}
 .p-mv {
   width: 100%;
   position: relative;
@@ -1456,23 +1643,23 @@ a {
   line-height: 2.4;
 }
 
-.p-contact-form {
+.p-contact {
   padding-block: 6.7rem 10rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-contact-form {
+  .p-contact {
     padding-block: 4.7rem 10.8rem;
   }
 }
 
-.p-contact-form__inner p {
+.p-contact__inner p {
   background-color: yellow;
   padding-bottom: 6.5rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
 @media only screen and (max-width: 767px) {
-  .p-contact-form__inner p {
+  .p-contact__inner p {
     padding-bottom: 3.2rem;
     font-size: 1.6rem;
     line-height: 1.875;
@@ -1531,16 +1718,11 @@ a {
   }
 }
 
-.p-contact__input {
-  background-color: aqua;
-  flex: 1;
-}
-
 .p-contact__control {
   width: 100%;
   height: 4rem;
   background: #fff;
-  padding: 0 2rem;
+  padding-inline: 2rem;
   border: solid 0.05rem #000;
 }
 
@@ -1554,42 +1736,6 @@ a {
   color: #B2B2B2;
   font-size: 1.5rem;
   line-height: 2.2;
-}
-
-.p-contact__textarea::-moz-placeholder {
-  color: #B2B2B2;
-  font-size: 1.5rem;
-  line-height: 2.2;
-}
-
-.p-contact__textarea::placeholder {
-  color: #B2B2B2;
-  font-size: 1.5rem;
-  line-height: 2.2;
-}
-@media only screen and (max-width: 767px) {
-  .p-contact__textarea::-moz-placeholder {
-    line-height: 1.6666666667;
-  }
-  .p-contact__textarea::placeholder {
-    line-height: 1.6666666667;
-  }
-}
-
-.p-contact__textarea {
-  width: 71.1rem;
-  min-height: 30rem;
-  resize: vertical;
-  background: #fff;
-  padding: 1.5rem 2rem;
-  border: solid 0.05rem #000;
-}
-@media only screen and (max-width: 767px) {
-  .p-contact__textarea {
-    width: 100%;
-    min-height: 19rem;
-    padding: 1rem 2rem;
-  }
 }
 
 .p-contact__label--pad {
@@ -1666,6 +1812,42 @@ a {
 
 .p-contact__checkbox input[type=checkbox]:checked + span::after {
   display: block;
+}
+
+.p-contact__textarea::-moz-placeholder {
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: 2.2;
+}
+
+.p-contact__textarea::placeholder {
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: 2.2;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__textarea::-moz-placeholder {
+    line-height: 1.6666666667;
+  }
+  .p-contact__textarea::placeholder {
+    line-height: 1.6666666667;
+  }
+}
+
+.p-contact__textarea {
+  width: 71.1rem;
+  min-height: 30rem;
+  resize: vertical;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border: solid 0.05rem #000;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__textarea {
+    width: 100%;
+    min-height: 19rem;
+    padding: 1rem 2rem;
+  }
 }
 
 .p-contact__submit button {
