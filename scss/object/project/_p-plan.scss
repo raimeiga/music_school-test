@@ -47,85 +47,114 @@
 }
 
 .p-plan__title {
- margin-bottom: 5rem;
+ margin-bottom: 4.7rem;
 }
 
 
 //-----table-----
 
 
-
-.p-plan__table {
+.p-plan-table { 
+ table-layout: fixed; /* 各列の幅を均等に固定 */
  width: 100%;
+ border-bottom: 0.05rem solid #000; 
 }
 
-.p-plan-table-head {
-  height: 8rem;
-  border-bottom: 0.05rem solid #000;
+.kkk {
+ height: 80px;
+ border-bottom: 0.05rem solid #000; 
 }
 
-.p-plan-table-head__th {
- color: #fff;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: calc(33 / 20);
-}
-
-.plan-table__black {
+.bg-blk {
  background-color: #000;
- display: block;
- margin-top: 3rem;
-}
+ display: block; 
+ color: #fff; 
+ font-size: 2rem;
+ font-weight: 600;
+ line-height: calc(33 / 20);  
+margin-top: 3rem;
+padding: 10px 0 7px;
+ }
 
-.plan-table__recommend {
+.bg-red { 
+ color: #fff; 
+ font-size: 2rem;
+ font-weight: 600;
+ line-height: calc(33 / 20); 
  background-color: $color-red;
+ padding-bottom: 5px;
 }
 
-.plan-table__recd-text {
-  font-size: 1.7rem;
-  display: block;
-  margin-bottom: 11px;
-}
-
-.plan-table__chapter {
- text-align: left;
- padding-left: 20px;
+.recommend {
  font-size: 1.7rem;
- font-weight: normal;
+ line-height: calc(17 / 17);  
 }
 
-.plan-table__item {
+
+.kkk th {
+ vertical-align: bottom; /* 下に寄せる */
+}
+
+.nnn {
+ height: 8.5rem;
+ color: #000; 
+}
+
+.chapter {
  font-size: 1.7rem;
- font-weight: normal;
- text-align: center;
- border-left:0.5px solid #000;
+ line-height: calc(30 / 17); 
+ text-align: left; 
+ padding: 0 20px;
+ vertical-align: middle; /* 下に寄せる */
+}
+.fee {
+ font-size: 2.2rem;
+ font-weight: 600;
+ line-height: calc(33 / 22);
+ border-left: 0.05rem solid #000; 
+ vertical-align: middle; /* 下に寄せる */
 }
 
-.plan-table__item--top {
- font-size: 22px;
- font-weight: bold;
+// .chapter-02 {
+//  font-size: 1.7rem;
+//  line-height: calc(30 / 17); 
+//  text-align: left; 
+//  vertical-align: middle; /* 下に寄せる */
+// }
+
+.lll {
+ border-left: 0.05rem solid #000; 
+ font-size: 1.7rem; 
+ line-height: calc(25 / 17);
+ vertical-align: middle; /* 下に寄せる */
 }
 
-.plan-table__item--red {
- color: $color-red;
+
+.grey {
+ background-color: rgba(80, 80, 80, 0.149);
 }
 
-&__item {
- font-size: 1.7rem;
- font-weight: normal;
- text-align: center;
- border-left:0.5px solid #000;
- &--top {
-     font-size: 22px;
-     font-weight: bold;
- }
- &--red {
-     color: variable.$red;
- }
+
+.p-circle {
+ display: inline-block;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background: #000;
 }
-&__chapter {
- text-align: left;
- padding-left: 20px;
- font-size: 1.7rem;
- font-weight: normal;
+
+.red-circle {
+ display: inline-block;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background: #CB0000;
+}
+
+.p-line {
+ display: inline-block;
+ width: 30px;
+ height: 1px;
+ background: rgb(112, 112, 112);
+ vertical-align: middle;
 }

@@ -68,7 +68,7 @@ a {
 }
 
 .l-inner {
-  max-width: 940px;
+  max-width: 94rem;
   width: 100%;
   padding-inline: 3rem;
   margin: 0 auto;
@@ -1478,140 +1478,105 @@ a {
 }
 
 .p-plan__title {
-  margin-bottom: 5rem;
+  margin-bottom: 4.7rem;
 }
 
-.plan-table-area {
+.p-plan-table {
+  table-layout: fixed; /* 各列の幅を均等に固定 */
   width: 100%;
-  margin-bottom: 30px;
+  border-bottom: 0.05rem solid #000;
 }
-.plan-table-row {
-  height: 85px;
-}
-.plan-table-row__head {
+
+.kkk {
   height: 80px;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 0.05rem solid #000;
 }
-.plan-table-row--gray {
-  background: rgba(80, 80, 80, 0.15);
-}
-.plan-table-row--bottom {
-  border-bottom: 0.5px solid #000;
-}
-.plan-table__head {
-  font-size: 2rem;
-  font-weight: bold;
-  background: #000;
-  color: #fff;
-}
-.plan-table__def {
+
+.bg-blk {
+  background-color: #000;
   display: block;
-  margin-top: 30px;
-  line-height: 2.5;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.65;
+  margin-top: 3rem;
+  padding: 10px 0 7px;
 }
-.plan-table__recd {
+
+.bg-red {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.65;
+  background-color: #CB0000;
+  padding-bottom: 5px;
+}
+
+.recommend {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.kkk th {
+  vertical-align: bottom; /* 下に寄せる */
+}
+
+.nnn {
+  height: 8.5rem;
+  color: #000;
+}
+
+.chapter {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  text-align: left;
+  padding: 0 20px;
+  vertical-align: middle; /* 下に寄せる */
+}
+
+.fee {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-left: 0.05rem solid #000;
+  vertical-align: middle; /* 下に寄せる */
+}
+
+.lll {
+  border-left: 0.05rem solid #000;
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
+  vertical-align: middle; /* 下に寄せる */
+}
+
+.grey {
+  background-color: rgba(80, 80, 80, 0.149);
+}
+
+.p-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.red-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   background: #CB0000;
 }
-.plan-table__recd-text {
-  font-size: 1.7rem;
-  display: block;
-  margin-bottom: 11px;
-}
-.plan-table__item {
-  font-size: 1.7rem;
-  font-weight: normal;
-  text-align: center;
-  border-left: 0.5px solid #000;
-}
-.plan-table__item--top {
-  font-size: 22px;
-  font-weight: bold;
-}
-.plan-table__item--red {
-  color: #CB0000;
-}
-.plan-table__chapter {
-  text-align: left;
-  padding-left: 20px;
-  font-size: 1.7rem;
-  font-weight: normal;
-}
-.plan-table-attention {
-  font-size: 1.7rem;
+
+.p-line {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: rgb(112, 112, 112);
+  vertical-align: middle;
 }
 
-.content-area--plan-table {
-  padding: 0 30px 229px;
-}
-
-.head-lower--plan-table {
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .plan-structure-table {
-    display: block;
-    margin-bottom: 42px;
-  }
-  .plan-structure-table__item {
-    display: block;
-    margin: 0 auto;
-  }
-  .plan-structure-table__sign {
-    margin: 19px;
-    text-align: center;
-  }
-  .plan-structure-text {
-    font-size: 1.6rem;
-    line-height: 1.88;
-  }
-  .plan-table-wrap {
-    overflow-x: scroll;
-    margin-bottom: 12px;
-    cursor: pointer;
-  }
-  .plan-table-area {
-    width: 670px;
-    margin-bottom: 17.5px;
-    cursor: default;
-  }
-  .plan-table__head {
-    line-height: 1.25;
-    padding: 10px 0;
-  }
-  .plan-table__def {
-    margin-top: 36px;
-  }
-  .plan-table__chapter {
-    width: 25%;
-    font-size: 1.6rem;
-    padding-left: 10px;
-  }
-  .plan-table__item {
-    width: 25%;
-  }
-  .plan-table-attention {
-    font-size: 1.6rem;
-    line-height: 1.88;
-  }
-  .plan-table ::-webkit-scrollbar {
-    height: 25px;
-    background: rgba(80, 80, 80, 0.15);
-  }
-  .plan-table ::-webkit-scrollbar-thumb {
-    height: 23px;
-    background: rgba(80, 80, 80, 0.25);
-  }
-  .content-area--plan-about {
-    padding: 50px 0 42px;
-  }
-  .content-area--plan-table {
-    padding: 0 0 190px;
-  }
-  .head-lower--plan-table {
-    margin-bottom: 6px;
-  }
-}
 .p-mv {
   width: 100%;
   position: relative;
