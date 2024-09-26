@@ -60,54 +60,51 @@
  border-bottom: 0.05rem solid #000; 
 }
 
-.kkk {
- height: 80px;
+.p-plan-table__head {
+ height: 8rem;
  border-bottom: 0.05rem solid #000; 
 }
 
-.bg-blk {
- background-color: #000;
- display: block; 
+.p-plan-table__head-th {
  color: #fff; 
  font-size: 2rem;
  font-weight: 600;
  line-height: calc(33 / 20);  
-margin-top: 3rem;
-padding: 10px 0 7px;
+ vertical-align: bottom; /* 下に寄せる */
+}
+
+.p-plan-table__head--bg-blk {
+ background-color: #000;
+ display: block; 
+ margin-top: 3rem; 
+ // padding: 10px 0 7px;
+ padding-block: 1rem 0.7rem;
  }
 
-.bg-red { 
- color: #fff; 
- font-size: 2rem;
- font-weight: 600;
- line-height: calc(33 / 20); 
- background-color: $color-red;
+.p-plan-table__head--bg-red { 
+ background-color: $color-red; 
  padding-bottom: 5px;
 }
 
-.recommend {
+.p-plan-table__head--recommend {
  font-size: 1.7rem;
  line-height: calc(17 / 17);  
 }
 
-
-.kkk th {
- vertical-align: bottom; /* 下に寄せる */
-}
-
-.nnn {
+.p-plan-table__body {
  height: 8.5rem;
  color: #000; 
 }
 
-.chapter {
+.p-plan-table-body__category {
  font-size: 1.7rem;
  line-height: calc(30 / 17); 
  text-align: left; 
- padding: 0 20px;
+ padding: 0 2rem;
  vertical-align: middle; /* 下に寄せる */
 }
-.fee {
+
+.p-plan-table-body__price {
  font-size: 2.2rem;
  font-weight: 600;
  line-height: calc(33 / 22);
@@ -115,14 +112,7 @@ padding: 10px 0 7px;
  vertical-align: middle; /* 下に寄せる */
 }
 
-// .chapter-02 {
-//  font-size: 1.7rem;
-//  line-height: calc(30 / 17); 
-//  text-align: left; 
-//  vertical-align: middle; /* 下に寄せる */
-// }
-
-.lll {
+.p-plan-table-body__item {
  border-left: 0.05rem solid #000; 
  font-size: 1.7rem; 
  line-height: calc(25 / 17);
@@ -130,31 +120,31 @@ padding: 10px 0 7px;
 }
 
 
-.grey {
+.p-plan-table__body--grey {
  background-color: rgba(80, 80, 80, 0.149);
 }
 
 
-.p-circle {
+.p-plan-table-body__circle {
  display: inline-block;
- width: 15px;
- height: 15px;
+ width: 1.5rem;
+ height: 1.5rem;
  border-radius: 50%;
  background: #000;
 }
 
-.red-circle {
+.p-plan-table-body__red-circle {
  display: inline-block;
- width: 15px;
- height: 15px;
+ width: 1.5rem;
+ height: 1.5rem;
  border-radius: 50%;
  background: #CB0000;
 }
 
-.p-line {
+.p-plan-table-body__line {
  display: inline-block;
- width: 30px;
- height: 1px;
- background: rgb(112, 112, 112);
+ width: 3rem;
+ height: 0.1rem;
+ background: #707070;
  vertical-align: middle;
 }
