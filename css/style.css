@@ -302,6 +302,21 @@ a {
   line-height: 2.0625;
 }
 
+.c-circle {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.c-circle--black {
+  background-color: #000;
+}
+
+.c-circle--red {
+  background-color: #CB0000;
+}
+
 .p-header {
   width: 100%;
   padding-inline: 10rem;
@@ -1547,22 +1562,6 @@ a {
 
 .p-plan-table__body--grey {
   background-color: rgba(80, 80, 80, 0.149);
-}
-
-.p-plan-table-body__circle {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background: #000;
-}
-
-.p-plan-table-body__red-circle {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background: #CB0000;
 }
 
 .p-plan-table-body__line {
