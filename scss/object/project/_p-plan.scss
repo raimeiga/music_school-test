@@ -3,7 +3,10 @@
 
 
 .p-plan__inner {
- padding-block: 6.7rem 22.3rem; 
+   padding-block: 6.7rem 22.3rem; 
+ @include sp {
+   padding-block: 4.6rem 0rem; 
+ }
 }
 
 .p-plan__text {
@@ -11,20 +14,33 @@
  line-height: calc(30 / 18); 
  text-align: left;
  margin-bottom: 5.7rem;
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   margin-bottom: 3.8rem;
+ }
 }
 
 .p-plan__btns {
- display: flex;
- column-gap: 8rem;
- justify-content: center;
- position: relative;
- padding-block: 3.8rem 4.8rem;
+  display: flex;
+  column-gap: 8rem;
+  justify-content: center;
+  position: relative;
+  padding-block: 3.8rem 4.8rem;
+  @include sp {
+   display: flex;
+   flex-direction: column;
+   row-gap: 5.8rem;   
+  }
 }
 
 .p-plan__btn {
- margin: 0;
- width: 21rem;
- height: 6rem; 
+  margin: 0;
+  width: 21rem;
+  height: 6rem; 
+  @include sp {
+   margin: 0 auto;
+  }
 }
 
 .p-plan__btn::after {
@@ -37,6 +53,11 @@
   width: 18.5px; /* 幅を指定 */
   height: 18.5px; /* 高さを指定 */  
   color: #000;
+  @include sp {
+   position: absolute;
+   top: 38%;
+   left: 46.7%;
+  }
 }
 
 .p-plan__btn p {
