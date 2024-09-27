@@ -1393,8 +1393,9 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-footer__copyright {
-    font-size: 1.5rem;
-    line-height: 1.3333333333;
+    font-size: 1.3rem;
+    line-height: 1.5384615385;
+    letter-spacing: 0.02em;
   }
 }
 

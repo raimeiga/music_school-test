@@ -29,6 +29,11 @@
 .p-footer-nav__list a {
   font-size: 1.7rem;
   line-height: calc(33 / 17);
+  transition: opacity .4s;
+}
+
+.p-footer-nav__list a:hover {
+  opacity: 0.5;
 }
 
 .p-footer__logo { 
@@ -43,17 +48,17 @@
 }
 
 .p-footer__copyright {
- width: 36rem;
+ width: 100%;
  font-size: 1.5rem;
   line-height: calc(33 / 15);
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.03em;
   margin-inline: auto;
   text-align: center;
   @include sp {
-   width: 32.5rem;
-    font-size: 1.3rem;
-    line-height: calc(20 / 13);
-    letter-spacing: 0.02em;
+    // width: 30rem;
+    font-size: 1.5rem;
+    line-height: calc(20 / 15);
+    
   }
 }
 
@@ -69,6 +74,22 @@
   margin-top: 1.6rem;   
  }
 }
+
+.p-footer__icon-wrap li {
+ display: flex;
+ align-items: center;
+}
+
+.p-footer__icon-wrap a  {
+ display: inline-block; /* インライン要素だとtransformが効かないため、ブロックかインラインブロックに */
+ transition: opacity 0.3s ease, transform 0.3s ease; /* opacityとtransformに対してトランジションを適用 */
+}
+
+.p-footer__icon-wrap a:hover {
+ opacity: 0.5;
+ transform: scale(1.2);
+}
+
 
 .p-footer__icon-wrap ul:nth-of-type(1) li {
  width: 2.2rem;

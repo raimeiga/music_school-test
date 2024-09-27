@@ -42,7 +42,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   line-height: calc(33 / 17);
-  transition: all .4s;
+  transition: opacity .4s;
   position: relative;
   @include sp {
     width: 100%;
@@ -64,7 +64,7 @@
     left: 0;
     bottom: hvw(28);
     transform: scaleX(0);
-    transition: all .4s;
+    transition: transform .4s;
     transform-origin: left center; 
     // ↑ leftは横の変形起点（左から右に動く）
     //   centerは縦の変形起点（だけど今回はなくても動く）
@@ -78,10 +78,11 @@
   @include sp {
    background-color: #000;
    color: #fff;
-  }
-  .p-header-nav__list a::before {
-    transform: scaleX(1);
-  }
- }          
+  }  
+ }
+
+  .p-header-nav__list a:hover::before {
+   transform: scaleX(1);
+ }      
  
  

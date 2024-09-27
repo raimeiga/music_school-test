@@ -454,7 +454,7 @@ a {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1.9411764706;
-  transition: opacity 0.4s;
+  transition: all 0.4s;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -478,7 +478,7 @@ a {
     left: 0;
     bottom: min(2.9787234043vw, 28px);
     transform: scaleX(0);
-    transition: transform 0.4s;
+    transition: all 0.4s;
     transform-origin: left center;
   }
 }
@@ -494,8 +494,7 @@ a {
     color: #fff;
   }
 }
-
-.p-header-nav__list a:hover::before {
+.p-header-nav__list a:hover .p-header-nav__list a::before {
   transform: scaleX(1);
 }
 
@@ -1364,11 +1363,6 @@ a {
 .p-footer-nav__list a {
   font-size: 1.7rem;
   line-height: 1.9411764706;
-  transition: opacity 0.4s;
-}
-
-.p-footer-nav__list a:hover {
-  opacity: 0.5;
 }
 
 .p-footer__logo {
@@ -1385,16 +1379,19 @@ a {
 }
 
 .p-footer__copyright {
-  width: 100%;
+  width: 36rem;
   font-size: 1.5rem;
   line-height: 2.2;
+  letter-spacing: -0.05em;
   margin-inline: auto;
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
   .p-footer__copyright {
-    font-size: 1.5rem;
-    line-height: 1.3333333333;
+    width: 32.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5384615385;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1411,21 +1408,6 @@ a {
   .p-footer__icon-wrap {
     margin-top: 1.6rem;
   }
-}
-
-.p-footer__icon-wrap li {
-  display: flex;
-  align-items: center;
-}
-
-.p-footer__icon-wrap a {
-  display: inline-block; /* インライン要素だとtransformが効かないため、ブロックかインラインブロックに */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* opacityとtransformに対してトランジションを適用 */
-}
-
-.p-footer__icon-wrap a:hover {
-  opacity: 0.5;
-  transform: scale(1.2);
 }
 
 .p-footer__icon-wrap ul:nth-of-type(1) li {
@@ -1522,10 +1504,6 @@ a {
   margin-bottom: 4.7rem;
 }
 
-.p-plan__table-wrap {
-  padding-bottom: 2.8rem;
-}
-
 .p-plan-table {
   width: 100%;
   border-bottom: 0.05rem solid #000;
@@ -1594,10 +1572,12 @@ a {
   background-color: rgba(80, 80, 80, 0.149);
 }
 
-.p-plan-table__attention {
-  font-size: 1.7rem;
-  line-height: 1.4705882353;
-  text-align: left;
+.p-plan-table-body__line {
+  display: inline-block;
+  width: 3rem;
+  height: 0.1rem;
+  background: #707070;
+  vertical-align: middle;
 }
 
 .p-mv {
