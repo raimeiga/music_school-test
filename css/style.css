@@ -1575,6 +1575,12 @@ a {
   line-height: 1.65;
   vertical-align: bottom;
 }
+@media only screen and (max-width: 767px) {
+  .p-plan-table__head-th {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
 
 .p-plan-table__head--bg-blk {
   background-color: #000;

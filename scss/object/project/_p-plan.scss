@@ -99,6 +99,10 @@
  font-weight: 600;
  line-height: calc(33 / 20);  
  vertical-align: bottom;         // ←←←1
+ @include sp {
+  font-size: 2rem;
+  line-height: calc(25 / 20);   
+ }
 }
 
 .p-plan-table__head--bg-blk {
