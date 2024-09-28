@@ -43,7 +43,6 @@ $('.p-qa-list__q').on('click', function(){
 // トップに戻るボタンの表示・非表示の切り替え
 // ページトップから、200pxスクロールしたら、トップに
 // 戻るボタンが表示され、200px以下だと非表示に戻る設定
-
 $(window).on('scroll', function() {
  if ($(this).scrollTop() > 200) {
      $('.c-top-back-btn, .c-btn').addClass('active');
@@ -52,5 +51,21 @@ $(window).on('scroll', function() {
  }
 });
 
-})
+
+// スクロールバー（SimpleBar）
+ const tableWrap = document.querySelector('.p-plan__table-wrap');
+ // SimpleBarを手動で適用
+ new SimpleBar(tableWrap, {
+   autoHide: false,  // スクロールバーを常に表示
+   
+ });
+
+
+});
+
+
+
+
+
+
 

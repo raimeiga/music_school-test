@@ -1478,7 +1478,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-plan__inner {
-    padding-block: 4.6rem 0rem;
+    padding-block: 4.6rem 18.6rem;
   }
 }
 
@@ -1552,20 +1552,67 @@ a {
 .p-plan__title {
   margin-bottom: 4.7rem;
 }
+@media only screen and (max-width: 767px) {
+  .p-plan__title {
+    margin-bottom: 0.5rem;
+  }
+}
 
 .p-plan__table-wrap {
   padding-bottom: 2.8rem;
 }
+@media only screen and (max-width: 767px) {
+  .p-plan__table-wrap {
+    overflow-x: scroll;
+    padding-bottom: 4rem;
+    margin-bottom: 1.9rem;
+  }
+}
 
+@media only screen and (max-width: 767px) {
+  .simplebar-track.simplebar-horizontal {
+    width: 100% !important;
+    height: 2.6rem !important;
+    background-color: rgba(80, 80, 80, 0.149); /* トラックの背景色 */
+  }
+  .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    width: 10rem !important;
+    height: 2.3rem !important;
+    top: 0.1rem !important;
+    bottom: 0.1rem !important;
+    background-color: rgba(80, 80, 80, 0.251); /* つまみの色 */
+  }
+  .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    height: 100% !important;
+    top: 0.1rem !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .simplebar-scrollbar:before {
+    border-radius: 0 !important;
+  }
+}
 .p-plan-table {
-  width: 100%;
+  min-width: 88rem;
   border-bottom: 0.05rem solid #000;
-  table-layout: fixed; /* 各列の幅を均等に固定 */
+  table-layout: auto; /* 各列の幅を均等に固定 */
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table {
+    min-width: 67rem;
+    border-bottom: 0.05rem solid #000;
+    cursor: default;
+  }
 }
 
 .p-plan-table__head {
   height: 8rem;
   border-bottom: 0.05rem solid #000;
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table__head {
+    border-bottom: 0.05rem solid #000;
+  }
 }
 
 .p-plan-table__head-th {
@@ -1573,12 +1620,14 @@ a {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.65;
+  border-inline: 0.05rem solid #000;
   vertical-align: bottom;
 }
 @media only screen and (max-width: 767px) {
   .p-plan-table__head-th {
     font-size: 2rem;
     line-height: 1.25;
+    border-inline: 0.05rem solid #000;
   }
 }
 
@@ -1604,20 +1653,50 @@ a {
   color: #000;
 }
 
-.p-plan-table-body__category {
+.p-plan-table-body__category--price {
+  width: 25%;
   font-size: 1.7rem;
   line-height: 1.7647058824;
   text-align: left;
   padding: 0 2rem;
   vertical-align: middle; /* 下に寄せる */
 }
+@media only screen and (max-width: 767px) {
+  .p-plan-table-body__category--price {
+    font-size: 1.6rem;
+    line-height: 1.875;
+    padding: 0 1rem;
+  }
+}
+
+.p-plan-table-body__category {
+  width: 25%;
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
+  text-align: left;
+  padding: 0 2rem;
+  vertical-align: middle; /* 下に寄せる */
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table-body__category {
+    font-size: 1.6rem;
+    line-height: 1.5625;
+    padding: 0 1rem;
+  }
+}
 
 .p-plan-table-body__price {
+  width: 25%;
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.5;
   border-left: 0.05rem solid #000;
   vertical-align: middle; /* 下に寄せる */
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table-body__price {
+    border-left: 0.05rem solid #000;
+  }
 }
 
 .p-plan-table-body__item {
@@ -1625,6 +1704,11 @@ a {
   font-size: 1.7rem;
   line-height: 1.4705882353;
   vertical-align: middle; /* 下に寄せる */
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table-body__item {
+    border-left: 0.05rem solid #000;
+  }
 }
 
 .p-plan-table__body--grey {
@@ -1635,6 +1719,12 @@ a {
   font-size: 1.7rem;
   line-height: 1.4705882353;
   text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  .p-plan-table__attention {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 
 .p-mv {
