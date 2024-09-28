@@ -69,21 +69,33 @@
 
 .p-plan__title {
  margin-bottom: 4.7rem;
+ @include sp {
+  margin-bottom: 0.7rem;
+ }
+
 }
 
 
 //-----table-----
 .p-plan__table-wrap {
- padding-bottom: 2.8rem; 
+  padding-bottom: 2.8rem; 
+  @include sp {
+   overflow-x: scroll;
+  }
 }
 
 .p-plan-table { 
- width: 100%;
- border-bottom: 0.05rem solid #000; 
- table-layout: fixed; /* 各列の幅を均等に固定 */
- // padding-bottom: 2.8rem; 
- // ↑table要素はpaddingやmarginの挙動が制限される
- // ので、親のp-plan__table-wrapにあててみた。 
+  // width: 100%; 
+  min-width: 88rem;
+  border-bottom: 0.05rem solid #000; 
+  table-layout: auto; /* 各列の幅を均等に固定 */ 
+  // padding-bottom: 2.8rem; 
+  // ↑table要素はpaddingやmarginの挙動が制限される
+  // ので、親のp-plan__table-wrapに書いた。 
+  @include sp {
+   //min-width: 767px;
+   min-width: 67rem;
+  }
 }
 
 .p-plan-table__head {
@@ -95,7 +107,8 @@
  color: #fff; 
  font-size: 2rem;
  font-weight: 600;
- line-height: calc(33 / 20);  
+ line-height: calc(33 / 20); 
+ border-inline: 0.05rem solid #000; 
  vertical-align: bottom;         // ←←←1
  @include sp {
   font-size: 2rem;
@@ -125,21 +138,43 @@
  color: #000; 
 }
 
-.p-plan-table-body__category {
+.p-plan-table-body__category--price {
+ width: 25%;
  font-size: 1.7rem;
  line-height: calc(30 / 17); 
  text-align: left; 
  padding: 0 2rem;
  vertical-align: middle; /* 下に寄せる */
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   padding: 0 1rem;
+ }
+}
+
+.p-plan-table-body__category {
+ width: 25%;
+ font-size: 1.7rem;
+ line-height: calc(25 / 17); 
+ text-align: left; 
+ padding: 0 2rem;
+ vertical-align: middle; /* 下に寄せる */
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(25 / 16);
+   padding: 0 1rem;
+ }
 }
 
 .p-plan-table-body__price {
+ width: 25%;
  font-size: 2.2rem;
  font-weight: 600;
  line-height: calc(33 / 22);
  border-left: 0.05rem solid #000; 
- vertical-align: middle; /* 下に寄せる */
+ vertical-align: middle; /* 下に寄せる */ 
 }
+
 
 .p-plan-table-body__item {
  border-left: 0.05rem solid #000; 
