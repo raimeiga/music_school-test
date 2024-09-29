@@ -328,7 +328,7 @@ a {
 .c-pagination {
   display: flex;
   list-style: none;
-  margin-top: 76px;
+  margin-top: 5.9rem;
   margin-inline: auto;
   justify-content: center;
 }
@@ -1288,7 +1288,7 @@ a {
 @media only screen and (max-width: 767px) {
   .p-blog__inner {
     position: initial;
-    padding-block: 4.8rem 19.15rem;
+    padding-block: 4.6rem 20rem;
   }
 }
 
@@ -1307,7 +1307,7 @@ a {
     padding-bottom: 3.7rem;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 3.9rem;
   }
 }
 
@@ -1317,7 +1317,12 @@ a {
   padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
-  row-gap: 6.9rem;
+}
+@media only screen and (max-width: 767px) {
+  .p-blog__lists-column {
+    padding-top: 3.8rem;
+    row-gap: 3.9rem;
+  }
 }
 
 .p-blog__list {
@@ -1336,6 +1341,12 @@ a {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
   position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .p-blog__list-row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .p-blog-list__image-cap {
@@ -1364,9 +1375,15 @@ a {
   width: 100%;
 }
 
-.p-blog-list__image--height-longer {
+.p-blog-list__image-height-longer {
   width: 26rem;
   height: 18.4rem;
+}
+@media only screen and (max-width: 767px) {
+  .p-blog-list__image-height-longer {
+    width: 100%;
+    height: 20rem;
+  }
 }
 
 .p-blog-list__text {
@@ -1388,7 +1405,7 @@ a {
   }
 }
 
-.p-blog-list__title--mb {
+.p-blog-list__title-mb {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.25;
@@ -1396,8 +1413,8 @@ a {
   margin-block: 0 0.3rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-blog-list__title--mb {
-    margin-block: 3rem 0.6rem;
+  .p-blog-list__title-mb {
+    margin-block: 3.1rem 0.5rem;
     font-size: 2rem;
     line-height: 1.5;
   }
@@ -1410,17 +1427,32 @@ a {
   justify-content: end;
 }
 
-.p-blog-list__time--left {
+.p-blog-list__time-side-change {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   display: flex;
   justify-content: left;
 }
+@media only screen and (max-width: 767px) {
+  .p-blog-list__time-side-change {
+    justify-content: end;
+  }
+}
 
 .p-blog-list__article {
+  height: 12rem;
+  background-color: pink;
   margin-top: 1.1rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
+}
+@media only screen and (max-width: 767px) {
+  .p-blog-list__article {
+    height: 15rem;
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 
 .p-blog__link {
