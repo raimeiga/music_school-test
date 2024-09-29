@@ -4,7 +4,7 @@
 
 .p-blog__inner {
   background-color: yellow;
-  padding-block: 6.7rem 23rem;  
+  padding-block: 6.7rem 21rem;  
   position: relative;
   @include sp {
    position: initial;
@@ -16,7 +16,7 @@
   background-color: aqua;
   width: 100%;
   padding-top: 3.5rem;
-  padding-bottom: 3.7rem;
+  padding-bottom: 5.7rem;
   display: flex;
   column-gap: 5rem;
   @include sp {
@@ -29,7 +29,7 @@
 }
 
 // ブログ一覧のみ
-.p-blog__lists--column {  
+.p-blog__lists-column {  
  background-color: aqua;
   width: 100%;
   padding-top: 3.5rem;
@@ -40,7 +40,7 @@
 }
 
 .p-blog__list {
-  width: vw(260); 
+  width: 26rem; 
   position: relative;
   @include sp {
     width:100%;
@@ -48,7 +48,7 @@
 }
 
 // ブログ一覧のみ
-.p-blog__list--row {
+.p-blog__list-row {
  width: 100%; 
  display: flex;
  column-gap: 5rem;
