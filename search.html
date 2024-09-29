@@ -75,30 +75,20 @@
       </div>
     </header>
    
-    <main>
-      <!-- メインビュー -->
-      <div class="p-mv">
-        <div class="p-mv__image">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./images/blog-list-mv-sp.jpg">
-            <img src="./images/blog-list-mv.jpg" alt="">
-          </picture> 
-        </div>
-        <div class="p-mv__contents">
-          <h2 class="p-mv__title" >ブログ</h2>
-        </div>  
-      </div>    
+    <main>    
       <!-- パンくずリスト -->
       <div class="c-breadcrumb">
         <a href="index.html" class="c-breadcrumb__text">ホーム</a>
         <p class="c-breadcrumb__text">></p>
-        <p class="c-breadcrumb__text">ブログ</p>
+        <p class="c-breadcrumb__text">検索</p>
       </div>
+      
 
-
-      <!-- p-blog -->
-      <div class="p-blog__inner l-inner">
-        <h2 class="c-section-title25" >ブログ一覧</h2>
+      <div class="p-search__inner l-inner">
+        <div class="p-search__top-text">
+          <h2>「キーワード」<span class="p-search__top-text-span">の検索結果</span></h2>
+          <p>28件</p>
+        </div>
         <div class="p-blog__lists-column">
           <div class="p-blog-list p-blog__list-row">
             <div class="p-blog-list__image-height-longer">
@@ -286,10 +276,8 @@
           <li class="c-pagination__item c-pagination__item--active"><a href="#">1</a></li>
           <li class="c-pagination__item"><a href="#">2</a></li>
           <li class="c-pagination__item"><a href="#">3</a></li>
-          <li class="c-pagination__item c-pagination__item--disabled"><span>…</span></li>
-          <li class="c-pagination__item"><a href="#">9</a></li>
         </ul>
-      </div>  
+      </div>      
     </main>
 
     <footer>

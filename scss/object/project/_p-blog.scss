@@ -1,6 +1,28 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
+.p-search__inner {
+ padding-block: 6.7rem;
+ position: relative;
+ @include sp {
+  position: initial;
+  padding-block: 3.6rem 19.5rem;    
+ }
+}
+
+             
+.p-search__top-text {
+ display: flex;
+ justify-content: space-between;
+ font-size: 1.8rem;
+ font-weight: 600;
+ line-height: calc(32 / 18); //この比率で固定しないと上下のパーツが再利用しにくい
+}
+
+.p-search__top-text-span {
+ font-weight: 500;
+}
+
 
 .p-blog__inner {
   background-color: yellow;
@@ -8,7 +30,7 @@
   position: relative;
   @include sp {
    position: initial;
-   padding-block: 4.6rem 20rem;    
+   padding-block: 4.6rem 19.5rem;    
   }
 }
 
@@ -36,6 +58,7 @@
   //padding-block: 35px 60px;
   display: flex;
   flex-direction: column;
+  row-gap: 6.5rem;
   @include sp {
    padding-top: 3.8rem;
    row-gap: 3.9rem;

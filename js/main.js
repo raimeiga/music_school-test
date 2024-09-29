@@ -60,12 +60,7 @@ $(window).on('scroll', function() {
    
  });
 
-
 });
-
-
-
-
 
 
 
