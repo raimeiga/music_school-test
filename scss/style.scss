@@ -55,7 +55,9 @@
 
 @use 'object/project/p-qa'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-qa-list'; // プロジェクトのスタイル（layout の後）
+
 @use 'object/project/p-blog'; // プロジェクトのスタイル（layout の後）
+
 @use 'object/project/p-footer'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-footer-nav'; // プロジェクトのスタイル（layout の後）
 
@@ -70,6 +72,8 @@
 @use 'object/project/p-contact-send'; // プロジェクトのスタイル（layout の後）
 
 @use 'object/project/p-search'; // プロジェクトのスタイル（layout の後）
+
+@use 'object/project/p-blog-details'; // プロジェクトのスタイル（layout の後）
 
 
 @use 'object/utility/u-utility';       // ユーティリティ（object の後）

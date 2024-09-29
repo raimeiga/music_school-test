@@ -1,0 +1,19 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-blog-details__inner {
+ display: flex;
+ justify-content: space-between;
+}
+
+.p-blog-details__main {
+ background-color: bisque;
+ width: 60rem;
+}
+
+
+.p-blog-details__sub {
+ background-color: rgb(123, 95, 160);
+ width: 25rem;
+}
+
