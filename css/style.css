@@ -2355,14 +2355,19 @@ a {
 }
 
 .p-blog-details-main__articles {
+  margin-block: 5.4rem 10rem;
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
 }
 
-.p-blog-details-main__pre-article {
+.p-blog-details-main__article {
   width: 26rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
 }
 
 .p-blog-details-main__article-item-01 {
