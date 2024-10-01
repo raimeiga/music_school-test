@@ -79,6 +79,7 @@
  font-size: 1.5rem;
  font-weight: 600;
  line-height: calc(25 / 15); 
+ z-index: 50;
  @include sp {
   width: 9rem;
  }

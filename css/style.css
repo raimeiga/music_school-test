@@ -1365,6 +1365,7 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.6666666667;
+  z-index: 50;
 }
 @media only screen and (max-width: 767px) {
   .p-blog-list__image-cap {
@@ -2156,14 +2157,39 @@ a {
 .p-blog-details__inner {
   display: flex;
   justify-content: space-between;
+  padding-block: 7rem;
 }
 
 .p-blog-details__main {
   width: 60rem;
+  position: relative;
 }
 
-.p-blog-details-main__image {
+.p-blog-details-main__01-image {
   width: 100%;
+}
+
+.p-blog-details-main__01-image-cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.2rem;
+  background-color: #CB0000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6666666667;
+  z-index: 99;
+}
+@media only screen and (max-width: 767px) {
+  .p-blog-details-main__01-image-cap {
+    width: 9rem;
+  }
 }
 
 .p-blog-details-main__01-title {
@@ -2171,7 +2197,7 @@ a {
   font-weight: 600;
   line-height: 1.6;
   text-align: left;
-  padding-block: 4rem 0.5rem;
+  padding-block: 4.6rem 0.5rem;
 }
 @media only screen and (max-width: 767px) {
   .p-blog-details-main__01-title {
@@ -2189,57 +2215,17 @@ a {
 }
 
 .p-blog-details__sns-boxes {
-  background-color: yellow;
   margin-block: 2.1rem 4.8rem;
   display: flex;
   width: 471px;
+  -moz-column-gap: 0.3rem;
+       column-gap: 0.3rem;
 }
 @media only screen and (max-width: 767px) {
   .p-blog-details__sns-boxes {
+    width: 100%;
     margin-block: 2.1rem 2.7rem;
   }
-}
-
-.p-blog-details__fb {
-  width: 105px;
-  background-color: #425893;
-  display: flex;
-}
-
-.p-blog-details__tw {
-  width: 105px;
-  background-color: #4A9FEB;
-  display: flex;
-}
-
-.p-blog-details__Hatebna {
-  width: 105px;
-  background-color: #4EACD5;
-  display: flex;
-}
-
-.p-blog-details__LINE {
-  width: 105px;
-  background-color: #52B534;
-  display: flex;
-}
-
-.p-blog-details__poc {
-  width: 105px;
-  background-color: #DC4F5A;
-  display: flex;
-}
-
-.p-blog-details__fb-logo {
-  width: 11px;
-  height: 21px;
-}
-
-.p-blog-details__sns-text {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 3.3;
 }
 
 .p-blog-details-main__01-text {
@@ -2320,9 +2306,11 @@ a {
 }
 
 .p-blog-details-main__03-title {
+  padding-left: 0.95rem;
+  border-left: 0.3rem solid #000; /* 左側に縦線を表示 */
   font-size: 2rem;
   font-weight: 600;
-  line-height: 2;
+  line-height: 1;
   text-align: left;
 }
 
@@ -2356,10 +2344,12 @@ a {
 }
 
 .p-blog-details-main__link {
+  width: 14rem;
   color: #CB0000;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.65;
+  border-bottom: 0.05rem solid;
   display: flex;
   justify-content: left;
 }

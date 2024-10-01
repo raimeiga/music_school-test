@@ -4,15 +4,38 @@
 .p-blog-details__inner {
  display: flex;
  justify-content: space-between;
+ padding-block: 7rem;
 }
 
 .p-blog-details__main {
  // background-color: bisque;
  width: 60rem;
+ position: relative;
 }
 
-.p-blog-details-main__image {
+.p-blog-details-main__01-image {
  width: 100%;
+}
+
+.p-blog-details-main__01-image-cap {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 8rem;
+ height: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 0.2rem;
+ background-color: $color-red;
+ color: #fff;
+ font-size: 1.5rem;
+ font-weight: 600;
+ line-height: calc(25 / 15); 
+ z-index: 99;
+ @include sp {
+  width: 9rem;
+ }
 }
 
 .p-blog-details-main__01-title {
@@ -20,7 +43,7 @@
   font-weight: 600;
   line-height: calc(40 / 25);
   text-align: left;
-  padding-block: 4rem 0.5rem;
+  padding-block: 4.6rem 0.5rem;
   @include sp {
     font-size: 2rem;
     line-height: calc(30 / 20);
@@ -36,53 +59,16 @@ line-height: calc(30 / 17);
 }
 
 .p-blog-details__sns-boxes {
- background-color: yellow;
  margin-block: 2.1rem 4.8rem; 
  display: flex;
  width: 471px;
+ column-gap: 0.3rem;
  @include sp {
+  width: 100%;
   margin-block: 2.1rem 2.7rem;
  }
 }
 
-.p-blog-details__fb {
-width: 105px;
- background-color: #425893;
- display: flex;
-}
-
-.p-blog-details__tw {
- width: 105px;
-  background-color: #4A9FEB;
-  display: flex;
- }
- .p-blog-details__Hatebna {
-  width: 105px;
-   background-color: #4EACD5;
-   display: flex;
-  }
-  .p-blog-details__LINE {
-   width: 105px;
-    background-color: #52B534;
-    display: flex;
-   }
-   .p-blog-details__poc {
-    width: 105px;
-     background-color: #DC4F5A;
-     display: flex;
-    }
-
-.p-blog-details__fb-logo{
- width: 11px;
- height: 21px;
-}
-
-.p-blog-details__sns-text{
- color: #fff;
- font-size: 1rem;
- font-weight: 600;
- line-height: calc(33 / 10);
-}
 
 .p-blog-details-main__01-text {
  height: 15rem;
@@ -150,9 +136,11 @@ line-height: calc(30 / 20);
 }
 
 .p-blog-details-main__03-title {
+ padding-left: 0.95rem;  
+ border-left: 0.3rem solid #000; /* 左側に縦線を表示 */
  font-size: 2rem;
  font-weight: 600;
- line-height: calc(40 / 20);
+ line-height: 1;
  text-align: left;
 }
 
@@ -184,10 +172,12 @@ line-height: calc(30 / 20);
 }
 
 .p-blog-details-main__link {
+ width: 14rem;
  color: $color-red;
  font-size: 2rem;
  font-weight: 600;
  line-height: calc(33 / 20);
+ border-bottom: 0.05rem solid;
  display: flex;
  justify-content: left;
 }
