@@ -46,22 +46,34 @@
 
 .p-blog__list {
   width: 26rem; 
+  transition: opacity .4s;
   position: relative;
   @include sp {
     width:100%;
   }
 }
 
+.p-blog__list:hover {
+ opacity: 0.5;
+}
+
+
+
 // ブログ一覧のみ
 .p-blog__list-row {
  width: 100%; 
  display: flex;
  column-gap: 5rem;
+ transition: opacity .4s;
  position: relative;
  @include sp {
   display: flex;
   flex-direction: column;
  }
+}
+
+.p-blog__list-row:hover {
+ opacity: 0.5;
 }
 
 .p-blog-list__image-cap {
@@ -177,3 +189,4 @@
   position: initial;
  }
 }
+

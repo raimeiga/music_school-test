@@ -5,10 +5,15 @@
 .p-voice-list {
   width: 27rem; 
   margin-inline: 1.75rem; 
+  transition: opacity .4s;
   @include sp {
     width: 100%;
     margin-inline: 0; 
   }
+}
+
+.p-voice-list:hover {
+ opacity: 0.5;
 }
 
 .p-voice-list__name  {
