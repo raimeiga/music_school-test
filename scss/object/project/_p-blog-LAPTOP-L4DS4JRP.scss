@@ -1,0 +1,91 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-blog__inner {
+ //background-color: yellow;
+  padding-block: 6.7rem 23.5rem;  
+  position: relative;
+  @include sp {
+   position: initial;
+   padding-top: 5rem;    
+  }
+}
+
+.p-blog__lists {
+  background-color: aqua;
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-bottom: 3.7rem;
+  display: flex;
+  column-gap: 5rem;
+  @include sp {
+   padding-top: 3.5rem;
+   display: flex;
+   flex-direction: column;
+   row-gap: 4rem;
+  }
+}
+
+.p-blog__list {
+  width: vw(260); 
+  position: relative;
+  @include sp {
+    width:100%;
+  }
+}
+
+.p-blog-list__image-cap {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 8rem;
+ height: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 0.2rem;
+ background-color: $color-red;
+ color: #fff;
+ font-size: 1.5rem;
+ line-height: calc(25 / 15); 
+ @include sp {
+  width: 9rem;
+ }
+}
+
+.p-blog-list__image {
+ width: 100%;
+}
+
+.p-blog-list__text {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: calc(25 / 20);
+  text-align: left;
+  margin-block: 2rem 1.3rem;
+  @include sp {
+   margin-block: 3rem 0.6rem;
+   font-size: 2rem;
+   line-height: calc(30 / 20);
+  }
+}
+
+.p-blog-list__time {
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+  display: flex;
+  justify-content: end;
+  letter-spacing: -0.06em;
+}
+
+.link-to-blog {
+ width: 10.8rem;
+ position: absolute;
+ bottom: 20.6rem;
+ right: 3.1rem;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ border-bottom: 0.5px solid;
+
+}

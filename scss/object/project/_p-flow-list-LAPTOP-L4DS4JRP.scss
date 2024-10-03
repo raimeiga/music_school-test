@@ -1,0 +1,79 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-flow-list {
+  // width: 640px;
+  display: flex;
+  margin-left: 12rem;   
+  position: relative; // 親要素にpositionを指定
+  @include sp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.9rem;
+    margin-left: 4.8rem;   
+  }
+}
+
+// 疑似要素で●を描く
+.p-flow-list::before {
+  content: ''; // 疑似要素の内容を空にする
+  position: absolute; // 親要素に対して絶対配置
+  left: -9%; // 50px左に配置
+  top: 45%; // 縦中央に配置
+  transform: translateY(-70%); // 完全に中央に調整
+  width: 20px; // 幅20px
+  height: 20px; // 高さ20px
+  border-radius: 50%; // 円形にする
+  background-color: $color-red; // 円の色を指定
+  @include sp {
+    left: -14%; // 50px左に配置
+    top: 13%; // 縦中央に配置
+    transform: translateY(-50%); // 完全に中央に調整
+  }
+}
+
+// 矢印の直線（柄の部分）の描画
+.p-flow-list:nth-of-type(1) ::after {
+  content: ''; /* 直線を表示するため */
+  width: 0.3rem; /* 直線の長さ */
+  height: 39.5rem; /* 直線の太さ */
+  background-color: $color-red; /* 直線の色 */
+  position: absolute; /* 円の上に配置 */ 
+  top: 50%; /* 円の中央に配置 */
+  left: -6rem; /* 円の中央に配置 */
+  transform: trans                    late(-4%, -2%); /* 直線の中心を円の中心に合わせる */
+  @include sp {
+    height: 67rem; /* 直線の太さ */
+    top: 70%; /* 円の中央に配置 */
+    left: -11.5%; /* 円の中央に配置 */
+    transform: translate(50%, -12%); /* 直線の中心を円の中心に合わせる */
+  }
+}
+
+.p-flow-list__item {
+  background-color: yellow;  
+  width: 192px;
+  padding-top: 0.7rem;
+  text-align: left;
+  color: $color-red;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: calc(33 / 22); 
+  @include sp {
+    width: 100%;   
+    padding-top: 0;
+  }
+}
+
+.p-flow-list__text {
+  background-color: pink;  
+  font-size: 1.8rem;
+  line-height: calc(30 / 18);
+  text-align: left;
+  @include sp {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}
+

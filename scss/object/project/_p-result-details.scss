@@ -1,2 +1,35 @@
-// @use '../../foundation/variable' as *;
-// @use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-result-details__inner {
+ 
+ padding-top: 7rem;
+}
+
+.p-result-details__image {
+ 
+}
+.p-result-details__image-wrap {
+ position: relative;
+}
+
+.p-result-details__title { 
+ font-size: 2.5rem;
+ font-weight: 600      ;
+ line-height: calc(40 / 25);
+ padding-block: 5rem 1.5rem;
+ text-align: left;
+ @include sp {
+   font-size: 2rem;
+   line-height: calc(30 / 20);
+   padding-block: 3rem 0.6rem;
+ }
+}
+
+.p-result-details__date {
+ font-size: 1.7rem;
+ line-height: calc(30 / 17);
+ display: flex;
+ justify-content: left;
+}

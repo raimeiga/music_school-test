@@ -1,0 +1,236 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-plan__inner {
+  padding-block: 6.7rem  22.3rem; 
+  @include sp {
+    padding-block: 4.6rem  18.6rem; 
+  }
+}
+
+.p-plan__text {
+  font-size: 1.8rem;
+  line-height: calc(30 / 18); 
+  text-align: left;
+  margin-bottom: 5.7rem;
+  @include sp {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    margin-bottom: 3.8rem;
+  }
+}
+
+.p-plan__btns {
+  display: flex;
+  column-gap: 8rem;
+  justify-content: center;
+  position: relative;
+  padding-block: 3.8rem 4.8rem;
+  @include sp {
+   display: flex;
+   flex-direction: column;
+   row-gap: 5.8rem;   
+  }
+}
+
+.p-plan__btn {
+  margin: 0;
+  width: 21rem;
+  height: 6rem; 
+  @include sp {
+   margin: 0 auto;
+  }
+}
+
+.p-plan__btn::after {
+  content: '+'; /* プラスマークを表示 */
+  font-size: 30px; /* プラスマークのサイズを指定 */
+  font-weight: bold; /* 太さを指定 */
+  position: absolute;
+  top: 29%; /* 垂直中央に配置 */
+  left: 48.7%; /* ボタンの右側に配置 */  
+  width: 18.5px; /* 幅を指定 */
+  height: 18.5px; /* 高さを指定 */  
+  color: #000;
+  @include sp {
+   position: absolute;
+   top: 38%;
+   left: 46.7%;
+  }
+}
+
+.p-plan__btn p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: calc(33 / 20);  
+}
+
+.p-plan__title {
+  margin-bottom: 4.7rem;
+  @include sp {
+   margin-bottom: 0.5rem;
+  }
+}
+
+
+//-----table-----
+.p-plan__table-wrap {
+  padding-bottom: 2.8rem;   
+  @include sp {
+   overflow-x: scroll;
+   padding-bottom: 4rem;   
+   margin-bottom: 1.9rem;
+   // cursor: pointer;
+  }
+}
+
+// スクロールバー　simplebar（プラグイン）をhtmlで読み込み、
+// jsに初期化のコードもあり。
+@include sp {  
+// 背景全体
+.simplebar-track.simplebar-horizontal {
+  width: 100% !important;
+  height: 2.6rem !important;
+  background-color: rgba(80, 80, 80, 0.149); /* トラックの背景色 */}
+
+// つまみ
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar { 
+  width: 10rem !important;
+  height: 2.3rem !important;
+  top: 0.1rem !important;
+  bottom: 0.1rem !important;
+  background-color: rgba(80, 80, 80, 0.251); /* つまみの色 */
+}
+
+// つまみの疑似要素
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100% !important;
+  top: 0.1rem !important; 
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.simplebar-scrollbar:before { 
+  border-radius: 0 !important;
+}
+
+}
+
+
+.p-plan-table { 
+  // width: 100%; 
+  min-width: 88rem;
+  border-bottom: 0.05rem solid #000; 
+  table-layout: auto; /* 各列の幅を均等に固定 */   
+  // padding-bottom: 2.8rem; 
+    // ↑table要素はpaddingやmarginの挙動が制限される
+    // ので、親のp-plan__table-wrapに書いた。 
+  @include sp {   
+   min-width: 67rem;
+    // ↑カンプみたら、幅375px内に2マスが均等に入り込んでいて、
+    //  1マスが167.5pxなので、右にスクロールしたときに見える
+    //  残りの2マスも167.5px。4倍して670pxに設定
+   cursor: default;
+  }
+}
+
+.p-plan-table__head {
+  height: 8rem;
+  border-bottom: 0.05rem solid #000;  
+}
+
+.p-plan-table__head-th {
+  color: #fff; 
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: calc(33 / 20); 
+  border-inline: 0.05rem solid #000; 
+  vertical-align: bottom;         // ←←←1
+  @include sp {
+   font-size: 2rem;
+   line-height: calc(25 / 20);
+  }
+}
+
+.p-plan-table__head--bg-blk {
+  background-color: #000;
+  display: block;                  // ←←←2
+  margin-top: 3rem;                // ←←←3
+  padding-block: 1rem 0.7rem;      // ←←←4
+}
+
+.p-plan-table__head--bg-red { 
+  background-color: $color-red; 
+  padding-bottom: 5px;             // ←←←5
+}
+
+.p-plan-table__head--recommend {
+  font-size: 1.7rem;
+  line-height: calc(17 / 17);  
+}
+
+.p-plan-table__body {
+  height: 8.5rem;
+  color: #000; 
+}
+
+.p-plan-table-body__category--price {
+  width: 25%;
+  font-size: 1.7rem;
+  line-height: calc(30 / 17); 
+  text-align: left; 
+  padding: 0 2rem;
+  vertical-align: middle; /* 下に寄せる */
+  @include sp {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    padding: 0 1rem;
+  }
+}
+
+.p-plan-table-body__category {
+  width: 25%;
+  font-size: 1.7rem;
+  line-height: calc(25 / 17); 
+  text-align: left; 
+  padding: 0 2rem;
+  vertical-align: middle; /* 下に寄せる */
+  @include sp {
+    font-size: 1.6rem;
+    line-height: calc(25 / 16);
+    padding: 0 1rem;
+  }
+}
+
+.p-plan-table-body__price {
+  width: 25%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: calc(33 / 22);
+  border-left: 0.05rem solid #000; 
+  vertical-align: middle; /* 下に寄せる */  
+}
+
+
+.p-plan-table-body__item {
+  border-left: 0.05rem solid #000; 
+  font-size: 1.7rem; 
+  line-height: calc(25 / 17);
+  vertical-align: middle; /* 下に寄せる */ 
+}
+
+.p-plan-table__body--grey {
+  background-color: rgba(80, 80, 80, 0.149);
+}
+
+.p-plan-table__attention {
+  font-size: 1.7rem;
+  line-height: calc(25 / 17);
+  text-align: left;
+  @include sp {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}

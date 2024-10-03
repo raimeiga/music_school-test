@@ -1,0 +1,30 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-message { 
+ display: flex;
+ flex-direction: column; 
+ row-gap: 3rem;
+ padding-block: 6.8rem 6.2rem; 
+ @include sp {  
+   row-gap: 1.5rem;
+   padding-block: 4.5rem; 
+ }
+}
+
+.p-message__title {
+  color: #fff;
+}
+
+.p-message__text {
+  color: #fff;
+  font-size: 1.8rem;  
+  line-height: calc(30 / 18);
+  // padding-block: 3rem 6.3rem;
+  @include sp {
+   font-size: 1.8rem;
+   line-height: calc(30 / 18);  
+   // padding-block: 1.4rem 4rem;
+  }
+}

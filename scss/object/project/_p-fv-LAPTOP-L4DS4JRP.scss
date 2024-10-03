@@ -1,0 +1,69 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+
+.p-fv {
+ width: 100%;
+ position: relative;
+}
+
+.p-fv__bg-image {
+ width: 100%;
+}
+
+.p-fv__bg-image {
+ width: 100%;
+ position: relative;
+}
+
+.p-fv__bg-image::after { //疑似要素で画像の上層に背景をのせる
+ content: ''; 
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%; /* 親要素の高さに合わせる */
+ background: rgba(80, 80, 80, 0.502); 
+ pointer-events: none; // この背景（オーバーレイ）がクリックなどの操作に干渉しないようにする 
+ z-index: 1; 
+}
+
+.p-fv__contents {
+ // padding-left: 5px;
+ position: absolute;
+ top:52%;
+ left: 50%;
+ width: 100%;
+ transform: translate(-50%, -49%); 
+ z-index: 5; 
+ @include sp {
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, 50%); 
+ }
+}
+
+.p-fv__contents h2 {
+ // background-color: yellow;        
+ color: #fff; 
+ // ↓font-size: 4rem;で書くと、_base.scssの支配を
+ // 受けて、941以上で拡大しないのでcalcで書いた。
+ // このテキストは画面幅と共に拡大させたい。
+ font-size: vw(40);
+ font-weight: 600;
+ line-height: calc(60 / 40);
+ text-align: center;
+ letter-spacing: -0.01em;
+ // text-indent: -0.0em;
+ width: 100%;
+ margin-inline: auto;
+ @include sp {
+  font-size: 3rem;
+  line-height: calc(50 / 30);
+ }
+}
+
+.p-fv__contents--short {
+ letter-spacing: -0.14em;
+}

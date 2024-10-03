@@ -1,0 +1,48 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-concept {
+ background-color: yellow ; 
+ padding-block: 6.6rem 3.4rem; 
+ @include sp {      
+  padding-block: 4.5rem 2rem; 
+ }
+}
+
+.p-concept__title {
+ background-color: yellow;
+ color: $color-red;
+ font-size: 3.5rem; 
+ font-weight: 600;
+ line-height: calc(50 / 35);
+ text-align: center;
+ @include sp {  
+   font-size: 2.5rem;
+   line-height: calc(40 / 25);
+ }
+}
+
+.p-concept__text {
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ text-align: center;
+ margin-block: 1.7rem 3.4rem;
+ @include sp {
+  margin-block: 0.5rem 2rem;
+ }
+}
+
+.p-concept__image {
+ width: 100%;
+ margin-inline: auto;
+ text-align: center;
+ @include sp {
+  width: vw(335,375);
+  padding-bottom: 1.7rem;
+ }
+}
+
+
+
+

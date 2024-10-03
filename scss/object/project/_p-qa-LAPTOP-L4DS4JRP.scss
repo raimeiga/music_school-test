@@ -1,0 +1,22 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-qa__inner {
+ //background-color: yellow;
+ padding-top: 5.5rem; 
+}
+
+.p-qa__lists { 
+ // background-color: aqua;
+ margin-top: 3.3rem;
+ border-top: solid 0.05rem #000; 
+}
+
+.p-qa__list {   
+ border-bottom: solid 0.05rem;
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+ }
+}
+

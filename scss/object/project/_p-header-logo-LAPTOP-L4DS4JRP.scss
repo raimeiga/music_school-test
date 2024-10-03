@@ -1,0 +1,43 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-header-logo a {
+ height: inherit;
+ display: flex;
+ align-items: center; 
+ column-gap: 1rem;
+ transition: opacity 0.4s;
+ @include sp {
+   column-gap: 0.65rem;
+ }
+}
+
+.p-header-logo a:hover {
+ opacity: 0.5;
+}
+
+.p-header-logo__text h1 {  
+ //font-size: 20px;
+ // font-size: hvw(20);
+ font-size: 2rem;
+ font-weight: 600;
+ line-height: calc(23 / 20);
+ padding-top: 0.6rem;
+ // letter-spacing: -0.1em;
+ @include sp {
+   font-size: 1.3rem;
+   line-height: calc(14 / 13);
+ }
+}
+
+.p-header-logo__text h1 span {
+ // font-size: hvw(15);
+ font-size: 1.5rem;
+ font-weight: 600;
+ line-height: calc(23 / 15);
+ // letter-spacing: -0.1em;
+ @include sp {
+   font-size: 1.3rem;
+   line-height: calc(14 / 13);
+ }
+}

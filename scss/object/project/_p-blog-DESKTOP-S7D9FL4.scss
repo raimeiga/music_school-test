@@ -8,7 +8,7 @@
   position: relative;
   @include sp {
    position: initial;
-   padding-block: 4.6rem 19.5rem;    
+   padding-block: 4.6rem 19.8rem;    
   }
 }
 
@@ -32,13 +32,12 @@
 .p-blog__lists-column {  
  background-color: aqua;
   width: 100%;
-  padding-top: 3.5rem;
-  //padding-block: 35px 60px;
+  padding-block: 3.5rem 6.7rem;
   display: flex;
   flex-direction: column;
   row-gap: 6.5rem;
-  @include sp {
-   padding-top: 3.8rem;
+  @include sp {   
+   padding-block: 3.8rem 6rem;
    row-gap: 3.9rem;
   }
 
@@ -46,17 +45,25 @@
 
 .p-blog__list {
   width: 26rem; 
+  transition: opacity .4s;
   position: relative;
   @include sp {
     width:100%;
   }
 }
 
+.p-blog__list:hover {
+ opacity: 0.5;
+}
+
+
+
 // ブログ一覧のみ
 .p-blog__list-row {
  width: 100%; 
  display: flex;
  column-gap: 5rem;
+ transition: opacity .4s;
  position: relative;
  @include sp {
   display: flex;
@@ -64,25 +71,8 @@
  }
 }
 
-.p-blog-list__image-cap {
- position: absolute;
- top: 0;
- left: 0;
- width: 8rem;
- height: 3rem;
- display: flex;
- justify-content: center;
- align-items: center;
- padding-top: 0.2rem;
- background-color: $color-red;
- color: #fff;
- font-size: 1.5rem;
- font-weight: 600;
- line-height: calc(25 / 15); 
- z-index: 50;
- @include sp {
-  width: 9rem;
- }
+.p-blog__list-row:hover {
+ opacity: 0.5;
 }
 
 .p-blog-list__image {
@@ -177,3 +167,4 @@
   position: initial;
  }
 }
+

@@ -1,0 +1,32 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.c-top-back-btn {
+ width: 6.8rem;
+ height: 6.8rem;
+ background-color: rgba(0, 0, 0, 0.502);
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ bottom: 34rem;
+ right: 10rem; 
+ opacity: 0;
+ visibility: hidden;
+ // transition: opacity .4s;
+ transition: all .4s;
+ z-index: 999;
+ @include sp {
+  position: fixed;
+   bottom: 38rem;
+   right: 2rem;
+ }
+}
+
+.c-top-back-btn__icon {
+ width: 2.3rem;
+ height: 1.6rem;
+}
+

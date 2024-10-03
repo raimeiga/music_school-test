@@ -1888,25 +1888,10 @@ a {
 }
 
 .p-result-details__title {
+  padding-block: 5rem 1.5rem;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.6;
-  padding-block: 5rem 1.5rem;
-  text-align: left;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details__title {
-    font-size: 2rem;
-    line-height: 1.5;
-    padding-block: 3rem 0.6rem;
-  }
-}
-
-.p-result-details__date {
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
-  display: flex;
-  justify-content: left;
 }
 
 .p-result-list__inner {

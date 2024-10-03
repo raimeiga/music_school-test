@@ -400,6 +400,49 @@ a {
   line-height: 1.6666666667;
 }
 
+.c-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.2rem;
+  background-color: #CB0000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6666666667;
+  z-index: 50;
+}
+
+.c-caption--w80 {
+  width: 8rem;
+}
+
+.c-caption--w100 {
+  width: 10rem;
+}
+
+.c-caption--w-pc80-sp90 {
+  width: 8rem;
+}
+@media only screen and (max-width: 767px) {
+  .c-caption--w-pc80-sp90 {
+    width: 9rem;
+  }
+}
+
+.c-caption--w-pc100-sp80 {
+  width: 10rem;
+}
+@media only screen and (max-width: 767px) {
+  .c-caption--w-pc100-sp80 {
+    width: 8rem;
+  }
+}
+
 .p-header {
   width: 100%;
   padding-inline: 10rem;
