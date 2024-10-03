@@ -1,0 +1,42 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.c-caption {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 0.2rem;
+ background-color: $color-red;
+ color: #fff;
+ font-size: 1.5rem;
+ font-weight: 600;
+ line-height: calc(25 / 15); 
+ z-index: 50; 
+}
+
+.c-caption--w80 {
+ width: 8rem;
+}
+
+.c-caption--w100 {
+ width: 10rem;
+}
+
+.c-caption--w-pc80-sp90 {
+ width: 8rem;
+ @include sp {
+  width: 9rem;
+ }
+}
+
+.c-caption--w-pc100-sp80 {
+ width: 10rem;
+ @include sp {
+  width: 8rem;
+ }
+}

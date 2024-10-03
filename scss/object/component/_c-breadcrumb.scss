@@ -24,14 +24,14 @@
 
 
 .c-breadcrumb__text--1-line { 
- padding-block: 10px 9px;
+ padding-block: 9px 8px;
  @include sp {
   padding-block: 2px 1px;
  }
 }
 
 .c-breadcrumb__text--2-lines { 
- padding-block: 10px 9px;
+ padding-block: 9px 8px;
  @include sp {
   padding-block: 9px 0px;
   line-height: 1;

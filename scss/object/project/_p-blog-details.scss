@@ -24,26 +24,6 @@
  width: 100%;
 }
 
-.p-blog-details-main__image-cap {
- position: absolute;
- top: 0;
- left: 0;
- width: 8rem;
- display: flex;
- justify-content: center;
- align-items: center;
- padding-block: 0.25rem;
- background-color: $color-red;
- color: #fff;
- font-size: 1.5rem;
- font-weight: 600;
- line-height: calc(25 / 15); 
- z-index: 99;
- @include sp {
-  width: 9rem;
- }
-}
-
 .p-blog-details-main__01-title {
   font-size: 2.5rem;
   font-weight: 600;
