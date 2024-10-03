@@ -1,6 +1,21 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
+.c-contact {  
+ color: #fff;   
+ background-color: $color-red;
+ display: flex;
+ justify-content: center;
+ align-items: center;    
+ border: 0.1rem solid transparent; //初期状態では透明な枠線
+ transition: all 0.4s; 
+}
+
+.c-contact:hover {
+ border: 0.1rem solid $color-red;     
+ color: $color-red;
+ background-color: #fff;
+ } 
 
  .c-contact__header {
   width: 15rem;
@@ -14,27 +29,19 @@
  .c-contact__fixed {
   width: 30rem;
   height: 6rem;   
-  font-size: 2rem;   
-  font-weight: 600;   
+  font-size: 2rem;      
   line-height: calc(33 / 20);
-  letter-spacing: 0.1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.15rem;  
-  // ↑カンプの上下中央がズレてるので、上下中央揃えが整った数値
+  padding-top: 0.1rem;  
+  margin-left: 3.3rem;   
   position: fixed;
-  bottom: 27.7rem;
+  bottom: 25rem;
   right: 0;  
   opacity: 0;
   visibility: hidden;
-  @include sp {
-   width: 33.5rem;
-   position: fixed;
-   bottom: 30.1rem;
-   right: 2rem;  
-   letter-spacing: 0.15em;
-  }
  }
 
  
+ // .u-show.active {
+ //  opacity: 1;
+ //  visibility: visible;
+ // }

@@ -177,6 +177,22 @@ a {
   }
 }
 
+.c-contact {
+  color: #fff;
+  background-color: #CB0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid transparent;
+  transition: all 0.4s;
+}
+
+.c-contact:hover {
+  border: 0.1rem solid #CB0000;
+  color: #CB0000;
+  background-color: #fff;
+}
+
 .c-contact__header {
   width: 15rem;
   height: 4.5rem;
@@ -190,27 +206,14 @@ a {
   width: 30rem;
   height: 6rem;
   font-size: 2rem;
-  font-weight: 600;
   line-height: 1.65;
-  letter-spacing: 0.1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.15rem;
+  padding-top: 0.1rem;
+  margin-left: 3.3rem;
   position: fixed;
-  bottom: 27.7rem;
+  bottom: 25rem;
   right: 0;
   opacity: 0;
   visibility: hidden;
-}
-@media only screen and (max-width: 767px) {
-  .c-contact__fixed {
-    width: 33.5rem;
-    position: fixed;
-    bottom: 30.1rem;
-    right: 2rem;
-    letter-spacing: 0.15em;
-  }
 }
 
 .c-section-title30 {
@@ -299,23 +302,23 @@ a {
   color: #000;
   font-size: 1.6rem;
   line-height: 2.0625;
-  padding-block: 10px 9px;
+}
+
+.c-breadcrumb__text--1-line {
+  padding-block: 9px 8px;
 }
 @media only screen and (max-width: 767px) {
-  .c-breadcrumb__text {
-    padding-block: 0px 0px;
+  .c-breadcrumb__text--1-line {
+    padding-block: 2px 1px;
   }
 }
 
-.c-breadcrumb__tex {
-  color: #000;
-  font-size: 1.6rem;
-  line-height: 2.0625;
-  padding-block: 10px 9px;
+.c-breadcrumb__text--2-lines {
+  padding-block: 9px 8px;
 }
 @media only screen and (max-width: 767px) {
-  .c-breadcrumb__tex {
-    padding-block: 7px 0px;
+  .c-breadcrumb__text--2-lines {
+    padding-block: 9px 0px;
     line-height: 1;
   }
 }
@@ -352,7 +355,6 @@ a {
 .c-pagination {
   display: flex;
   list-style: none;
-  margin-top: 6.2rem;
   margin-inline: auto;
   justify-content: center;
 }
