@@ -34,14 +34,16 @@
   padding-top: 0.1rem;  
   margin-left: 3.3rem;   
   position: fixed;
-  bottom: 25rem;
+  bottom: 27.7rem;
   right: 0;  
   opacity: 0;
   visibility: hidden;
+  @include sp {   
+    width: 33.5rem;
+    position: fixed;
+    bottom: 30.2rem;
+    right: 2rem;  
+  }
  }
 
  
- // .u-show.active {
- //  opacity: 1;
- //  visibility: visible;
- // }

@@ -215,14 +215,6 @@ a {
   opacity: 0;
   visibility: hidden;
 }
-@media only screen and (max-width: 767px) {
-  .c-contact__fixed {
-    width: 33.5rem;
-    position: fixed;
-    bottom: 30.2rem;
-    right: 2rem;
-  }
-}
 
 .c-section-title30 {
   margin: 0 auto;
@@ -2110,9 +2102,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-result-details-related-articles {
-    padding-top: 6.1rem;
-    padding-bottom: 19.7rem;
-    row-gap: 2rem;
+    padding-top: 7.1rem;
   }
 }
 
@@ -2159,7 +2149,6 @@ a {
 }
 
 .p-result-details-related-article-list__title {
-  width: 59rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.25;
@@ -2168,10 +2157,8 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-result-details-related-article-list__title {
-    width: 15.5rem;
     font-size: 1.7rem;
     line-height: 1.6470588235;
-    padding-bottom: 0.39rem;
   }
 }
 

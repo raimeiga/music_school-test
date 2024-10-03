@@ -219,8 +219,8 @@ a {
   .c-contact__fixed {
     width: 33.5rem;
     position: fixed;
-    bottom: 30.2rem;
-    right: 2rem;
+    bottom: 29rem;
+    right: 0;
   }
 }
 

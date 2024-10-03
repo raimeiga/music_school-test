@@ -210,18 +210,10 @@ a {
   padding-top: 0.1rem;
   margin-left: 3.3rem;
   position: fixed;
-  bottom: 27.7rem;
+  bottom: 25rem;
   right: 0;
   opacity: 0;
   visibility: hidden;
-}
-@media only screen and (max-width: 767px) {
-  .c-contact__fixed {
-    width: 33.5rem;
-    position: fixed;
-    bottom: 30.2rem;
-    right: 2rem;
-  }
 }
 
 .c-section-title30 {
@@ -1929,14 +1921,12 @@ a {
 .p-result-details__inner {
   padding-top: 7rem;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details__inner {
-    padding-top: 5rem;
-  }
-}
 
 .p-result-details__image {
   width: 100%;
+}
+
+.p-result-details__image-wrap {
   position: relative;
 }
 
@@ -1968,22 +1958,10 @@ a {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details__table-area {
-    padding-top: 2.1rem;
-    flex-direction: column;
-    row-gap: 2.3rem;
-  }
-}
 
 .p-result-details__table {
   width: 40rem;
   border: 0.05rem solid #707070;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details__table {
-    width: 100%;
-  }
 }
 
 .p-result-details-table__label-01 {
@@ -2002,7 +1980,6 @@ a {
   .p-result-details-table__label-01 {
     width: 12rem;
     height: 39px;
-    padding-left: 1rem;
   }
 }
 
@@ -2014,11 +1991,6 @@ a {
   padding-left: 2rem;
   padding-block: 3px 0px;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details-table__label-02 {
-    padding-left: 1rem;
-  }
-}
 
 .p-result-details__text {
   width: 44rem;
@@ -2026,19 +1998,9 @@ a {
   line-height: 1.6666666667;
   text-align: left;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details__text {
-    width: 100%;
-  }
-}
 
 .p-result-details__articles-area {
-  padding-block: 6rem 0;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details__articles-area {
-    padding-block: 4rem 0;
-  }
+  padding-block: 6rem;
 }
 
 .p-result-details__articles-wrap {
@@ -2046,20 +2008,9 @@ a {
   -moz-column-gap: 20rem;
        column-gap: 20rem;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details__articles-wrap {
-    -moz-column-gap: 2.2rem;
-         column-gap: 2.2rem;
-  }
-}
 
-.p-result-details-article {
+.p-result-details__article {
   width: 34rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details-article {
-    width: 15.6rem;
-  }
 }
 
 .p-result-details-article__label-prev {
@@ -2100,20 +2051,12 @@ a {
   text-align: left;
 }
 
-.p-result-details-related-articles {
+.p-result-details__related-articles {
   width: 100%;
   padding-top: 10rem;
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-  padding-bottom: 15.7rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details-related-articles {
-    padding-top: 6.1rem;
-    padding-bottom: 19.7rem;
-    row-gap: 2rem;
-  }
 }
 
 .p-result-details-related-articles__label {
@@ -2125,33 +2068,16 @@ a {
   padding: 10px 0 7px 30px;
   text-align: left;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details-related-articles__label {
-    text-align: center;
-    padding: 10px 0 7px 0;
-  }
-}
 
 .p-result-details-related-article-list {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details-related-article-list {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-}
 
 .p-result-details-related-article-list__image {
   width: 26rem;
   position: relative;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details-related-article-list__image {
-    width: 16rem;
-  }
 }
 
 .p-result-details-related-article-list__title-and-date {
@@ -2159,27 +2085,16 @@ a {
 }
 
 .p-result-details-related-article-list__title {
-  width: 59rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.25;
-  padding-bottom: 1.3rem;
   text-align: left;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details-related-article-list__title {
-    width: 15.5rem;
-    font-size: 1.7rem;
-    line-height: 1.6470588235;
-    padding-bottom: 0.39rem;
-  }
 }
 
 .p-result-details-related-article-list__date {
   font-size: 1.7rem;
   line-height: 1.7647058824;
-  display: flex;
-  justify-content: left;
+  text-align: left;
 }
 
 .p-result-list__inner {
