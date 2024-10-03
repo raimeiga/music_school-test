@@ -1889,6 +1889,35 @@ a {
   }
 }
 
+.p-result-list__inner {
+  padding-top: 6.7rem;
+}
+
+.p-result-list__lists {
+  background-color: yellow;
+  padding-top: 3.8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-result-list__list {
+  width: 38.7rem;
+  position: relative;
+  margin-bottom: 6.1rem;
+  margin-right: 106px;
+}
+
+.p-result-list-list__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.p-result-list-list__time {
+  font-size: 1.8rem;
+  line-height: 1.7777777778;
+}
+
 .p-mv {
   width: 100%;
   position: relative;
