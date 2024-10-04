@@ -111,10 +111,13 @@
 
 .p-result-details-article {
  width: 34rem;
+ transition: opacity .4s;
  @include sp {
   width: 15.6rem;
  }
 }
+
+
 
 .p-result-details-article__label-prev {
  background-color: #000;
@@ -184,9 +187,15 @@
 .p-result-details-related-article-list {
  display: flex;
  column-gap: 3rem;
+ transition: opacity .4s;
  @include sp {
   column-gap: 2rem;
  }
+}
+
+.p-result-details-article:hover,
+.p-result-details-related-article-list:hover {
+ opacity: 0.5;
 }
 
 .p-result-details-related-article-list__image {
@@ -222,3 +231,4 @@
  display: flex;
  justify-content: left;
 }
+

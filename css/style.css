@@ -2055,6 +2055,7 @@ a {
 
 .p-result-details-article {
   width: 34rem;
+  transition: opacity 0.4s;
 }
 @media only screen and (max-width: 767px) {
   .p-result-details-article {
@@ -2136,12 +2137,18 @@ a {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+  transition: opacity 0.4s;
 }
 @media only screen and (max-width: 767px) {
   .p-result-details-related-article-list {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
+}
+
+.p-result-details-article:hover,
+.p-result-details-related-article-list:hover {
+  opacity: 0.5;
 }
 
 .p-result-details-related-article-list__image {
