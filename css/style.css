@@ -576,7 +576,6 @@ a {
   display: flex;
   align-items: center;
   padding-top: 0.3rem;
-  color: #fff;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1.9411764706;
@@ -590,6 +589,7 @@ a {
     font-size: 1.8rem;
     line-height: 1.8333333333;
     background-color: #CB0000;
+    color: #fff;
   }
 }
 

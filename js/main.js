@@ -62,45 +62,6 @@ $(window).on('scroll', function() {
 });
 
 
-// $(function() {
-//  $(window).on('scroll', function() {
-//    // フッターの上端位置を取得
-//    var footerOffset = $('footer').offset().top;
-//    // 現在のスクロール位置 + ウィンドウの高さ
-//    var scrollPosition = $(window).scrollTop() + $(window).height();
-   
-//    // 画面のスクロールがフッターに達した場合
-//    if (scrollPosition >= footerOffset) {
-//      var overlap = scrollPosition - footerOffset;
-
-//      // PCとSPでの処理を分ける
-//      if ($(window).width() > 767) { // PC画面の場合
-//        // .c-contact__fixedをfooterの上端から0remに配置
-//        $('.c-contact__fixed').css('bottom', overlap + 'px');
-//        // .c-top-back-btnをfooterの上端からcalc(91 / 1080 * 100vw)離して配置
-//        var pcDistance = parseFloat($('html').width()) * (91 / 1080); // calc(91 / 1080 * 100vw)をピクセルに変換
-//        $('.c-top-back-btn').css('bottom', (overlap + pcDistance) + 'px');
-//      } else { // SP画面の場合
-//        // .c-contact__fixedをfooterの上端から0remに配置
-//        $('.c-contact__fixed').css('bottom', overlap + 'px');
-//        // .c-top-back-btnをfooterの上端からcalc(79 / 375 * 100vw)離して配置
-//        var spDistance = parseFloat($('html').width()) * (79 / 375); // calc(79 / 375 * 100vw)をピクセルに変換
-//        $('.c-top-back-btn').css('bottom', (overlap + spDistance) + 'px');
-//      }
-//    } else {
-//      // フッターが表示されていない場合は通常の位置に戻す
-//      if ($(window).width() > 767) { // PC画面の場合
-//        $('.c-contact__fixed').css('bottom', '0');
-//        $('.c-top-back-btn').css('bottom', 'calc(91 / 1080 * 100vw)');
-//      } else { // SP画面の場合
-//        $('.c-contact__fixed').css('bottom', '0');
-//        $('.c-top-back-btn').css('bottom', 'calc(79 / 375 * 100vw)');
-//      }
-//    }
-//  });
-// });
-
-
 $(function() {
  $(window).on('scroll', function() {
    // フッターの上端位置を取得
