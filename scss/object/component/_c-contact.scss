@@ -34,14 +34,17 @@
   padding-top: 0.1rem;  
   margin-left: 3.3rem;   
   position: fixed;
-  bottom: 27.7rem;
+  //bottom: 27.7rem;
+  bottom: 0;
   right: 0;  
   opacity: 0;
   visibility: hidden;
   @include sp {   
     width: 33.5rem;
     position: fixed;
-    bottom: 30.2rem;
+    // bottom: 30.2rem;    
+    //bottom: calc(30.2rem);
+    bottom: 0;
     right: 2rem;  
   }
  }

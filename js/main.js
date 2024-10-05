@@ -57,10 +57,30 @@ $(window).on('scroll', function() {
  // SimpleBarを手動で適用
  new SimpleBar(tableWrap, {
    autoHide: false,  // スクロールバーを常に表示
-   
  });
 
 });
 
 
 
+$(function() {
+ $(window).on('scroll', function() {
+   // フッターの位置を取得
+   var footerOffset = $('footer').offset().top;
+   // 現在のスクロール位置 + ウィンドウの高さ
+   var scrollPosition = $(window).scrollTop() + $(window).height();
+
+   // スクロール位置がフッターに達したら、ボタンの位置を調整
+   if (scrollPosition >= footerOffset) {
+     // フッターが表示されている場合
+     $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
+     $('.c-top-back-btn--bottom-long').css('bottom', (scrollPosition - footerOffset + 91) + 'px');
+     $('.c-top-back-btn--bottom-short').css('bottom', (scrollPosition - footerOffset + 79) + 'px');
+   } else {
+     // フッターが表示されていない場合は、元の位置に戻す
+     $('.c-contact__fixed').css('bottom', '0');
+     $('.c-top-back-btn--bottom-long').css('bottom', '91px');
+     $('.c-top-back-btn--bottom-short').css('bottom', '79px');
+   }
+ });
+});

@@ -7,35 +7,6 @@
  color: #fff; 
 }
 
-.p-footer-nav {
- width: 30rem;
- height: 3.3rem;
- margin-inline: auto;
- @include sp {
-  width: 290px;
- }
-}
-
-.p-footer-nav__lists {
- width: 30rem;
- height: 3.3rem;
- display: flex;
- justify-content: space-between;
- @include sp {
-  width: 290px;
- }
-}
-
-.p-footer-nav__list a {
-  font-size: 1.7rem;
-  line-height: calc(33 / 17);
-  transition: opacity .4s;
-}
-
-.p-footer-nav__list a:hover {
-  opacity: 0.5;
-}
-
 .p-footer__logo { 
  display: block;
  width: 3.2rem;
@@ -57,8 +28,7 @@
   @include sp {
     // width: 30rem;
     font-size: 1.5rem;
-    line-height: calc(20 / 15);
-    
+    line-height: calc(20 / 15);    
   }
 }
 

@@ -209,7 +209,7 @@ a {
   padding-top: 0.1rem;
   margin-left: 3.3rem;
   position: fixed;
-  bottom: 0;
+  bottom: 277px;
   right: 0;
   opacity: 0;
   visibility: hidden;
@@ -218,7 +218,7 @@ a {
   .c-contact__fixed {
     width: 33.5rem;
     position: fixed;
-    bottom: 0;
+    bottom: 30.2rem;
     right: 2rem;
   }
 }
@@ -269,7 +269,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--bottom-long {
-    bottom: 91px;
+    bottom: 380px;
     right: 2rem;
   }
 }
@@ -279,7 +279,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--bottom-short {
-    bottom: 79px;
+    bottom: 320px;
     right: 3rem;
   }
 }
