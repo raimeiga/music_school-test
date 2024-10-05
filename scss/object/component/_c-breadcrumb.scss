@@ -9,7 +9,11 @@
  align-items: center;
  column-gap: 2rem; 
  flex-wrap: wrap; 
- padding-inline: 10rem;
+ padding-inline: 10rem 10rem;
+ margin: 0 auto;
+ @include max(1024px) {
+  padding-inline: 7rem 6rem;
+ }
  @include sp {
   width: 100%;  
   padding-inline: 2rem;
@@ -62,31 +66,36 @@
  }
 
 .c-breadcrumb__text--1-line { 
- padding-block: 9px 8px;
+ //padding-block: 9px 8px;
+ padding-block: 0.9rem 0.8rem;
  @include sp {
-  padding-block: 2px 1px;
+  // padding-block: 2px 1px;
+  padding-block: 0.2rem 0.1rem; 
  }
 }
 
 .c-breadcrumb__text--2-lines { 
- padding-block: 18px 16px;
+ //padding-block: 18px 16px;
+ padding-block: 1.8rem 1.6rem;
  @include sp {
-  padding-block: 10px 5px;
+  // padding-block: 10px 5px;
+  padding-block: 1rem 0.5rem;
   line-height: 1;
  }
 }
 
 .c-breadcrumb__text--blog-details {
- @include sp {
- padding-block: 5px 7px; 
- line-height: 1;
-}
+  @include sp {
+  // padding-block: 5px 7px; 
+  padding-block: 0.5rem 0.7rem; 
+  line-height: 1;
+ }
 }
 
 
 .c-breadcrumb__text--result-details {
  @include sp {
-  padding-block: 5px 9px; 
-
+  // padding-block: 5px 9px; 
+  padding-block: 0.5rem 0.7rem;
 }
 }

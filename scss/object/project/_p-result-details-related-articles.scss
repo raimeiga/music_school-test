@@ -1,0 +1,35 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+
+
+//------result-details-related-articles-----
+
+.p-result-details-related-articles {
+ width: 100%;
+ padding-top: 10rem;
+ display: flex;
+ flex-direction: column;
+ row-gap: 3rem;
+ padding-bottom: 15.7rem;
+ @include sp {
+  padding-top: 6.1rem;
+  padding-bottom: 19.7rem;
+  row-gap: 2rem;
+ }
+}
+
+.p-result-details-related-articles__label {
+ background-color: #000;
+ color: #fff;
+ font-size: 1.8rem;
+ font-weight: 600;
+ line-height: calc(33 / 18);
+ padding: 10px 0 7px 30px;
+ text-align: left;
+ @include sp {
+  text-align: center;
+  padding: 10px 0 7px 0;
+ }
+}

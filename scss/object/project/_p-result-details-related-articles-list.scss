@@ -1,0 +1,53 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+//------p-result-details-related-article-list-----
+
+.p-result-details-related-article-list {
+ display: flex;
+ column-gap: 3rem;
+ transition: opacity .4s;
+ @include sp {
+  column-gap: 2rem;
+ }
+}
+
+.p-result-details-related-article-list:hover {
+ opacity: 0.5;
+}
+
+.p-result-details-related-article-list__image {
+ width: 26rem;
+ position: relative;
+ @include sp {
+  width: 16rem;
+ }
+}
+
+.p-result-details-related-article-list__title-and-date {
+ display: block;
+}
+
+.p-result-details-related-article-list__title {
+ width: 59rem;
+ font-size: 2rem;
+ font-weight: 600;
+ line-height: calc(25 / 20);
+ padding-bottom: 1.3rem;
+ text-align: left;
+ @include sp {
+  width: 15.5rem;
+   font-size: 1.7rem;
+   line-height: calc(28 / 17);
+   padding-bottom: 0.39rem;
+ }
+}
+
+.p-result-details-related-article-list__date {
+ font-size: 1.7rem;
+ line-height: calc(30 / 17);
+ display: flex;
+ justify-content: left;
+}
+

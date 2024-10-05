@@ -65,8 +65,15 @@
 @use 'object/project/p-plan'; // プロジェクトのスタイル（layout の後）
 
 
-@use 'object/project/p-result-details'; // プロジェクトのスタイル（layout の後）
+
 @use 'object/project/p-result-list';    // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-result-details'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-result-details-table'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-result-details-article'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-result-details-related-articles'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-result-details-related-article-list'; // プロジェクトのスタイル（layout の後）
+
+
 
 @use 'object/project/p-mv';    // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-contact'; // プロジェクトのスタイル（layout の後）

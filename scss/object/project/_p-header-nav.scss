@@ -58,11 +58,11 @@
   @include pc { //spのナビメニューにも下線が走ってしまうのでpcに限定する
     content: '';
     width: 100%;
-    height: hvw(1);
+    height: hvw(2);
     background: #000;
     position: absolute;
     left: 0;
-    bottom: hvw(28);
+    bottom: hvw(25);
     transform: scaleX(0);
     transition: transform .4s;
     transform-origin: left center; 
