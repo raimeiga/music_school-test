@@ -255,7 +255,7 @@ a {
   align-items: center;
   position: fixed;
   right: 10rem;
-  bottom: 9.1rem;
+  bottom: 8.4259259259vw;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s;
@@ -264,7 +264,7 @@ a {
 @media only screen and (max-width: 767px) {
   .c-top-back-btn {
     position: fixed;
-    bottom: 7.9rem;
+    bottom: 21.0666666667vw;
     right: 2rem;
   }
 }
