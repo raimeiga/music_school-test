@@ -3,11 +3,12 @@
 
 
 .p-voice__inner {
- max-width: 94rem;
+  max-width: 94rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
   position: relative;  
   @include sp {
+   max-width: 34.5rem;
    padding-block: 4.8rem 5rem;
    position: static;
   }
@@ -20,17 +21,19 @@
 .p-voice__lists {
   // width: vw(915,1080); 
   // width: vw(915); 
-width: 91.5rem;
+  width: 91.5rem;
   padding-top: 3.6rem;
   margin: auto; 
-  overflow: hidden; // スライドしない部分を隠す 
-  
+  overflow: hidden; // スライドしない部分を隠す  
   @include sp {
     width: 100%; 
     padding-top: 3.7rem;
     margin: 0 auto; 
   }
 }
+
+
+
 
 //----slick関係--------------------
 .slick-slider {

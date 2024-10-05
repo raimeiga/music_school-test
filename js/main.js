@@ -22,7 +22,7 @@ $('.js-slider').slick({
  nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="Next"></button>',
  responsive: [
    {
-     breakpoint: 767, // スマホサイズ
+     breakpoint: 768, // ここを767にすると、スタイルの適用は画面幅766px以下からになってしまう。
      settings: {      
       slidesToShow: 1, // 1枚表示
       slidesToScroll: 1,     
@@ -39,7 +39,6 @@ $('.p-qa-list__q').on('click', function(){
  $(this).next().slideToggle();
 });
 
-
 // トップに戻るボタンの表示・非表示の切り替え
 // ページトップから、200pxスクロールしたら、トップに
 // 戻るボタンが表示され、200px以下だと非表示に戻る設定
@@ -51,8 +50,10 @@ $(window).on('scroll', function() {
  }
 });
 
-
 // スクロールバー（SimpleBar）
+document.addEventListener('DOMContentLoaded', function() {
+ // SimpleBarの初期化コード
+
  const tableWrap = document.querySelector('.p-plan__table-wrap');
  // SimpleBarを手動で適用
  new SimpleBar(tableWrap, {
@@ -99,4 +100,7 @@ $(function() {
      }
    }
  });
+});
+
+
 });

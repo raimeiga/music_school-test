@@ -31,10 +31,6 @@ body {
   }
 }
 
-#wrapper {
-  overflow: hidden;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -205,9 +201,11 @@ a {
   width: 30rem;
   height: 6rem;
   font-size: 2rem;
+  font-weight: 600;
   line-height: 1.65;
-  padding-top: 0.1rem;
+  padding-top: 0.3rem;
   margin-left: 3.3rem;
+  letter-spacing: 0.2em;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -855,7 +853,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-reason__inner {
-    padding-block: 4.9rem 3.6rem;
+    padding-block: 4.9rem 3.9rem;
   }
 }
 
@@ -1002,6 +1000,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-voice__inner {
+    max-width: 34.5rem;
     padding-block: 4.8rem 5rem;
     position: static;
   }
@@ -1203,7 +1202,7 @@ a {
   .p-flow-list:nth-of-type(1) ::after {
     height: 67rem; /* 直線の太さ */
     top: 70%; /* 円の中央に配置 */
-    left: -11.5%; /* 円の中央に配置 */
+    left: -3.3rem; /* 円の中央に配置 */
     transform: translate(50%, -12%); /* 直線の中心を円の中心に合わせる */
   }
 }
@@ -1468,7 +1467,7 @@ a {
   font-weight: 600;
   line-height: 1.25;
   text-align: left;
-  margin-block: 2rem 1.3rem;
+  margin-block: 2rem 1rem;
 }
 @media only screen and (max-width: 767px) {
   .p-blog-list__title {
@@ -2294,25 +2293,25 @@ a {
 
 @media only screen and (max-width: 767px) {
   .simplebar-track.simplebar-horizontal {
-    width: 100% !important;
-    height: 2.6rem !important;
+    width: 100%;
+    height: 2.6rem;
     background-color: rgba(80, 80, 80, 0.149); /* トラックの背景色 */
   }
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-    width: 10rem !important;
-    height: 2.3rem !important;
-    top: 0.1rem !important;
-    bottom: 0.1rem !important;
+    width: 10rem;
+    height: 2.3rem;
+    top: 0.1rem;
+    bottom: 0.1rem;
     background-color: rgba(80, 80, 80, 0.251); /* つまみの色 */
   }
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
-    height: 100% !important;
-    top: 0.1rem !important;
-    left: 0 !important;
-    right: 0 !important;
+    height: 100%;
+    top: 0.1rem;
+    left: 0;
+    right: 0;
   }
   .simplebar-scrollbar:before {
-    border-radius: 0 !important;
+    border-radius: 0;
   }
 }
 .p-plan-table {
