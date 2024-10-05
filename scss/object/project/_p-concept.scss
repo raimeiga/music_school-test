@@ -3,7 +3,6 @@
 
 
 .p-concept {
- background-color: yellow ; 
  padding-block: 6.6rem 3.4rem; 
  @include sp {      
   padding-block: 4.5rem 1.6rem; 
@@ -11,7 +10,6 @@
 }
 
 .p-concept__title {
- background-color: yellow;
  color: $color-red;
  font-size: 3.5rem; 
  font-weight: 600;

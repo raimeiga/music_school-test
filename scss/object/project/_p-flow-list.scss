@@ -52,7 +52,6 @@
 }
 
 .p-flow-list__item {
-  background-color: yellow;  
   width: 192px;
   padding-top: 0.7rem;
   text-align: left;
@@ -66,8 +65,7 @@
   }
 }
 
-.p-flow-list__text {
-  background-color: pink;  
+.p-flow-list__text {  
   font-size: 1.8rem;
   line-height: calc(30 / 18);
   text-align: left;

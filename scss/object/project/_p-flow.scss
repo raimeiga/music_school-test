@@ -2,16 +2,14 @@
 @use '../../foundation/mixin' as *;
 
 
-.p-flow__inner {
-  background-color: yellow;
+.p-flow__inner {  
   padding-block: 5.4rem;
   @include sp {
     padding-block: 4.6rem 0;
   }
 }
 
-.p-flow__lists {
-  background-color: aqua;
+.p-flow__lists { 
   padding-top: 5.3rem;
   margin: 0 auto;
   display: flex;

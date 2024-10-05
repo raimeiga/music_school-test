@@ -1,8 +1,7 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
-.p-reason__content {
- background-color: aqua; 
+.p-reason__content { 
  display: flex; 
  @include sp {
   display: block;
