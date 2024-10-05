@@ -269,7 +269,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--bottom-long {
-    bottom: 91px;
+    bottom: 9.1rem;
     right: 2rem;
   }
 }
@@ -279,7 +279,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--bottom-short {
-    bottom: 79px;
+    bottom: 7.9rem;
     right: 3rem;
   }
 }
