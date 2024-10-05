@@ -12,6 +12,7 @@
  align-items: center;
  position: fixed;
  right: 10rem; 
+ bottom: calc(91 / 1080 * 100vw);
  opacity: 0;
  visibility: hidden;
  // transition: opacity .4s;
@@ -19,24 +20,35 @@
  z-index: 999;
  @include sp {
   position: fixed;   
+  bottom: calc(79 / 375 * 100vw);
+  right: 2rem; 
  }
 }
 
-.c-top-back-btn--bottom-long {
- bottom: 37rem;
- @include sp {
-  bottom: 9.1rem;
-  right: 2rem;
- }
-}
+// .c-top-back-btn--long {
+//  bottom: 9.1rem;
+//  @include sp {
+//   bottom: 7.9rem;
+//   right: 2rem;
+//  }
+// }     
 
-.c-top-back-btn--bottom-short {
- bottom: 30.8rem;
- @include sp {
-  bottom: 7.9rem;
-  right: 3rem;
- }
-}
+
+// .c-top-back-btn--bottom-long {
+//  bottom: 37rem;
+//  @include sp {
+//   bottom: 9.1rem;
+//   right: 2rem;
+//  }
+// }
+
+// .c-top-back-btn--bottom-short {
+//  bottom: 30.8rem;
+//  @include sp {
+//   bottom: 7.9rem;
+//   right: 3rem;
+//  }
+// }
 
 .c-top-back-btn__icon {
  width: 43%;
