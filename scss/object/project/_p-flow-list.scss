@@ -40,8 +40,8 @@
   height: 39.5rem; /* 直線の太さ */
   background-color: $color-red; /* 直線の色 */
   position: absolute; /* 円の上に配置 */ 
-  top: 50%; /* 円の中央に配置 */
-  left: -6rem; /* 円の中央に配置 */
+  top: 66%; /* 円の中央に配置 */
+  left: -5.95rem; /* 円の中央に配置 */
   transform: translate(-4%, -2%); /* 直線の中心を円の中心に合わせる */
   @include sp {
     height: 67rem; /* 直線の太さ */
