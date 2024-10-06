@@ -53,34 +53,7 @@ $(function() {
    });
  }
 
- // フッターの位置調整
- // $(window).on('scroll', function() {
- //   var footerOffset = $('footer').offset().top;
- //   var scrollPosition = $(window).scrollTop() + $(window).height();
- //   var windowHeight = $(window).height();
-
- //   $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
-
- //   if (scrollPosition >= footerOffset) {
- //     if ($(window).width() > 767) {
- //       var pcDistance = parseFloat($('html').width()) * (91 / 1080);
- //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
- //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance) + 'px');
- //     } else {
- //       var spDistance = parseFloat($('html').width()) * (79 / 375);
- //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
- //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance) + 'px');
- //     }
- //   } else {
- //     if ($(window).width() > 767) {
- //       $('.c-contact__fixed').css('bottom', '0');
- //       $('.c-top-back-btn').css('bottom', 'calc(91 / 1080 * 100vw)');
- //     } else {
- //       $('.c-contact__fixed').css('bottom', '0');
- //       $('.c-top-back-btn').css('bottom', 'calc(79 / 375 * 100vw)');
- //     }
- //   }
- // });
+ 
 
  $(window).on('scroll', function() {
   var footerOffset = $('footer').offset().top;
@@ -95,7 +68,6 @@ $(function() {
     $('.c-top-back-btn, .c-contact__fixed').removeClass('active'); // ボタン非表示
   }
 
-  $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
 
   // footerに到達したときの処理
   if (scrollPosition >= footerOffset) {
@@ -140,6 +112,35 @@ $(function() {
 
 });
 
+
+// フッターの位置調整
+ // $(window).on('scroll', function() {
+ //   var footerOffset = $('footer').offset().top;
+ //   var scrollPosition = $(window).scrollTop() + $(window).height();
+ //   var windowHeight = $(window).height();
+
+ //   $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
+
+ //   if (scrollPosition >= footerOffset) {
+ //     if ($(window).width() > 767) {
+ //       var pcDistance = parseFloat($('html').width()) * (91 / 1080);
+ //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
+ //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance) + 'px');
+ //     } else {
+ //       var spDistance = parseFloat($('html').width()) * (79 / 375);
+ //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
+ //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance) + 'px');
+ //     }
+ //   } else {
+ //     if ($(window).width() > 767) {
+ //       $('.c-contact__fixed').css('bottom', '0');
+ //       $('.c-top-back-btn').css('bottom', 'calc(91 / 1080 * 100vw)');
+ //     } else {
+ //       $('.c-contact__fixed').css('bottom', '0');
+ //       $('.c-top-back-btn').css('bottom', 'calc(79 / 375 * 100vw)');
+ //     }
+ //   }
+ // });
 
 // $(function() {
 
