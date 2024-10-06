@@ -16,7 +16,7 @@
  width: 22rem;
  height: 4rem;
  margin: 1.5rem;
- display: flex; 
+ display: flex;
  @include sp {
   width: 29.5rem;
   height: 5.4rem;
@@ -33,9 +33,7 @@
 
 .p-sidebar-blog-search__btn-bg {
   background-color: #000;
-  width: 4rem;
-  display: grid;
-  place-content: center;
+  width: 4rem;  
     @include sp {
      width: 5.4rem;
     }
