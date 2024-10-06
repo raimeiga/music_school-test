@@ -3570,6 +3570,8 @@ body::-ms-scrollbar-thumb:before {
 }
 
 .p-contact__submit button {
+  width: inherit;
+  height: inherit;
   display: block;
   padding-top: 0.2rem;
 }
