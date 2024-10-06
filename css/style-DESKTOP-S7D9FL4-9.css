@@ -260,6 +260,10 @@ a {
   z-index: 999;
 }
 
+.c-top-back-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .c-top-back-btn--91-79 {
   position: fixed;
   right: 10rem;

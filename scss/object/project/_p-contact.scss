@@ -32,6 +32,12 @@
  }
 }
 
+.p-contact__group label,
+.p-contact__group input { 
+ cursor: pointer;
+}
+
+
 .p-contact__group:nth-of-type(4) {
 padding-bottom: 2.6rem;
 @include sp {
@@ -185,6 +191,6 @@ border: solid 0.05rem #000;
 
 .p-contact__submit button {
  display: block;
- padding-top: 0.1rem;
+ padding-top: 0.2rem;
 }
 

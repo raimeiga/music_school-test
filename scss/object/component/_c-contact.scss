@@ -8,7 +8,7 @@
  justify-content: center;
  align-items: center;    
  border: 0.1rem solid transparent; //初期状態では透明な枠線
- transition: all 0.4s; 
+ transition: all .4s; 
 }
 
 .c-contact:hover {
@@ -24,6 +24,7 @@
   line-height: calc(33 / 15); 
   padding-top: 0.1rem;  
   margin-left: 3.3rem;  
+  transition: all .4s; 
  }
 
  .c-contact__fixed {    
@@ -35,20 +36,16 @@
   padding-top: 0.3rem;  
   margin-left: 3.3rem;
   letter-spacing: 00.2em;
-  position: fixed;
-  //bottom: 27.7rem;
+  position: fixed;  
   bottom: 0;
-  right: 0;  
+  right: 0;    
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden;  
+  transition: all .4s;
   @include sp {   
     width: 33.5rem;
-    position: fixed;
-    // bottom: 30.2rem;    
-    //bottom: calc(30.2rem);
+    position: fixed;    
     bottom: 0;
     right: 2rem;  
   }
  }
-
- 

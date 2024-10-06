@@ -11,6 +11,7 @@
  // text-align: center;
  border: 0.1rem solid transparent; //初期状態では透明な枠線
  transition: all 0.4s; 
+ cursor: pointer;
 }
 
 .c-btn:hover {
@@ -33,4 +34,3 @@
     line-height: calc(26 / 20);  
   }
  }
-
