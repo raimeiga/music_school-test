@@ -54,33 +54,90 @@ $(function() {
  }
 
  // フッターの位置調整
+ // $(window).on('scroll', function() {
+ //   var footerOffset = $('footer').offset().top;
+ //   var scrollPosition = $(window).scrollTop() + $(window).height();
+ //   var windowHeight = $(window).height();
+
+ //   $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
+
+ //   if (scrollPosition >= footerOffset) {
+ //     if ($(window).width() > 767) {
+ //       var pcDistance = parseFloat($('html').width()) * (91 / 1080);
+ //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
+ //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance) + 'px');
+ //     } else {
+ //       var spDistance = parseFloat($('html').width()) * (79 / 375);
+ //       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
+ //       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance) + 'px');
+ //     }
+ //   } else {
+ //     if ($(window).width() > 767) {
+ //       $('.c-contact__fixed').css('bottom', '0');
+ //       $('.c-top-back-btn').css('bottom', 'calc(91 / 1080 * 100vw)');
+ //     } else {
+ //       $('.c-contact__fixed').css('bottom', '0');
+ //       $('.c-top-back-btn').css('bottom', 'calc(79 / 375 * 100vw)');
+ //     }
+ //   }
+ // });
+
  $(window).on('scroll', function() {
-   var footerOffset = $('footer').offset().top;
-   var scrollPosition = $(window).scrollTop() + $(window).height();
-   var windowHeight = $(window).height();
+  var footerOffset = $('footer').offset().top;
+  var scrollPosition = $(window).scrollTop() + $(window).height();
+  var windowHeight = $(window).height();
+  var isPC = $(window).width() > 767;
 
-   $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
+  // スクロールが200px以上のときに表示する設定
+  if ($(this).scrollTop() > 200) {
+    $('.c-top-back-btn, .c-contact__fixed').addClass('active'); // ボタン表示
+  } else {
+    $('.c-top-back-btn, .c-contact__fixed').removeClass('active'); // ボタン非表示
+  }
 
-   if (scrollPosition >= footerOffset) {
-     if ($(window).width() > 767) {
-       var pcDistance = parseFloat($('html').width()) * (91 / 1080);
-       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
-       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance) + 'px');
-     } else {
-       var spDistance = parseFloat($('html').width()) * (79 / 375);
-       $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px');
-       $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance) + 'px');
-     }
-   } else {
-     if ($(window).width() > 767) {
-       $('.c-contact__fixed').css('bottom', '0');
-       $('.c-top-back-btn').css('bottom', 'calc(91 / 1080 * 100vw)');
-     } else {
-       $('.c-contact__fixed').css('bottom', '0');
-       $('.c-top-back-btn').css('bottom', 'calc(79 / 375 * 100vw)');
-     }
-   }
- });
+  $('.c-contact__fixed, .c-top-back-btn').css('transition', 'none');
+
+  // footerに到達したときの処理
+  if (scrollPosition >= footerOffset) {
+    if (isPC) { // PC画面の場合
+      var pcDistance91_79 = parseFloat($('html').width()) * (91 / 1080); // 91/1080の距離
+      var pcDistance30_18 = parseFloat($('html').width()) * (30 / 1080); // 30/1080の距離
+
+      $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px'); // footer上部0rem
+
+      if ($('.c-top-back-btn').hasClass('c-top-back-btn--91-79')) {
+        $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance91_79) + 'px'); // 9.1rem
+      } else if ($('.c-top-back-btn').hasClass('c-top-back-btn--30-18')) {
+        $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + pcDistance30_18) + 'px'); // 3rem
+      }
+    } else { // SP画面の場合
+      var spDistance91_79 = parseFloat($('html').width()) * (79 / 375); // 79/375の距離
+      var spDistance30_18 = parseFloat($('html').width()) * (18 / 375); // 18/375の距離
+
+      $('.c-contact__fixed').css('bottom', (scrollPosition - footerOffset) + 'px'); // footer上部0rem
+
+      if ($('.c-top-back-btn').hasClass('c-top-back-btn--91-79')) {
+        $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance91_79) + 'px'); // 7.9rem
+      } else if ($('.c-top-back-btn').hasClass('c-top-back-btn--30-18')) {
+        $('.c-top-back-btn').css('bottom', (scrollPosition - footerOffset + spDistance30_18) + 'px'); // 1.8rem
+      }
+    }
+  } else {
+    // footerに到達していないときの通常状態
+    if (isPC) {
+      $('.c-contact__fixed').css('bottom', '0'); // ボタンは画面の下端に固定
+      $('.c-top-back-btn--91-79').css('bottom', 'calc(91 / 1080 * 100vw)'); // 通常位置に戻す
+      $('.c-top-back-btn--30-18').css('bottom', 'calc(30 / 1080 * 100vw)'); // 通常位置に戻す
+    } else {
+      $('.c-contact__fixed').css('bottom', '0'); // ボタンは画面の下端に固定
+      $('.c-top-back-btn--91-79').css('bottom', 'calc(79 / 375 * 100vw)'); // 通常位置に戻す
+      $('.c-top-back-btn--30-18').css('bottom', 'calc(18 / 375 * 100vw)'); // 通常位置に戻す
+    }
+  }
+});
+
+
+
 });
 
 

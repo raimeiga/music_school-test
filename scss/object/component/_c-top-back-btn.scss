@@ -10,20 +10,46 @@
  display: flex;
  justify-content: center;
  align-items: center;
- position: fixed;
- right: 10rem; 
- bottom: calc(91 / 1080 * 100vw);
+ // position: fixed;
+ // right: 10rem; 
+ // bottom: calc(91 / 1080 * 100vw);
  opacity: 0;
  visibility: hidden;
  // transition: opacity .4s;
  transition: all .4s;
  z-index: 999;
+ // @include sp {
+ //  position: fixed;   
+ //  right: 2rem; 
+ //  bottom: calc(79 / 375 * 100vw);  
+ // }
+}
+
+
+.c-top-back-btn--91-79 {
+ position: fixed;
+ right: 10rem; 
+ bottom: calc(91 / 1080 * 100vw);
  @include sp {
   position: fixed;   
-  bottom: calc(79 / 375 * 100vw);
   right: 2rem; 
+  bottom: calc(79 / 375 * 100vw);  
  }
 }
+
+.c-top-back-btn--30-18 {
+ position: fixed;
+ right: 10rem; 
+ bottom: calc(30 / 1080 * 100vw);
+ @include sp {
+  position: fixed;   
+  right: 2rem; 
+  bottom: calc(18 / 375 * 100vw);  
+ }
+}
+
+
+
 
 // .c-top-back-btn--long {
 //  bottom: 9.1rem;

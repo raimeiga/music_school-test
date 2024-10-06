@@ -1,0 +1,15 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-sidebar-category__name {
+ height: 4.6rem;
+ border-bottom: 0.05rem solid;
+ display: flex;
+ align-items: center;
+ padding-top: 0.3rem;
+ font-size: 1.7rem;
+ line-height: calc(28 / 17);
+ text-align: left;
+ transition: opacity .4s;
+}

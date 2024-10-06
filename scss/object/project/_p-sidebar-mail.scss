@@ -1,0 +1,36 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+// サイドバー
+
+.p-sidebar-mail {
+ height: 25rem;
+ border: 0.05rem solid #000;
+ @include sp {
+   height: 31.8rem;
+ }
+} 
+
+.p-sidebar-mail__banner {
+ background-color: #E8E8E8;
+ width: 22rem;
+ height: 17rem; 
+ margin: 1.5rem;
+ display: grid;         
+ place-content: center; 
+ transition: opacity .4s;
+ @include sp {
+  width: 29.5rem;
+  height: 22.8rem; 
+  margin: 2rem;
+ }
+}
+
+.p-sidebar-mail__banner p {
+ color: #000;
+ font-size: 1.8rem;
+ font-weight: 600;
+ line-height: calc(33 / 18); 
+}
+

@@ -21,20 +21,18 @@
   display: flex;
   column-gap: 10.6rem;
   @include sp {
-   display: block;
-   // display: flex;
-   // flex-direction: column;
-   // row-gap: 4.1rem;
+    display: block;  
   }
 }
 
 .p-result-list__list {
  width: 38.7rem;
  position: relative;
- margin-bottom: 4.1rem;
+ margin-bottom: 6.1rem;
  transition: opacity .4s;
  @include sp {
    width: 100%;
+   margin-bottom: 4.1rem;
  }
 }
 

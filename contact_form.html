@@ -18,10 +18,10 @@
  <link rel="stylesheet" href="css/reset.css">
 
   <!-- slick（slick.css）読み込み -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <!-- スタイルシート読み込みに、キャッシュ削除のクエリを追記　style.css更新時に、ver=1.0.2とかに変更していくらしい　-->
- <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.3"/>
+ <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.8"/>
 
 </head>
 
@@ -94,7 +94,7 @@
          <p>当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
             通常３営業日以内にメールにてご連絡させていただきます。
          </p>
-         <form action="" class="p-contact__form">
+         <form action="contact_send.html" class="p-contact__form">
            <dl class="p-contact__group">
              <dt>
                <label for="company-name" class="p-contact__label">会社名</label>
@@ -158,10 +158,10 @@
              <!-- <dd class="u-flex-1"> -->
               <textarea name="content" id="content" class="p-contact__textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
             <!-- </dd> -->
-           </dl>
-           <div class="c-btn c-btn--detail p-contact__submit">
-             <button type="submit">送 信</button>
-           </div>
+           </dl>           
+           <div class="c-btn c-btn--detail p-contact__submit">             
+               <button type="submit">送 信</button>             
+           </div>           
          </form> 
        </div>       
      </div> 
@@ -217,7 +217,7 @@
      </div>
     </footer> 
     <!-- トップに戻るボタン -->
-    <a href="#" class="c-top-back-btn c-top-back-btn--bottom-short u-scroll-show">
+    <a href="#" class="c-top-back-btn c-top-back-btn--30-18 u-scroll-show">
      <div class="c-top-back-btn__icon">
        <img src="./images/top-back-btn.svg" alt="">
      </div>
@@ -226,7 +226,7 @@
   <!--jQueryの読み込み --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- slick読み込み -->
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- javascriptの読み込み -->
   <script src="./js/main.js"> </script>
 </body>

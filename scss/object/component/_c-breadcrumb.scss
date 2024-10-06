@@ -62,7 +62,7 @@
 .c-breadcrumb__text {
  color: #000;
  font-size: 1.6rem;
- line-height: 1;  
+ line-height: calc(33 / 16); 
  }
 
 .c-breadcrumb__text--1-line { 
@@ -70,16 +70,18 @@
  padding-block: 0.9rem 0.8rem;
  @include sp {
   // padding-block: 2px 1px;
-  padding-block: 0.2rem 0.1rem; 
+  padding-block: 0.3rem 0rem; 
  }
 }
 
 .c-breadcrumb__text--2-lines { 
  //padding-block: 18px 16px;
  padding-block: 1.8rem 1.6rem;
+ line-height: 1;
  @include sp {
   // padding-block: 10px 5px;
-  padding-block: 1rem 0.5rem;
+  //padding-block: 11px 6px;
+  padding-block: 1.1rem 0.6rem;
   line-height: 1;
  }
 }

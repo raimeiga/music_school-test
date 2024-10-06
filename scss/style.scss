@@ -60,6 +60,16 @@
 @use 'object/project/p-blog'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-blog-list'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-blog-details'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-blog-details-main'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-blog-details-main-related-article'; // プロジェクトのスタイル（layout の後）
+
+@use 'object/project/p-sidebar'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-sidebar-mail'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-sidebar-blog-search'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-sidebar-reco-articles'; // プロジェクトのスタイル（layout の後）
+@use 'object/project/p-sidebar-category'; // プロジェクトのスタイル（layout の後）
+
+
 
 @use 'object/project/p-footer'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-footer-nav'; // プロジェクトのスタイル（layout の後）

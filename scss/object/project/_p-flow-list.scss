@@ -22,8 +22,8 @@
   left: -9%; // 50px左に配置
   top: 45%; // 縦中央に配置
   transform: translateY(-70%); // 完全に中央に調整
-  width: 20px; // 幅20px
-  height: 20px; // 高さ20px
+  width: 2rem; // 幅20px
+  height: 2rem; // 高さ20px
   border-radius: 50%; // 円形にする
   background-color: $color-red; // 円の色を指定
   @include sp {
@@ -42,12 +42,12 @@
   position: absolute; /* 円の上に配置 */ 
   top: 50%; /* 円の中央に配置 */
   left: -6rem; /* 円の中央に配置 */
-  transform: trans                    late(-4%, -2%); /* 直線の中心を円の中心に合わせる */
+  transform: translate(-4%, -2%); /* 直線の中心を円の中心に合わせる */
   @include sp {
     height: 67rem; /* 直線の太さ */
-    top: 70%; /* 円の中央に配置 */
-    left: -3.3rem; /* 円の中央に配置 */
-    transform: translate(50%, -12%); /* 直線の中心を円の中心に合わせる */
+    top: 8%; /* 円の中央に配置 */
+    left: -11%; /* 円の中央に配置 */
+    transform: translate(0%, 0%); /* 直線の中心を円の中心に合わせる */
   }
 }
 

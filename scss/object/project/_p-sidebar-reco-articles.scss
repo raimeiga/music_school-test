@@ -1,0 +1,43 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+
+.p-sidebar-reco-articles {
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.5rem;
+ @include sp {
+  row-gap: 2rem;
+ }
+}
+
+.p-sidebar-reco-articles__list {
+ height: 7.5rem;
+ display: flex;
+ column-gap: 1.5rem;
+ transition: opacity .4s;
+ @include sp {
+  height: 11rem;
+  column-gap: 2rem;
+ }
+}
+
+.p-sidebar-reco-articles__image {
+ background-color: #E8E8E8;
+ width: 9.5rem;
+ height: 7.5rem; 
+ @include sp {
+  width: 16rem;
+  height: 11rem; 
+ }
+}
+
+.p-sidebar-reco-articles__title p {
+ font-size: 1.7rem;
+ line-height: calc(28 / 17);
+ text-align: left;
+ @include sp {
+  margin-block: 0.9rem 4.5rem;
+ }
+}
