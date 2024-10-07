@@ -784,40 +784,80 @@ a {
 
 .p-concept-flow {
   width: 100%;
+}
+
+.p-concept-flow-detail {
+  width: 37rem;
+  margin: 1.9rem auto;
   display: flex;
-  margin-top: -41px;
-  padding-top: 30px;
-  padding-left: 256px;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .p-concept-flow-detail {
+    width: 31rem;
+    margin: 1.8rem auto;
+  }
 }
 
-.p-concept-flow__en-wrap {
-  margin-top: 30px;
-}
-
-.p-concept-flow__en {
-  text-align: right;
+.p-concept-flow-detail__en {
+  width: 45%;
   color: #CB0000;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 2;
-  margin-bottom: 19px;
+  text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  .p-concept-flow-detail__en {
+    font-size: 2rem;
+    line-height: 2.5;
+  }
 }
 
-.p-concept__flow-image {
-  width: 43.5px;
-  height: 202px;
-  margin-inline: 21px 18.5px;
+.p-concept-flow-detail__circle {
+  background-color: #CB0000;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 3rem;
+  position: relative;
 }
 
-.p-concept-flow__ja-wrap {
-  margin-top: 30px;
+.p-concept-flow-detail:nth-of-type(3) .p-concept-flow-detail__circle::after {
+  content: ""; /* 直線を表示するため */
+  position: absolute; /* 円の上に配置 */
+  width: 0.3rem; /* 直線の長さ */
+  height: 19.5rem; /* 直線の太さ */
+  background-color: #CB0000; /* 直線の色 */
+  top: 0%; /* 円の中央に配置 */
+  left: 50%; /* 円の中央に配置 */
+  transform: translate(-50%, -92%); /* 直線の中心を円の中心に合わせる */
 }
 
-.p-concept-flow__ja {
+.p-concept-flow-detail:nth-of-type(1) .p-concept-flow-detail__circle::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  border-top: 0.4rem solid #CB0000;
+  border-left: 0.4rem solid #CB0000;
+  position: absolute;
+  top: -25%;
+  left: -0.2rem;
+  transform: translateY(-134%) rotate(45deg);
+}
+
+.p-concept-flow-detail__ja {
+  width: 45%;
+  text-align: left;
   font-size: 2.3rem;
   line-height: 2.1739130435;
-  text-align: left;
-  margin-bottom: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .p-concept-flow-detail__ja {
+    font-size: 2rem;
+    line-height: 2.5;
+  }
 }
 
 .p-reason__inner {
