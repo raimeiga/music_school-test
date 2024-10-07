@@ -787,7 +787,7 @@ a {
 }
 
 .p-concept-flow-detail {
-  width: 37rem;
+  width: 100%;
   margin: 1.9rem auto;
   display: flex;
   align-items: center;
@@ -801,7 +801,8 @@ a {
 }
 
 .p-concept-flow-detail__en {
-  width: 45%;
+  background-color: aqua;
+  width: 18rem;
   color: #CB0000;
   font-size: 2.5rem;
   font-weight: 600;
@@ -848,7 +849,8 @@ a {
 }
 
 .p-concept-flow-detail__ja {
-  width: 45%;
+  background-color: aqua;
+  width: 18rem;
   text-align: left;
   font-size: 2.3rem;
   line-height: 2.1739130435;
@@ -1236,6 +1238,7 @@ a {
 }
 
 .p-flow-list__text {
+  background-color: aqua;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   text-align: left;

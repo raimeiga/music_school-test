@@ -2,8 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 
-.p-flow-list {
-  // width: 640px;
+.p-flow-list { 
   display: flex;
   margin-left: 12rem;   
   position: relative; // 親要素にpositionを指定
@@ -65,7 +64,8 @@
   }
 }
 
-.p-flow-list__text {  
+.p-flow-list__text { 
+ background-color: aqua; 
   font-size: 1.8rem;
   line-height: calc(30 / 18);
   text-align: left;

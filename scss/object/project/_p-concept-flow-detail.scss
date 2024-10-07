@@ -3,7 +3,7 @@
 
 
 .p-concept-flow-detail {
- width: 37rem; 
+ width: 100%; 
  margin: 1.9rem auto;
  display: flex; 
  align-items: center;
@@ -15,7 +15,8 @@
 }
 
 .p-concept-flow-detail__en {
- width: 45%;
+ background-color: aqua;
+ width: 18rem;
  color: $color-red;
  font-size: 2.5rem;
  font-weight: 600;
@@ -65,7 +66,8 @@
  }
 
 .p-concept-flow-detail__ja {
- width: 45%;
+ background-color: aqua;
+ width: 18rem;
  text-align: left;
  font-size: 2.3rem;
  line-height: calc(50 / 23); 
