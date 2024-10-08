@@ -42,9 +42,6 @@
 @use 'object/project/p-concept-flow'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-concept-flow-detail'; // プロジェクトのスタイル（layout の後）
 
-
-
-
 @use 'object/project/p-reason'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-reason-content'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-reason-content-textarea'; // プロジェクトのスタイル（layout の後）
@@ -56,6 +53,8 @@
 
 @use 'object/project/p-qa'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-qa-list'; // プロジェクトのスタイル（layout の後）
+
+@use 'object/project/p-btn'; // プロジェクトのスタイル（layout の後）
 
 @use 'object/project/p-blog'; // プロジェクトのスタイル（layout の後）
 @use 'object/project/p-blog-list'; // プロジェクトのスタイル（layout の後）

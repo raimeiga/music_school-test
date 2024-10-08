@@ -81,6 +81,14 @@ $(function() {
               bottom: 'calc(' + footerHeight + 'px + (30 / 1080 * 100vw))',  // フッター上端から指定の余白分上に配置
               right: '10rem'
           });
+
+          // お問い合わせボタンは常にフッターの上に配置
+      contactBtn.css({
+       position: 'absolute',
+       bottom: footerHeight + 'px',  // フッターの上端にピタリと配置
+       right: '0'
+   });
+
       } else {
           // SP画面の場合
           topBackBtn91_79.css({
@@ -94,14 +102,16 @@ $(function() {
               bottom: 'calc(' + footerHeight + 'px + (18 / 375 * 100vw))',  // フッター上端からSP用の余白分上に配置
               right: '2rem'
           });
+
+          // お問い合わせボタンは常にフッターの上に配置
+      contactBtn.css({
+       position: 'absolute',
+       bottom: footerHeight + 'px',  // フッターの上端にピタリと配置
+       right: '2rem'
+   });
       }
 
-      // お問い合わせボタンは常にフッターの上に配置
-      contactBtn.css({
-          position: 'absolute',
-          bottom: footerHeight + 'px',  // フッターの上端にピタリと配置
-          right: '0'
-      });
+      
 
   } else {
       if (isPC) {
@@ -121,6 +131,16 @@ $(function() {
               opacity: 1,
               visibility: 'visible'
           });
+
+                 // お問い合わせボタンは常に画面下端に固定
+             contactBtn.css({
+              position: 'fixed',
+              bottom: '0',  // 固定表示
+              right: '0',
+              opacity: 1,
+              visibility: 'visible'
+          });
+
       } else {
           // SP画面の場合、通常時は画面右下に固定表示
           topBackBtn91_79.css({
@@ -138,17 +158,18 @@ $(function() {
               opacity: 1,
               visibility: 'visible'
           });
-      }
 
-      // お問い合わせボタンは常に画面下端に固定
-      contactBtn.css({
-          position: 'fixed',
-          bottom: '0',  // 固定表示
-          right: '0',
-          opacity: 1,
-          visibility: 'visible'
-      });
+                 // お問い合わせボタンは常に画面下端に固定
+             contactBtn.css({
+              position: 'fixed',
+              bottom: '0',  // 固定表示
+              right: '2rem',
+              opacity: 1,
+              visibility: 'visible'
+          });
+      }      
   }
+  
 });
 
 

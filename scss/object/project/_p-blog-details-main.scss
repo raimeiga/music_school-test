@@ -47,6 +47,7 @@
  @include sp {
   width: 100%;
   margin-block: 2.1rem 2.7rem;
+  column-gap: 0.3rem;
  }
 }
 
@@ -56,22 +57,37 @@
 
 .p-blog-details-main__sns-link--fb {
  width: 10.5rem;
+ @include sp {
+  width: 6.5rem;
+ }
 }
 
 .p-blog-details-main__sns-link--tw {
  width: 8.8rem;
+ @include sp {
+  width: 6.5rem;
+ }
 }
 
 .p-blog-details-main__sns-link--hatena {
  width: 9.3rem;
+ @include sp {
+  width: 6.5rem;
+ }
 }
 
 .p-blog-details-main__sns-link--line {
  width: 8.1rem;
+ @include sp {
+  width: 6.5rem;
+ }
 }
 
 .p-blog-details-main__sns-link--pocket {
  width: 9.1rem;
+ @include sp {
+  width: 6.5rem;
+ }
 }
 
 .p-blog-details-main__01-text {
@@ -206,7 +222,9 @@ text-align: left;
  font-size: 2rem;
  font-weight: 600;
  line-height: calc(33 / 20);
- border-bottom: 0.05rem solid; 
+ // border-bottom: 0.05rem solid; 
+ text-decoration: underline;
+ text-decoration-thickness: 0.1rem;
  transition: opacity .4s;
  position: relative;
 }
