@@ -25,13 +25,13 @@
 //　矢印の先端の描画
 .p-flow__lists::before {
   content: '';
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-right: 0.4rem solid $color-red;
   border-bottom: 0.4rem solid $color-red;
   position: absolute;
-  left: 5rem;
-  bottom: 3rem;
+  left: 5.05rem;
+  bottom: 3.2rem;
   transform: translateY(186%) rotate(45deg);
   @include sp {
     position: absolute;
