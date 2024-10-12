@@ -2849,36 +2849,29 @@ body::-ms-scrollbar-thumb:before {
   }
 }
 
-.p-result-list__lists-container {
-  padding-top: 3.8rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-list__lists-container {
-    padding-block: 4.9rem 2rem;
-  }
-}
-
 .p-result-list__lists {
-  display: flex;
-  -moz-column-gap: 10.6rem;
-       column-gap: 10.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 6.1rem 12%;
+  padding-block: 3.8rem 5.8rem;
 }
 @media only screen and (max-width: 767px) {
   .p-result-list__lists {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.1rem;
+    padding-block: 4.9rem 6rem;
   }
 }
 
 .p-result-list__list {
   width: 38.7rem;
   position: relative;
-  margin-bottom: 6.1rem;
   transition: opacity 0.4s;
 }
 @media only screen and (max-width: 767px) {
   .p-result-list__list {
     width: 100%;
-    margin-bottom: 4.1rem;
   }
 }
 
