@@ -44,6 +44,7 @@
  display: flex;
  width: 47.1rem;
  column-gap: 0.3rem;
+
  @include sp {
   width: 100%;
   margin-block: 2.1rem 2.7rem;
@@ -54,6 +55,8 @@
 .p-blog-details-main__sns-link {
  transition: opacity .4s;
 }
+
+
 
 .p-blog-details-main__sns-link--fb {
  width: 10.5rem;
@@ -355,7 +358,7 @@ text-align: left;
   }
 }
 
-.p-blog-details__sns-link:hover,
+.p-blog-details-main__sns-link:hover,
 .p-blog-details-main__link:hover,
 .p-blog-details-main__article:hover,
 .p-blog-details-main-related-article__list:hover,
@@ -501,6 +504,12 @@ text-align: left;
  }
 }
 
+.p-sidebar-reco-articles__title {
+ max-height: 5.6rem;     /* 必要な最大高さを設定 */
+ overflow: hidden;     /* はみ出し部分を非表示 */
+ text-overflow: ellipsis;
+}
+
 .p-sidebar-reco-articles__title p {
  font-size: 1.7rem;
  line-height: calc(28 / 17);
@@ -509,8 +518,6 @@ text-align: left;
   margin-block: 0.9rem 4.5rem;
  }
 }
-
-
 
 .p-sidebar-category__name {
  height: 4.6rem;
