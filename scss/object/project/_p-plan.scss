@@ -35,33 +35,7 @@
   }
 }
 
-.p-plan__btn {
-  margin: 0;
-  width: 21rem;
-  height: 6rem; 
-  @include sp {
-   margin: 0 auto;
-  }
-}
-
-.p-plan__btn::after {
-  content: '+'; /* プラスマークを表示 */
-  font-size: 30px; /* プラスマークのサイズを指定 */
-  font-weight: bold; /* 太さを指定 */
-  position: absolute;
-  top: 29%; /* 垂直中央に配置 */
-  left: 48.7%; /* ボタンの右側に配置 */  
-  width: 18.5px; /* 幅を指定 */
-  height: 18.5px; /* 高さを指定 */  
-  color: #000;
-  @include sp {
-   position: absolute;
-   top: 38%;
-   left: 46.7%;
-  }
-}
-
-.p-plan__btn p {
+.p-plan__btns p {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;

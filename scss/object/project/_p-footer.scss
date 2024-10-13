@@ -15,10 +15,16 @@
  height: 4.9rem;
  margin-block: 2.25rem;
  margin-inline: auto;
+ transition: opacity .3s;
  @include sp {
    margin-block: 1.8rem 2.9rem;   
  }
 }
+
+.p-footer__logo:hover {
+ opacity: 0.5; 
+}
+
 
 .p-footer__copyright {
  width: 100%;

@@ -69,7 +69,7 @@ $(function() {
   // 要素の取得
   var topBackBtn91_79 = $('.c-top-back-btn--91-79');  // トップに戻るボタン（91/79）
   var topBackBtn30_18 = $('.c-top-back-btn--30-18');  // トップに戻るボタン（30/18）
-  var contactBtn = $('.c-contact__fixed');  // お問い合わせボタン
+  var contactBtn = $('.c-btn--fixed');  // お問い合わせボタン
 
   // フッターに到達しているかチェック
   if (scrollPosition >= footerOffset) {
