@@ -30,10 +30,18 @@ $(function() {
    ]
  });
 
- // アコーディオンメニュー
- $('.p-qa-list__q').on('click', function(){
-   $(this).toggleClass('active');
-   $(this).next().slideToggle();
+ // アコーディオンメニューの初期化とクリックイベント
+ $('.p-qa-list__a').hide(); // 初期状態で非表示
+
+ $('.p-qa-list__q').on('click', function() {
+   $(this).toggleClass('active'); // 矢印の回転を制御
+   $(this).addClass('active'); // 矢印の回転を制御
+   $(this).next('.p-qa-list__a').slideToggle(); // 対応する要素を開閉
+ });
+
+ $('.p-qa-list__a').on('click', function() {
+   $(this).slideUp(); // 閉じる
+   $(this).prev('.p-qa-list__q').removeClass('active'); // 矢印をリセット
  });
 
  // トップに戻るボタンの表示・非表示の切り替え
@@ -53,8 +61,7 @@ $(function() {
    });
  }
 
- 
- $(window).on('scroll', function() {
+  $(window).on('scroll', function() {
   var footerOffset = $('footer').offset().top;  // フッターの位置
   var scrollPosition = $(window).scrollTop() + $(window).height();  // 現在のスクロール位置 + ウィンドウの高さ
   var isPC = $(window).width() > 767;  // PC画面かSP画面かを判定

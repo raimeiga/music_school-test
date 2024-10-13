@@ -21,7 +21,8 @@
  opacity: 0.5;
 }
 
-.p-header-logo__text h1 {  
+.p-header-logo__text h1,
+.p-header-logo__text h2 {  
  //font-size: 20px;
  // font-size: hvw(20);
  font-size: 2rem;
@@ -36,7 +37,8 @@
  }
 }
 
-.p-header-logo__text h1 span {
+.p-header-logo__text h1 span,
+.p-header-logo__text h2 span {
  // font-size: hvw(15);
  font-size: 1.5rem;
  font-weight: 600;
