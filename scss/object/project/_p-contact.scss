@@ -1,0 +1,190 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-contact {
+ padding-block: 6.7rem 10rem; 
+ @include sp {
+  padding-block: 4.7rem 10.8rem; 
+ }
+}
+
+.p-contact__inner p {
+ padding-bottom: 6.5rem;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ @include sp {
+   padding-bottom: 3.2rem;
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+   text-align: left;
+ }
+}
+
+.p-contact__group {
+ display: flex; 
+ text-align: left;
+ padding-bottom: 3rem;
+ @include sp {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.3rem;
+ }
+}
+
+.p-contact__group label,
+.p-contact__group input { 
+ cursor: pointer;
+}
+
+
+.p-contact__group:nth-of-type(4) {
+padding-bottom: 2.6rem;
+@include sp {
+  padding-bottom: 1.3rem;
+}
+}
+
+.p-contact__group:nth-of-type(5) {
+ padding-bottom: 0rem;
+ }
+
+ .p-contact__group:last-of-type {
+  padding-bottom: 0; 
+  margin-bottom: 4.2rem;
+ }
+ 
+.p-contact__group dt {
+ width: 17rem;
+}
+
+.p-contact__label {
+ display: inline-block;
+ padding-top: 0.7rem;
+ font-size: 2rem;
+ line-height: calc(33 / 20);
+ @include sp {  
+   padding-block: 0 0.2rem;
+   font-size: 1.6rem;
+   line-height: calc(33 / 16);
+ }
+}
+
+// ↓ テキストボックスはデフォルトで上下に
+// ↓ 余白がつき、上下中央に揃うので、左右だけ余白設定
+.p-contact__control {
+ width: 100%;
+ height: 4rem;
+ background: #fff;
+ padding-inline: 2rem; 
+ border: solid 0.05rem #000;
+}
+
+.p-contact__control::placeholder {  
+  color: #B2B2B2;
+  font-size: 1.5rem;
+  line-height: calc(33 / 15);
+  // margin-bottom: 5rem; 
+}
+
+//----------目的----------
+
+.p-contact__label--pad {
+ display: inline-block; 
+ font-size: 2rem;
+ line-height: calc(33 / 20);
+ @include sp {
+   font-size: 1.6rem;
+   line-height: calc(33 / 16);
+ }
+}
+
+.p-contact__checkboxes {
+ display: flex; 
+ align-items: flex-start;
+ flex-direction: column; 
+ row-gap: 0.9rem;
+ padding-bottom: 2.7rem;
+ @include sp {
+  padding-bottom: 0.9rem;
+ }
+}
+
+.p-contact__checkbox {
+ display: flex;
+ justify-content: left;
+}
+
+.p-contact__checkbox input[type="checkbox"] + span {
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ position: relative;
+ padding-left: 4rem;
+ @include sp {
+  font-size: 1.6rem;
+  line-height: calc(30 / 16);
+  padding-left: 3rem;
+ }
+}
+
+// 疑似要素　チェックボックス
+.p-contact__checkbox input[type="checkbox"] + span::before {
+ content: '';
+ width: 2rem;
+ height: 2rem;
+ background: #fff;
+ border: 0.05rem solid #000;
+ position: absolute; 
+ top: 50%;
+ left: 0;
+ transform: translateY(-50%);
+ z-index: 9;
+}
+
+// 疑似要素　チェック時のマーク、チェック前は非表示にしとく
+.p-contact__checkbox input[type="checkbox"] + span::after { 
+ content: '';
+ width: 1.7rem;
+ height: 0.9rem;
+ // ↓ 長方形のleftとbottomだけ線にして、rotate(-55deg)で傾ける
+ border-left: 0.3rem solid $color-red;
+ border-bottom: 0.4rem solid $color-red;
+ position: absolute;
+ top: 45%;
+ left: 0.2rem;
+ transform: translateY(-50%) rotate(-55deg);
+ display: none;
+ z-index: 10;
+}
+
+// チェックされたときに表示する
+.p-contact__checkbox input[type="checkbox"]:checked + span::after {
+ display: block; 
+}
+
+//-------------内容-------------
+.p-contact__textarea::placeholder {  
+ color: #B2B2B2;
+ font-size: 1.5rem;
+ line-height: calc(33 / 15);
+ // margin-bottom: 5rem; 
+ @include sp {
+  line-height: calc(25 / 15);
+ }
+}
+
+.p-contact__textarea {
+width: 71.1rem;
+min-height: 30rem; //最小の高さを設定
+resize: vertical; //縦方向だけリサイズを許可
+background: #fff;
+padding: 1.5rem 2rem;
+border: solid 0.05rem #000;  
+@include sp {
+ width: 100%;
+ min-height: 19rem; //最小の高さを設定
+ padding: 1rem 2rem;  
+}
+}
+
+

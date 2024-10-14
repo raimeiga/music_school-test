@@ -58,8 +58,10 @@
    padding-bottom: 4rem;   
    margin-bottom: 1.9rem;
    // cursor: pointer;
+   
   }
 }
+
 
 // スクロールバー　simplebar（プラグイン）をhtmlで読み込み、
 // jsに初期化のコードもあり。
@@ -68,7 +70,8 @@
 .simplebar-track.simplebar-horizontal {
   width: 100% !important;
   height: 2.6rem !important;
-  background-color: rgba(80, 80, 80, 0.149); /* トラックの背景色 */}
+  background-color: rgba(80, 80, 80, 0.149); /* トラックの背景色 */
+ }
 
 // つまみ
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar { 
@@ -119,8 +122,6 @@ body::-ms-scrollbar-thumb:before {
  right: 0 !important;
 }
 
-
-
 .p-plan-table { 
   // width: 100%; 
   min-width: 88rem;
@@ -130,13 +131,14 @@ body::-ms-scrollbar-thumb:before {
     // ↑table要素はpaddingやmarginの挙動が制限される
     // ので、親のp-plan__table-wrapに書いた。 
   @include sp {   
-   min-width: 67rem;
+   min-width: 67rem;  
     // ↑カンプみたら、幅375px内に2マスが均等に入り込んでいて、
     //  1マスが167.5pxなので、右にスクロールしたときに見える
     //  残りの2マスも167.5px。4倍して670pxに設定
    cursor: default;
   }
 }
+
 
 .p-plan-table__head {
   height: 8rem;
