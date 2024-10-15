@@ -3676,13 +3676,6 @@ body::-ms-scrollbar-thumb:before {
   }
 }
 
-.p-contact__submit button {
-  width: inherit;
-  height: inherit;
-  display: block;
-  padding-top: 0.2rem;
-}
-
 .p-contact-send {
   padding-block: 6.9rem 9rem;
 }
