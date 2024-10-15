@@ -1192,12 +1192,6 @@ a {
 }
 
 .p-voice__lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 3.5rem;
-     -moz-column-gap: 3.5rem;
-          column-gap: 3.5rem;
   width: 100%;
   padding-inline: 4rem;
   padding-top: 3.6rem;
