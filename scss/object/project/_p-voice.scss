@@ -4,8 +4,8 @@
 
 
 .p-voice__inner {
-  max-width: 105rem;
-  padding-inline: 4rem;
+  max-width: 108rem;
+  padding-inline: 7rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
   //position: relative;  
@@ -20,13 +20,18 @@
   color: #fff;  
 }
 
+.kimoto {
+ padding-inline: 1rem;
+ // background-color: aqua;
+}
+
 .p-voice__lists {
  // display: flex;
  // column-gap: 3.5rem;
   // width: vw(915,1080); 
   // width: vw(915); 
   width: 100%;
-  padding-inline: 4rem;
+  //padding-inline: 4rem;
   padding-top: 3.6rem;
   margin: auto; 
   //overflow: hidden; // スライドしない部分を隠す  
@@ -55,12 +60,13 @@
 // .slick-nextのabsoluteで配置を調整。sp画面では元に戻す。
 
 .slick-prev, .slick-next {
+ display: block;
   background: transparent; /* 背景を透明に */
   border: none; /* ボーダーを消す */
   outline: none; /* アウトラインを消す */
   cursor: pointer; /* カーソルをポインターに */
   position: absolute; /* 矢印を絶対位置に */
-  top: 53%; /* 縦位置を中央に */
+  top: 47%; /* 縦位置を中央に */
   transform: translateY(-50%); /* 中央に合わせる */
   z-index: 10; //これないとprev矢印が見えない。
   @include sp {
@@ -72,21 +78,21 @@
 }
 
 .slick-prev {
-  left: 0; /* 左矢印の位置 */
+  left: -2rem; /* 左矢印の位置 */
   @include sp {
     left: 0;
   }
 }
 
 .slick-next {
-  right: 0; /* 右矢印の位置 */
+  right: -2rem; /* 右矢印の位置 */
   @include sp {
     right: 0;
   }
 }
 
 .slick-prev img, .slick-next img {
-  width: 2.8rem; /* 矢印のサイズを調整 */
+  //width: 2.8rem; /* 矢印のサイズを調整 */
   height: auto; /* 高さを自動調整 */
 }
 

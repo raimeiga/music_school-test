@@ -2,15 +2,14 @@
 @use '../../foundation/mixin' as *;
 
 
-
-.p-voice__lists a {
- display:block;
- margin-inline: 1.75rem; 
-}
+// .p-voice__lists a {
+//  display:block;
+//  margin-inline: 1.75rem; 
+// }
 
 .p-voice-list {
   // width: 27rem; 
-  //margin-inline: 1.75rem; 
+  margin-inline: 1.75rem; 
   transition: transform .2s;
   @include sp {
     width: 100%;
