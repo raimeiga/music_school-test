@@ -5,7 +5,7 @@
 
 .p-voice__inner {
   max-width: 108rem;
-  padding-inline: 7rem;
+  padding-inline: 8rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
   //position: relative;  
@@ -20,18 +20,8 @@
   color: #fff;  
 }
 
-.kimoto {
- padding-inline: 1rem;
- // background-color: aqua;
-}
-
-.p-voice__lists {
- // display: flex;
- // column-gap: 3.5rem;
-  // width: vw(915,1080); 
-  // width: vw(915); 
+.p-voice__lists { 
   width: 100%;
-  //padding-inline: 4rem;
   padding-top: 3.6rem;
   margin: auto; 
   //overflow: hidden; // スライドしない部分を隠す  
@@ -41,23 +31,6 @@
     margin: 0 auto; 
   }
 }
-
-
-
-
-//----slick関係--------------------
-// .slick-slider {
-//   position: static;
-//   @include sp {
-//     position: relative;
-//   }
-// }
-// ↑.slick-sliderはプラグインにデフォルトでposition: relative;が
-// 書かれていて（検証ツール参照）、↓の矢印（.slick-prev, .slick-next）の
-// 親だったが、.slick-sliderの範囲より外に配置したいから、
-// 親を一番外枠の.p-voice__innerにしたかった。なので、position:static;
-// で上書きし、p-voice__innerにrelativeを記述し、.slick-prev, 
-// .slick-nextのabsoluteで配置を調整。sp画面では元に戻す。
 
 .slick-prev, .slick-next {
  display: block;
@@ -92,7 +65,7 @@
 }
 
 .slick-prev img, .slick-next img {
-  //width: 2.8rem; /* 矢印のサイズを調整 */
+  width: 2.8rem; /* 矢印のサイズを調整 */
   height: auto; /* 高さを自動調整 */
 }
 

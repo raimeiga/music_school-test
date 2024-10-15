@@ -1071,7 +1071,7 @@ a {
 
 .p-voice__inner {
   max-width: 108rem;
-  padding-inline: 7rem;
+  padding-inline: 8rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
 }
@@ -1085,10 +1085,6 @@ a {
 
 .p-voice__inner h2 {
   color: #fff;
-}
-
-.kimoto {
-  padding-inline: 1rem;
 }
 
 .p-voice__lists {
@@ -1143,6 +1139,7 @@ a {
 }
 
 .slick-prev img, .slick-next img {
+  width: 2.8rem; /* 矢印のサイズを調整 */
   height: auto; /* 高さを自動調整 */
 }
 
