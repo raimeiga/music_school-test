@@ -11,6 +11,7 @@ $(function() {
    $('.p-header-nav').removeClass('active')
  })
 
+ 
  // FVのスライダー
  $('.js-slider').slick({ 
   // centerMode: true,
