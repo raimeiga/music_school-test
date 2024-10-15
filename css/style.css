@@ -1091,7 +1091,6 @@ a {
   width: 91.5rem;
   padding-top: 3.6rem;
   margin: auto;
-  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .p-voice__lists {

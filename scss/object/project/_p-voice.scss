@@ -24,7 +24,7 @@
   width: 91.5rem;
   padding-top: 3.6rem;
   margin: auto; 
-  overflow: hidden; // スライドしない部分を隠す  
+  //overflow: hidden; // スライドしない部分を隠す  
   @include sp {
     width: 100%; 
     padding-top: 3.7rem;
