@@ -3,10 +3,11 @@
 
 
 .p-voice__inner {
-  max-width: 94rem;
+  max-width: 105rem;
+  padding-inline: 4rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
-  position: relative;  
+  //position: relative;  
   @include sp {
    max-width: 34.5rem;
    padding-block: 4.8rem 5rem;
@@ -19,9 +20,12 @@
 }
 
 .p-voice__lists {
+ // display: flex;
+ // column-gap: 3.5rem;
   // width: vw(915,1080); 
   // width: vw(915); 
-  width: 91.5rem;
+  width: 100%;
+  padding-inline: 4rem;
   padding-top: 3.6rem;
   margin: auto; 
   //overflow: hidden; // スライドしない部分を隠す  
@@ -36,12 +40,12 @@
 
 
 //----slick関係--------------------
-.slick-slider {
-  position: static;
-  @include sp {
-    position: relative;
-  }
-}
+// .slick-slider {
+//   position: static;
+//   @include sp {
+//     position: relative;
+//   }
+// }
 // ↑.slick-sliderはプラグインにデフォルトでposition: relative;が
 // 書かれていて（検証ツール参照）、↓の矢印（.slick-prev, .slick-next）の
 // 親だったが、.slick-sliderの範囲より外に配置したいから、
@@ -67,14 +71,14 @@
 }
 
 .slick-prev {
-  left: -1.4rem; /* 左矢印の位置 */
+  left: 0; /* 左矢印の位置 */
   @include sp {
     left: 0;
   }
 }
 
 .slick-next {
-  right: -1.4rem; /* 右矢印の位置 */
+  right: 0; /* 右矢印の位置 */
   @include sp {
     right: 0;
   }

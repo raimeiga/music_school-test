@@ -13,6 +13,7 @@ $(function() {
 
  // FVのスライダー
  $('.js-slider').slick({ 
+  // centerMode: true,
    autoplay: false, 
    arrows: true,
    slidesToShow: 3, // 3枚ずつ表示
