@@ -57,13 +57,30 @@ $(function() {
  });
 
  // SimpleBarの初期化
- const tableWrap = document.querySelector('.p-plan__table-wrap');
- if (tableWrap) {
-   new SimpleBar(tableWrap, {
-     autoHide: false,  // スクロールバーを常に表示
-   });
- }
+ // const tableWrap = document.querySelector('.p-plan__table-wrap');
+ // if (tableWrap) {
+ //   new SimpleBar(tableWrap, {
+ //     autoHide: false,  // スクロールバーを常に表示
+ //     scrollbarMaxSize: 120, // スクロールバーの最大サイズ  
+ //   });
+ // }
 
+// 1remのピクセル値を取得
+const remToPx = (rem) => rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+// rem値をピクセルに変換して設定
+const tableWrap = document.querySelector('.p-plan__table-wrap');
+if (tableWrap) {
+  new SimpleBar(tableWrap, {
+    autoHide: false,  // スクロールバーを常に表示
+    scrollbarMaxSize: remToPx(10), // 10remをpxに変換して指定
+  });
+}
+
+
+
+
+ // トップに戻るボタン、問い合わせボタン
   $(window).on('scroll', function() {
   var footerOffset = $('footer').offset().top;  // フッターの位置
   var scrollPosition = $(window).scrollTop() + $(window).height();  // 現在のスクロール位置 + ウィンドウの高さ
