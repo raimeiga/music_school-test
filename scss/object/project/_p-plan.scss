@@ -54,11 +54,11 @@
 .p-plan__table-wrap {
   padding-bottom: 2.8rem;   
   @include sp {
+   max-width: 33.5rem;
    overflow-x: scroll;
    padding-bottom: 4rem;   
    margin-bottom: 1.9rem;
-   // cursor: pointer;
-   
+   // cursor: pointer;   
   }
 }
 

@@ -6,8 +6,7 @@
   // width: 27rem; 
   margin-inline: 1.75rem; 
   transition: transform .2s;
-  @include sp {
-    width: 100%;
+  @include sp {   
     margin-inline: 0;     
   }
 }

@@ -1,5 +1,6 @@
 $(function() {
 
+ 
  // ハンバーガー
  $('.c-hamburger').click(function(){
    $(this).toggleClass('active')
@@ -81,13 +82,15 @@ $(function() {
           // PC画面の場合
           topBackBtn91_79.css({
               position: 'absolute',
-              bottom: 'calc(' + footerHeight + 'px + (91 / 1080 * 100vw))',  // フッター上端から指定の余白分上に配置
+              // bottom: 'calc(' + footerHeight + 'px + (91 / 1080 * 100vw))',  // フッター上端から指定の余白分上に配置
+              bottom: `calc(${footerHeight}px + 9.1rem)`, // フッター上端から9.1rem上に配置
               right: '10rem'
           });
 
           topBackBtn30_18.css({
               position: 'absolute',
-              bottom: 'calc(' + footerHeight + 'px + (30 / 1080 * 100vw))',  // フッター上端から指定の余白分上に配置
+              // bottom: 'calc(' + footerHeight + 'px + (30 / 1080 * 100vw))',  // フッター上端から指定の余白分上に配置
+              bottom: `calc(${footerHeight}px + 3rem)`, // フッター上端から3rem上に配置
               right: '10rem'
           });
 
@@ -102,13 +105,15 @@ $(function() {
           // SP画面の場合
           topBackBtn91_79.css({
               position: 'absolute',
-              bottom: 'calc(' + footerHeight + 'px + (79 / 375 * 100vw))',  // フッター上端からSP用の余白分上に配置
+              // bottom: 'calc(' + footerHeight + 'px + (79 / 375 * 100vw))',  // フッター上端からSP用の余白分上に配置
+              bottom: `calc(${footerHeight}px + 7.9rem)`, // フッター上端から7.9rem上に配置
               right: '2rem'
           });
 
           topBackBtn30_18.css({
               position: 'absolute',
-              bottom: 'calc(' + footerHeight + 'px + (18 / 375 * 100vw))',  // フッター上端からSP用の余白分上に配置
+              //bottom: 'calc(' + footerHeight + 'px + (18 / 375 * 100vw))',  // フッター上端からSP用の余白分上に配置
+              bottom: `calc(${footerHeight}px + 1.8rem)`, // フッター上端から1.8rem上に配置
               right: '2rem'
           });
 
@@ -118,16 +123,15 @@ $(function() {
        bottom: footerHeight + 'px',  // フッターの上端にピタリと配置
        right: '2rem'
    });
-      }
-
-      
+      }     
 
   } else {
       if (isPC) {
           // PC画面の場合、通常時は画面右下に固定表示
           topBackBtn91_79.css({
               position: 'fixed',
-              bottom: 'calc(91 / 1080 * 100vw)',  // 固定表示
+              //bottom: 'calc(91 / 1080 * 100vw)',  // 固定表示
+              bottom: '9.1rem',  // 固定表示
               right: '10rem',
               opacity: 1,
               visibility: 'visible'
@@ -135,7 +139,8 @@ $(function() {
 
           topBackBtn30_18.css({
               position: 'fixed',
-              bottom: 'calc(30 / 1080 * 100vw)',  // 固定表示
+              // bottom: 'calc(30 / 1080 * 100vw)',  // 固定表示
+              bottom: '3rem',  // 固定表示
               right: '10rem',
               opacity: 1,
               visibility: 'visible'
@@ -154,7 +159,8 @@ $(function() {
           // SP画面の場合、通常時は画面右下に固定表示
           topBackBtn91_79.css({
               position: 'fixed',
-              bottom: 'calc(79 / 375 * 100vw)',  // 固定表示
+              //bottom: 'calc(79 / 375 * 100vw)',  // 固定表示
+              bottom: '7.9rem',  // 固定表示
               right: '2rem',
               opacity: 1,
               visibility: 'visible'
@@ -162,7 +168,8 @@ $(function() {
 
           topBackBtn30_18.css({
               position: 'fixed',
-              bottom: 'calc(18 / 375 * 100vw)',  // 固定表示
+              // bottom: 'calc(18 / 375 * 100vw)',  // 固定表示
+              bottom: '1.8rem',  // 固定表示
               right: '2rem',
               opacity: 1,
               visibility: 'visible'
@@ -182,3 +189,4 @@ $(function() {
 });
 
 });
+
