@@ -1167,7 +1167,7 @@ a {
 
 .p-voice__inner {
   max-width: 108rem;
-  padding-inline: 8rem;
+  padding-inline: 7.9rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;
 }
@@ -1209,7 +1209,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .slick-prev, .slick-next {
-    top: 40%;
+    top: 48%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); /* 中央に合わせる */
     opacity: 1;
@@ -1261,7 +1261,7 @@ a {
 .p-voice-list__name {
   padding-block: 1.7rem 1rem;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.037037037vw;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
@@ -1569,7 +1569,7 @@ a {
 }
 
 .p-blog__inner {
-  padding-block: 6.7rem 21.2rem;
+  padding-block: 6.6rem 21.2rem;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -2279,213 +2279,6 @@ a {
   opacity: 0.5;
 }
 
-.p-sidebar {
-  width: 25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 3.1rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar {
-    width: 33.5rem;
-  }
-}
-
-.p-sidebar-mail {
-  height: 25rem;
-  border: 0.05rem solid #000;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-mail {
-    height: 31.8rem;
-  }
-}
-
-.p-sidebar__title {
-  background-color: #000;
-  height: 5rem;
-  display: grid;
-  place-content: center;
-}
-
-.p-sidebar__title h3 {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.8333333333;
-}
-
-.p-sidebar-mail__banner {
-  background-color: #E8E8E8;
-  width: 22rem;
-  height: 17rem;
-  margin: 1.5rem;
-  display: grid;
-  place-content: center;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-mail__banner {
-    width: 29.5rem;
-    height: 22.8rem;
-    margin: 2rem;
-  }
-}
-
-.p-sidebar-mail__banner p {
-  color: #000;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.8333333333;
-}
-
-.p-sidebar__blog-search {
-  height: 12rem;
-  border: 0.05rem solid #000;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar__blog-search {
-    height: 14.3rem;
-  }
-}
-
-.search-box {
-  background-color: #E8E8E8;
-  width: 22rem;
-  height: 4rem;
-  margin: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media only screen and (max-width: 767px) {
-  .search-box {
-    width: 29.5rem;
-    height: 5.4rem;
-    margin: 2rem;
-  }
-}
-
-.search-input {
-  width: 18rem;
-}
-@media only screen and (max-width: 767px) {
-  .search-input {
-    width: 24.1rem;
-  }
-}
-
-.p-sidebar-blog-search__btn-bg {
-  background-color: #000;
-  width: 4rem;
-  display: grid;
-  place-content: center;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-blog-search__btn-bg {
-    width: 5.4rem;
-  }
-}
-
-.search-button {
-  width: 2.1rem;
-  height: 2.3rem;
-}
-@media only screen and (max-width: 767px) {
-  .search-button {
-    width: 2.7rem;
-    height: 3.1rem;
-  }
-}
-
-.p-sidebar__reco-articles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 1.5rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar__reco-articles {
-    row-gap: 2rem;
-  }
-}
-
-.p-sidebar-reco-articles__list {
-  height: 7.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 1.5rem;
-     -moz-column-gap: 1.5rem;
-          column-gap: 1.5rem;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-reco-articles__list {
-    height: 11rem;
-    -webkit-column-gap: 2rem;
-       -moz-column-gap: 2rem;
-            column-gap: 2rem;
-  }
-}
-
-.p-sidebar-reco-articles__image {
-  background-color: #E8E8E8;
-  width: 9.5rem;
-  height: 7.5rem;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-reco-articles__image {
-    width: 16rem;
-    height: 11rem;
-  }
-}
-
-.p-sidebar-reco-articles__title {
-  max-height: 5.6rem; /* 必要な最大高さを設定 */
-  overflow: hidden; /* はみ出し部分を非表示 */
-  text-overflow: ellipsis;
-}
-
-.p-sidebar-reco-articles__title p {
-  font-size: 1.7rem;
-  line-height: 1.6470588235;
-  text-align: left;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-reco-articles__title p {
-    margin-block: 0.9rem 4.5rem;
-  }
-}
-
-.p-sidebar-category__name {
-  height: 4.6rem;
-  border-bottom: 0.05rem solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 0.3rem;
-  font-size: 1.7rem;
-  line-height: 1.6470588235;
-  text-align: left;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
 .p-blog-details-main-related-articles {
   width: 100%;
   padding-bottom: 3rem;
@@ -2679,6 +2472,8 @@ a {
 .p-sidebar-blog-search__btn-bg {
   background-color: #000;
   width: 4rem;
+  display: grid;
+  place-content: center;
 }
 @media only screen and (max-width: 767px) {
   .p-sidebar-blog-search__btn-bg {
@@ -2747,6 +2542,9 @@ a {
 }
 
 .p-sidebar-reco-articles__title p {
+  max-height: 5.6rem; /* 必要な最大高さを設定 */
+  overflow: hidden; /* はみ出し部分を非表示 */
+  text-overflow: ellipsis;
   font-size: 1.7rem;
   line-height: 1.6470588235;
   text-align: left;
@@ -3123,7 +2921,6 @@ a {
 /* スクロールバー自体のスタイル */
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
   background-color: rgba(80, 80, 80, 0) !important; /* スクロールバーの色 */
-  width: 10rem;
   height: inherit !important; /* 高さ */
   top: 0;
 }
@@ -3777,11 +3574,12 @@ body::-ms-scrollbar-thumb:before {
 }
 
 .p-result-details-related-article-list__title {
+  max-height: 5rem; /* 必要な最大高さを設定 */
+  overflow: hidden; /* はみ出し部分を非表示 */
   width: 59rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.25;
-  padding-bottom: 3.7rem;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
@@ -3802,6 +3600,7 @@ body::-ms-scrollbar-thumb:before {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  margin-top: 1.1rem;
 }
 
 .p-mv {

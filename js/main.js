@@ -71,7 +71,7 @@ const tableWrap = document.querySelector('.p-plan__table-wrap');
 if (tableWrap) {
   new SimpleBar(tableWrap, {
     autoHide: false,  // スクロールバーを常に表示
-    scrollbarMaxSize: remToPx(10), // 10remをpxに変換して指定
+    scrollbarMaxSize: remToPx(11), // 10remをpxに変換して指定
   });
 }
 

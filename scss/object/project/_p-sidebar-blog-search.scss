@@ -34,9 +34,11 @@
 .p-sidebar-blog-search__btn-bg {
   background-color: #000;
   width: 4rem;    
-    @include sp {
-     width: 5.4rem;
-    }
+  display: grid;
+  place-content: center;
+  @include sp {
+    width: 5.4rem;
+  }
 }
 
 .p-sidebar-blog__search-button {

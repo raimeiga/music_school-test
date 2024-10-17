@@ -5,7 +5,7 @@
 
 .p-voice__inner {
   max-width: 108rem;
-  padding-inline: 8rem;
+  padding-inline: 7.9rem;
   padding-block: 6.4rem 6rem;
   margin: 0 auto;   
   @include sp {   
@@ -42,7 +42,7 @@
   transform: translateY(-50%); /* 中央に合わせる */
   z-index: 10; //これないとprev矢印が見えない。
   @include sp {
-    top: 40%;
+    top: 48%;
     transform: translateY(-50%); /* 中央に合わせる */
     opacity: 1;
     z-index: 10; //これないとprev矢印が見えない。

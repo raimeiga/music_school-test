@@ -178,8 +178,7 @@
 
 /* スクロールトラックの背景部分 */
 .simplebar-track {
- width: 100%;
- //width: 33.5rem;
+ width: 100%; 
  height: 2.5rem !important;
  background-color: rgba(80, 80, 80, 0.149) !important; /* 背景色 */
  border-radius: 0 !important; /* 四角くする */
@@ -190,10 +189,8 @@
 /* スクロールバー自体のスタイル */
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
  background-color: rgba(80, 80, 80, 0) !important; /* スクロールバーの色 */
- //width: 100px !important; /* 幅 */
- width: 10rem;
- height: inherit !important;   /* 高さ */
- // margin-left: 1rem !important; /* 左余白 */
+ // width: 10rem !important;
+ height: inherit !important;   /* 高さ */ 
  top: 0; 
 }
 
