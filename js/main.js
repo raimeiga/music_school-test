@@ -1,5 +1,4 @@
 $(function() {
-
  
  // ハンバーガー
  $('.c-hamburger').click(function(){
@@ -11,7 +10,6 @@ $(function() {
    $('.c-hamburger').removeClass('active')
    $('.p-header-nav').removeClass('active')
  })
-
  
  // FVのスライダー
  $('.js-slider').slick({ 
