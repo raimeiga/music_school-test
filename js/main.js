@@ -77,9 +77,6 @@ if (tableWrap) {
   });
 }
 
-
-
-
  // トップに戻るボタン、問い合わせボタン
   $(window).on('scroll', function() {
   var footerOffset = $('footer').offset().top;  // フッターの位置
