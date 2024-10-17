@@ -49,6 +49,7 @@
   position: relative;
   @include sp {
     width: 100%;    
+    padding-top: 0.1rem;   
     padding-left: 2rem;    
     font-size: 1.8rem;   
     line-height: calc(33 / 18);
