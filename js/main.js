@@ -25,7 +25,9 @@ $(function() {
        breakpoint: 768,
        settings: {      
          slidesToShow: 1, // 1枚表示
-         slidesToScroll: 1     
+         slidesToScroll: 1,
+         prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev-sp.svg" alt="Previous"></button>',  
+         nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next-sp.svg" alt="Next"></button>',     
        }
      }
    ]
@@ -36,7 +38,7 @@ $(function() {
 
  $('.p-qa-list__q').on('click', function() {
    $(this).toggleClass('active'); // 矢印の回転を制御
-   $(this).addClass('active'); // 矢印の回転を制御
+   // $(this).addClass('active'); // 矢印の回転を制御
    $(this).next('.p-qa-list__a').slideToggle(); // 対応する要素を開閉
  });
 

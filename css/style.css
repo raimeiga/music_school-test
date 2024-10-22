@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Yu Gothic", "游ゴシック", "YuGothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Noto Sans JP", "MS PGothic", "ＭＳ Ｐゴシック", "Arial", sans-serif;
+  font-family: "Yu Gothic", "游ゴシック", "YuGothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
@@ -391,6 +391,15 @@ a {
     width: 100%;
     padding-inline: 2rem;
   }
+}
+
+.c-breadcrumb a {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.c-breadcrumb a:hover {
+  opacity: 0.5;
 }
 
 .c-breadcrumb__text {
@@ -1242,10 +1251,6 @@ a {
 
 .p-voice-list {
   margin-inline: 1.75rem;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 @media only screen and (max-width: 767px) {
   .p-voice-list {
@@ -1253,7 +1258,18 @@ a {
   }
 }
 
-.p-voice-list:hover {
+.p-voice-list__image {
+  overflow: hidden;
+}
+
+.p-voice-list__image img {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.p-voice-list:hover .p-voice-list__image img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

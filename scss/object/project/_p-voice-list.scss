@@ -4,14 +4,21 @@
 
 .p-voice-list {
   // width: 27rem; 
-  margin-inline: 1.75rem; 
-  transition: transform .2s;
+  margin-inline: 1.75rem;   
   @include sp {   
     margin-inline: 0;     
   }
 }
 
-.p-voice-list:hover {
+.p-voice-list__image {
+ overflow: hidden;
+}
+
+.p-voice-list__image img {
+ transition: transform .2s;
+}
+
+.p-voice-list:hover .p-voice-list__image img {
  transform: scale(1.05);  
 }
 
