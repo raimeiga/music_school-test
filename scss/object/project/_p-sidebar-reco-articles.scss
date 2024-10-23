@@ -2,7 +2,6 @@
 @use '../../foundation/mixin' as *;
 
 
-
 .p-sidebar-reco-articles {
  display: flex;
  flex-direction: column;
@@ -33,7 +32,6 @@
  }
 }
 
-
 .p-sidebar-reco-articles__title p {
  max-height: 5.6rem;     /* 必要な最大高さを設定 */
  overflow: hidden;     /* はみ出し部分を非表示 */
@@ -45,3 +43,5 @@
   margin-block: 0.9rem 4.5rem;
  }
 }
+
+
