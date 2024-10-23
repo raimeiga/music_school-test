@@ -32,16 +32,31 @@
  }
 }
 
+// .p-sidebar-reco-articles__title p {
+//  max-height: 5.6rem;     /* 必要な最大高さを設定 */
+//  overflow: hidden;     /* はみ出し部分を非表示 */
+//  text-overflow: ellipsis; 
+//  font-size: 1.7rem;
+//  line-height: calc(28 / 17);
+//  text-align: left;
+//  @include sp {
+//   margin-block: 0.9rem 4.5rem;
+//  }
+// }
+
+
 .p-sidebar-reco-articles__title p {
- max-height: 5.6rem;     /* 必要な最大高さを設定 */
- overflow: hidden;     /* はみ出し部分を非表示 */
- text-overflow: ellipsis;
+ display: -webkit-box;           // Flexboxを使用するための設定
+ -webkit-box-orient: vertical;   //  縦方向にボックスを配置 */
+ -webkit-line-clamp: 2;          //  表示する行数を2行に制限 */
+ overflow: hidden;     // はみ出し部分を非表示 
+ text-overflow: ellipsis;  // 3点リーダー表示 
  font-size: 1.7rem;
  line-height: calc(28 / 17);
  text-align: left;
+ margin-bottom: 20px;      
  @include sp {
   margin-block: 0.9rem 4.5rem;
  }
 }
-
 

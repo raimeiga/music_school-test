@@ -2369,15 +2369,11 @@ a {
 }
 
 .p-sidebar-reco-articles__title p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+  overflow: hidden; /* はみ出し部分を非表示 */
   text-overflow: ellipsis;
   font-size: 1.7rem;
   line-height: 1.6470588235;
   text-align: left;
-  margin-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
   .p-sidebar-reco-articles__title p {

@@ -2368,10 +2368,13 @@ a {
   }
 }
 
-.p-sidebar-reco-articles__title p {
+.p-sidebar-reco-articles__title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.p-sidebar-reco-articles__title p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 1.7rem;
