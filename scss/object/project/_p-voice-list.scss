@@ -11,7 +11,13 @@
 }
 
 .p-voice-list__image {
- overflow: hidden;
+  width: 27rem;
+  height: 19rem;
+  overflow: hidden;
+  @include sp {
+   width: 33.5rem;
+   height: 20rem;
+  }
 }
 
 .p-voice-list__image img {

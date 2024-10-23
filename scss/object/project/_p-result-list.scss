@@ -36,7 +36,13 @@
 }
 
 .p-result-list-list__image {
- width: 100%;
+  width: 38.7rem;
+  height: 27.3rem;
+  overflow: hidden;
+  @include sp {
+   width: 33.5rem;
+   height: 23.6rem;
+  }
 }
 
 .p-result-list-list__image img {

@@ -2094,15 +2094,7 @@ a {
 @media only screen and (max-width: 767px) {
   .p-blog-details-main-related-article__image {
     width: 16rem;
-    height: 11rem;
   }
-}
-
-.p-blog-details-main-related-article__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-blog-details-main-related-article__text p {
@@ -2179,13 +2171,10 @@ a {
 
 .p-blog-details-main-related-article__image {
   width: 20rem;
-  height: 14rem;
-  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .p-blog-details-main-related-article__image {
     width: 16rem;
-    height: 11rem;
   }
 }
 
@@ -2280,15 +2269,7 @@ a {
 }
 
 .p-sidebar-mail__banner-image {
-  width: 22rem;
-  height: 17rem;
-  overflow: hidden;
-}
-@media only screen and (max-width: 767px) {
-  .p-sidebar-mail__banner-image {
-    width: 29.5rem;
-    height: 22.8rem;
-  }
+  width: 100%;
 }
 
 .p-sidebar-mail__banner-image img {
@@ -2304,7 +2285,6 @@ a {
   left: 2rem;
   transform: translate(50%, -50%);
   color: #000;
-  color: #fff;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.8333333333;
@@ -2856,15 +2836,7 @@ body::-ms-scrollbar-thumb:before {
 }
 
 .p-result-list-list__image {
-  width: 38.7rem;
-  height: 27.3rem;
-  overflow: hidden;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-list-list__image {
-    width: 33.5rem;
-    height: 23.6rem;
-  }
+  width: 100%;
 }
 
 .p-result-list-list__image img {
@@ -2912,16 +2884,8 @@ body::-ms-scrollbar-thumb:before {
 }
 
 .p-result-details__image {
-  width: 88rem;
-  height: 40rem;
-  overflow: hidden;
+  width: 100%;
   position: relative;
-}
-@media only screen and (max-width: 767px) {
-  .p-result-details__image {
-    width: 33.5rem;
-    height: 23.6rem;
-  }
 }
 
 .p-result-details__image img {
@@ -3315,7 +3279,6 @@ body::-ms-scrollbar-thumb:before {
 .p-result-details-article__image {
   width: 9.8rem;
   height: 6.8rem;
-  overflow: hidden;
 }
 
 .p-result-details-article__image img {
@@ -3384,14 +3347,11 @@ body::-ms-scrollbar-thumb:before {
 
 .p-result-details-related-article-list__image {
   width: 26rem;
-  height: 18.3rem;
-  overflow: hidden;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
   .p-result-details-related-article-list__image {
     width: 16rem;
-    height: 11.3rem;
   }
 }
 

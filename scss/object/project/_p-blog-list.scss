@@ -3,7 +3,13 @@
 
 
 .p-blog-list__image {
- width: 100%;
+ width: 26rem;
+ height: 20rem;
+ overflow: hidden;
+ @include sp {
+  width: 33.5rem;
+  height: 20rem;
+ }
 }
 
 .p-blog-list__image img {
@@ -16,9 +22,10 @@
 .p-blog-list__image-height-longer {
  width: 26rem;
  height: 18.4rem;
+ overflow: hidden;
  @include sp {
-   width: 100%;
-   height: 20rem;
+  width: 33.5rem;
+  height: 20rem;
  }
 }
 

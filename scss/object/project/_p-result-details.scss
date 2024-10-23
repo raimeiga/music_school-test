@@ -10,8 +10,14 @@
 }
 
 .p-result-details__image {
- width: 100%;
- position: relative;
+  width: 88rem;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  @include sp {
+   width: 33.5rem;
+   height: 23.6rem;
+  }
 }
 
 .p-result-details__image img {

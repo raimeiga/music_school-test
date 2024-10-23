@@ -2917,12 +2917,6 @@ body::-ms-scrollbar-thumb:before {
   overflow: hidden;
   position: relative;
 }
-@media only screen and (max-width: 767px) {
-  .p-result-details__image {
-    width: 33.5rem;
-    height: 23.6rem;
-  }
-}
 
 .p-result-details__image img {
   width: 100%;

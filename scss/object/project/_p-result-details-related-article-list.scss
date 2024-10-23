@@ -18,11 +18,14 @@
 }
 
 .p-result-details-related-article-list__image {
- width: 26rem;
- position: relative;
- @include sp {
-  width: 16rem;
- }
+  width: 26rem;
+  height: 18.3rem;
+  overflow: hidden; 
+  position: relative;
+  @include sp {
+    width: 16rem;
+    height: 11.3rem;
+  }
 }
 
 .p-result-details-related-article-list__image img {

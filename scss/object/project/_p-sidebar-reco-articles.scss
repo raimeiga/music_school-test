@@ -25,10 +25,11 @@
 .p-sidebar-reco-articles__image {
  background-color: #E8E8E8;
  width: 9.5rem;
- height: 7.5rem; 
+ height: 7.5rem;
+ overflow: hidden;
  @include sp {
   width: 16rem;
-  height: 11rem; 
+  height: 11rem;
  }
 }
 

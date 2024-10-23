@@ -43,8 +43,11 @@
 
 .p-blog-details-main-related-article__image {
   width: 20rem;
+  height: 14rem;
+  overflow: hidden;
   @include sp {
     width: 16rem;
+    height: 11rem;
   }
 }
 
