@@ -2944,7 +2944,7 @@ a {
 /* つまみの疑似要素 */
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
   height: inherit !important;
-  left: 1rem !important;
+  left: 0 !important;
   right: 0 !important;
   background-color: rgba(80, 80, 80, 0.749) !important; /* スクロールバーの色 */
 }
