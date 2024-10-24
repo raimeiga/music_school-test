@@ -11,9 +11,7 @@
  justify-content: center;
  align-items: center;
  margin-inline: auto;
- // text-align: center;
  border: 0.1rem solid transparent; //初期状態では透明な枠線
- // transition: all 0.4s; 
  transition: border-color 0.4s, color 0.4s, background-color 0.4s;
  cursor: pointer;
 }
@@ -42,18 +40,29 @@
   font-weight: 600;  
   line-height: calc(33 / 20);
   padding-top: 0.3rem;  
-  // margin-left: 3.3rem;
   letter-spacing: 00.2em;
-  position: fixed;  
+  position: fixed;
   bottom: 0;
   right: 0;    
   opacity: 0;
   visibility: hidden;    
   @include sp {   
-    width: 33.5rem;   
+    width: 33.5rem;
+    right: 2rem;
   }  
  }
 
+ .c-btn--fixed.fixed-position-con {
+  position: absolute;  
+  bottom: 27.8rem; 
+  right: 0;
+  @include sp {  
+   right: 2rem; 
+   bottom: 30.3rem;  
+  }   
+ }
+
+ 
 .c-btn--plan {
   margin: 0;
   width: 21rem;

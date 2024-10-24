@@ -1107,7 +1107,7 @@ a {
 .p-voice__inner {
   max-width: 108rem;
   padding-inline: 7.9rem;
-  padding-block: 6.4rem 5.7rem;
+  padding-block: 6.4rem 6rem;
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
@@ -1481,7 +1481,7 @@ a {
 }
 
 .p-blog__inner {
-  padding-block: 6.6rem 21.4rem;
+  padding-block: 6.6rem 21.2rem;
   position: relative;
 }
 @media only screen and (max-width: 767px) {

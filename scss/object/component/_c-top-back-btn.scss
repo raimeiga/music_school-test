@@ -2,10 +2,8 @@
 @use '../../foundation/mixin' as *;
 
 
-.c-top-back-btn {
- // width: 6.8rem;
- width: 68px;
- //height: 6.8rem;
+.c-top-back-btn { 
+ width: 68px; 
  height: 68px;
  background-color: rgba(0, 0, 0, 0.502);
  border-radius: 50%;
@@ -14,15 +12,15 @@
  align-items: center;
  // position: fixed;
  // right: 10rem; 
- // bottom: calc(91 / 1080 * 100vw);
+ // bottom: 9.1rem;
  opacity: 0;
  visibility: hidden;
- transition: background-color .4s;
+ transition: background-color 0.4s, opacity 0.4s, visibility 0.4s; 
  z-index: 999;
  // @include sp {
- //  position: fixed;   
- //  right: 2rem; 
- //  bottom: calc(79 / 375 * 100vw);  
+ //   position: fixed;   
+ //   right: 2rem; 
+ //   bottom: 7.9rem;  
  // }
 }
 
@@ -33,24 +31,45 @@
 .c-top-back-btn--91-79 {
  position: fixed;
  right: 10rem; 
- bottom: calc(91 / 1080 * 100vw);
+ bottom: 9.1rem;
  @include sp {
   position: fixed;   
+   right: 2rem; 
+   bottom: 7.9rem;  
+ }
+}
+
+.c-top-back-btn--91-79.fixed-position-long {
+ position: absolute;
+ right: 10rem; 
+ bottom: 36.9rem;
+ @include sp {  
   right: 2rem; 
-  bottom: calc(79 / 375 * 100vw);  
+  bottom: 38.1rem;  
  }
 }
 
 .c-top-back-btn--30-18 {
  position: fixed;
  right: 10rem; 
- bottom: calc(30 / 1080 * 100vw);
+ bottom: 3rem;
  @include sp {
   position: fixed;   
   right: 2rem; 
-  bottom: calc(18 / 375 * 100vw);  
+  bottom: 1.8rem;  
  }
 }
+
+.c-top-back-btn--30-18.fixed-position-short {
+ position: absolute;
+ right: 10rem; 
+ bottom: 30.8rem;
+ @include sp {  
+  right: 2rem; 
+  bottom: 32.1rem;  
+ }
+}
+
 
 .c-top-back-btn__icon {
  width: 43%;
