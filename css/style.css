@@ -195,13 +195,13 @@ a {
 
 .c-btn--fixed.fixed-position-con {
   position: absolute;
-  bottom: 27.8rem;
+  bottom: 27.7rem;
   right: 0;
 }
 @media only screen and (max-width: 767px) {
   .c-btn--fixed.fixed-position-con {
     right: 2rem;
-    bottom: 30.3rem;
+    bottom: 30.2rem;
   }
 }
 
@@ -1481,7 +1481,7 @@ a {
 }
 
 .p-blog__inner {
-  padding-block: 6.6rem 21.4rem;
+  padding-block: 6.6rem 21.2rem;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
