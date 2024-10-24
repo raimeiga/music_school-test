@@ -82,7 +82,6 @@ $(function() {
     $('.c-btn').removeClass('fixed-position-con'); 
   }
 });
-
  
  // SimpleBarの初期化
  // const tableWrap = document.querySelector('.p-plan__table-wrap');
