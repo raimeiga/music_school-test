@@ -1584,20 +1584,11 @@ a {
 }
 
 .p-blog-list__image {
-  width: 26rem;
-  height: 20rem;
-  overflow: hidden;
-}
-@media only screen and (max-width: 767px) {
-  .p-blog-list__image {
-    width: 33.5rem;
-    height: 20rem;
-  }
+  width: 100%;
 }
 
 .p-blog-list__image img {
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 260/200;
   -o-object-fit: cover;
      object-fit: cover;
 }
