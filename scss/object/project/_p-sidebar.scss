@@ -15,12 +15,12 @@
  }
 }
 
-
 .p-sidebar__title {
  background-color: #000;
- height: 5rem;
+ // height: 5rem;
  display: grid;         
  place-content: center; 
+ padding-block: 1.1rem 0.6rem;
 }
 
 .p-sidebar__title h3 {

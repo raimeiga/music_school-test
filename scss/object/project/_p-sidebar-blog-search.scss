@@ -4,7 +4,7 @@
 
 
 .p-sidebar-blog-search {
- height: 12rem;
+ // height: 12rem;
  border: 0.05rem solid #000;
  @include sp {
   height: 14.3rem;
@@ -25,7 +25,7 @@
 }
 
 .p-sidebar-blog-search__input {
- width: 18rem;
+  width: 18rem;
   @include sp {
     width: 24.1rem;
   }

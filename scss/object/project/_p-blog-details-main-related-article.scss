@@ -9,7 +9,7 @@
 
 .p-blog-details-main-related-articles__label {
   width: 100%;
-  height: 5rem;
+  // height: 5rem;
   background-color: #000;
   // display: flex;
   // align-items: center;
@@ -20,7 +20,7 @@
  font-size: 1.8rem;
  line-height: calc(33 / 18);
  text-align: left;
- padding-block: 1rem;
+ padding-block: 1rem 0.8rem;
  padding-left: 3rem;
  @include sp {
   text-align: center;
@@ -43,29 +43,29 @@
 
 .p-blog-details-main-related-article__image {
   width: 20rem;
-  height: 14rem;
   overflow: hidden;
   @include sp {
-    width: 16rem;
-    height: 11rem;
+    width: 16rem;    
   }
 }
 
 .p-blog-details-main-related-article__image img {
-  width: 100%;
-  height: 100%; 
+  aspect-ratio: 200 / 140;
   object-fit: cover;
+  @include sp {
+   aspect-ratio: 160 / 110;
+  }
 }
 
 .p-blog-details-main-related-article__text p {
-  height: 5rem;
+  // height: 5rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: calc(25 / 20);
   text-align: left;
-  margin-bottom: 1.3rem;
+  margin-bottom: 3.6rem;
   @include sp {
-    height: 5.6rem;
+    // height: 5.6rem;
     font-size: 1.7rem;
     font-weight: 600;
     line-height: calc(28 / 17);
@@ -74,13 +74,6 @@
   }
 }
 
-.p-blog-details__sns-link:hover,
-.p-blog-details-main__link:hover,
-.p-blog-details-main__article:hover,
-.p-blog-details-main-related-article__list:hover,
-.p-sidebar-mail__banner:hover,
-.p-sidebar-reco-articles__list:hover,
-.p-sidebar-category__name:hover {
+.p-blog-details-main-related-article__list:hover {
  opacity: 0.5;
 }
-

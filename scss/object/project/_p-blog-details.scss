@@ -7,17 +7,6 @@
  padding-block: 6.8rem 15.8rem;
  @include sp {
   display: block;
-  padding-block: 5rem 20.2rem;
+  padding-block: 5rem 19.2rem;
  }
 }
-
-.p-blog-details__sns-link:hover,
-.p-blog-details-main__link:hover,
-.p-blog-details-main__article:hover,
-.p-blog-details-main-related-article__list:hover,
-.p-sidebar-mail__banner:hover,
-.p-sidebar-reco-articles__list:hover,
-.p-sidebar-category__name:hover {
- opacity: 0.5;
-}
-

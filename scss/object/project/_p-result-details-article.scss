@@ -41,14 +41,12 @@
 }
 
 .p-result-details-article__image {
- width: 9.8rem;
- height: 6.8rem;
+ width: 9.8rem; 
  overflow: hidden;
 }
 
 .p-result-details-article__image img {
- width: 100%;
- height: 100%; 
+ aspect-ratio: 98 / 68;
  object-fit: cover;
 }
 

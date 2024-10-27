@@ -2,23 +2,26 @@
 @use '../../foundation/mixin' as *;
 
 
+
 .p-voice-list {
   // width: 27rem; 
+  // slick使うと、スライドの幅はslickが決めて
+  // くるので、widthを上書きできない
   margin-inline: 1.75rem;   
   @include sp {   
     margin-inline: 0;     
   }
 }
 
+
+// 親（p-voice-list__image）の幅はslickが勝手
+// に決めているっぽいので、親にwidth書かずともOKと判断
 .p-voice-list__image img {
   transition: transform .2s;
   width: 100%;
-  // height: 100%;
-  // object-fit: cover; 
   aspect-ratio: 273 / 192;
+  object-fit: cover; 
   @include sp {
-    height: 100%;
-    object-fit: cover; 
     aspect-ratio: 335 / 200;
   } 
 }
