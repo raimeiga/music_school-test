@@ -22,17 +22,17 @@
  }
 }
 
-.p-sidebar-reco-articles__list:hover{
+.p-sidebar-reco-articles__list:hover {
  opacity: 0.5;
 }
 
 .p-sidebar-reco-articles__image {
- background-color: #E8E8E8;
- width: 9.5rem;
- overflow: hidden;
- @include sp {
-  width: 16rem;  
- }
+  background-color: #E8E8E8;
+  width: 9.5rem;
+  overflow: hidden;
+  @include sp {
+    width: 16rem;
+  }
 }
 
 .p-sidebar-reco-articles__image img {

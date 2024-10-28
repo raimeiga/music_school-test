@@ -2147,7 +2147,7 @@ a {
   width: 25rem;
   display: flex;
   flex-direction: column;
-  row-gap: 3.1rem;
+  row-gap: 3rem;
 }
 @media only screen and (max-width: 767px) {
   .p-sidebar {
@@ -2170,7 +2170,6 @@ a {
 }
 
 .p-sidebar-mail {
-  height: 25rem;
   border: 0.05rem solid #000;
 }
 @media only screen and (max-width: 767px) {
