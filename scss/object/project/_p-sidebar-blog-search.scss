@@ -26,6 +26,8 @@
 
 .p-sidebar-blog-search__input {
   width: 18rem;
+  text-align: left;  
+  padding: 1.1rem 1rem 0.9rem 1rem;
   @include sp {
     width: 24.1rem;
   }

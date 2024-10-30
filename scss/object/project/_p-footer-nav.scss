@@ -3,29 +3,31 @@
 
 
 .p-footer-nav {
- width: 30rem;
  height: 3.3rem;
- margin-inline: auto;
+ display: flex;
+ justify-content: center;
  @include sp {
-  width: 29rem;
+  // width: 29rem;
  }
 }
 
 .p-footer-nav__lists {
- width: 30rem;
  height: 3.3rem;
  display: flex;
- justify-content: space-between;
  @include sp {
-  width: 29rem;
+  // width: 29rem;
  }
 }
 
 .p-footer-nav__list a {
+  padding: 1.2rem 1.6rem ;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: calc(33 / 17);
   transition: opacity .4s;
+  @include sp {
+   padding: 1.2rem 1.5rem;
+  }
 }
 
 .p-footer-nav__list a:hover {

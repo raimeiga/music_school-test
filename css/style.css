@@ -273,7 +273,8 @@ a {
   width: inherit;
   height: inherit;
   display: block;
-  padding-top: 0.2rem;
+  padding-top: 0.3rem;
+  cursor: pointer;
 }
 @media only screen and (max-width: 374px) {
   .c-btn--submit-button {
@@ -1480,7 +1481,7 @@ a {
 }
 
 .p-blog__inner {
-  padding-block: 6.6rem 21.2rem;
+  padding-block: 6.6rem 21.7rem;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -2254,6 +2255,8 @@ a {
 
 .p-sidebar-blog-search__input {
   width: 18rem;
+  text-align: left;
+  padding: 1.1rem 1rem 0.9rem 1rem;
 }
 @media only screen and (max-width: 767px) {
   .p-sidebar-blog-search__input {
@@ -2458,33 +2461,25 @@ a {
 }
 
 .p-footer-nav {
-  width: 30rem;
-  height: 3.3rem;
-  margin-inline: auto;
-}
-@media only screen and (max-width: 767px) {
-  .p-footer-nav {
-    width: 29rem;
-  }
-}
-
-.p-footer-nav__lists {
-  width: 30rem;
   height: 3.3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-@media only screen and (max-width: 767px) {
-  .p-footer-nav__lists {
-    width: 29rem;
-  }
+.p-footer-nav__lists {
+  height: 3.3rem;
+  display: flex;
 }
-
 .p-footer-nav__list a {
+  padding: 1.2rem 1.6rem;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1.9411764706;
   transition: opacity 0.4s;
+}
+@media only screen and (max-width: 767px) {
+  .p-footer-nav__list a {
+    padding: 1.2rem 1.5rem;
+  }
 }
 
 .p-footer-nav__list a:hover {
