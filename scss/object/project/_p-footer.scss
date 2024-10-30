@@ -2,30 +2,23 @@
 @use '../../foundation/mixin' as *;
 
 
-
-
 .p-footer__inner {
  padding-block: 4.5rem 5rem;
  color: #fff; 
 }
 
-.p-footer__logo { 
- display: block;
- width: 3.2rem;
- height: 4.9rem;
- margin-block: 2.25rem;
- margin-inline: auto;
- transition: opacity .3s;
- @include sp {
-   margin-block: 1.8rem 2.9rem;   
- }
+.p-footer__logo {
+ //background-color: yellow;
+ width: 7.2rem; 
+ // 画像は32×49なので、左右paddingをつけた分をwidthに加算
+ padding: 1.5rem 2rem;
+ margin: 0.6rem auto;
+ transition: opacity .4s;
 }
-
 
 .p-footer__logo:hover {
  opacity: 0.5; 
 }
-
 
 .p-footer__copyright {
  width: 100%;
@@ -43,11 +36,12 @@
 }
 
 .p-footer__icon-wrap {
- width: 12rem;
+ // width: 12rem;
  height: 2.3rem;
  display: flex;
+ justify-content: center;
  align-items: center;
- // column-gap: 1.25rem;
+ column-gap: 1.2rem;
  // margin-top: 2.2rem;
  margin-inline: auto;
  @include sp {
@@ -55,9 +49,11 @@
  }
 }
 
+
 .p-footer__icon-wrap li {
  display: flex;
  align-items: center;
+ // background-color: yellow;
 }
 
 .p-footer__icon-wrap a  {
@@ -72,22 +68,22 @@
 
 
 .p-footer__icon-wrap ul:nth-of-type(1) li {
- width: 2.2rem;
+ width: 2.3rem;
  margin-right: 1.23rem;
 }
 
 .p-footer__icon-wrap ul:nth-of-type(2) li {
- width: 2.2rem;
+ width: 2.3rem;
  margin-right: 1.42rem;
 }
 
 .p-footer__icon-wrap ul:nth-of-type(3) li {
- width: 2.2rem; 
+ width: 2.3rem;
  margin-right: 1rem;
 }
 
 .p-footer__icon-wrap ul:nth-of-type(4) li {
- width: 2.2rem;
+ width: 2.3rem;
  height: 2rem;
 }
 
