@@ -14,6 +14,11 @@
  padding: 1.5rem 2rem;
  margin: 0.6rem auto;
  transition: opacity .4s;
+ @include sp {
+  // padding: 15px 20px 23px;
+  padding: 1.2rem 2rem 2.5rem;
+  margin: 6px auto;
+ }
 }
 
 .p-footer__logo:hover {
