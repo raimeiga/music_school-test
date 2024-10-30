@@ -37,7 +37,7 @@
  position: relative;
  @include sp {
   column-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
  }
 }
 
@@ -63,7 +63,7 @@
   font-weight: 600;
   line-height: calc(25 / 20);
   text-align: left;
-  margin-bottom: 3.6rem;
+  margin-bottom: 4.1rem;
   @include sp {
     // height: 5.6rem;
     font-size: 1.7rem;
