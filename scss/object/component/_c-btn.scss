@@ -103,13 +103,15 @@
   font-size: 2.5rem;
   font-weight: 600;
   line-height: calc(33 / 25);  
+  padding-top: 0.3rem;
   @include sp {
     // width: 33.5rem;
-    width: 335px;
-    height: 50px;
-    font-size: 20px;
+    width: 33.5rem;
+    height: 5rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: calc(26 / 20);  
+    padding-top: 0.2rem;
   }
   @include max(374px) {
     width: 33.5rem;
@@ -124,10 +126,10 @@
  width: inherit;
  height: inherit;
  display: block;
- padding-top: 0.3rem;
+ // padding-top: 0.1rem;
  cursor: pointer;
  @include max(374px) {
-  padding-top: 0.2rem;
+  // padding-top: 0.2rem;
  }
 }
 
