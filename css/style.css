@@ -2407,9 +2407,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 1.2rem;
-       column-gap: 1.2rem;
-  margin-inline: auto;
 }
 @media only screen and (max-width: 767px) {
   .p-footer__icon-wrap {
@@ -2424,36 +2421,14 @@ a {
 
 .p-footer__icon-wrap a {
   display: inline-block; /* インライン要素だとtransformが効かないため、ブロックかインラインブロックに */
+  width: 3.5rem;
+  padding: 1rem 0.6rem;
   transition: opacity 0.3s ease, transform 0.3s ease; /* opacityとtransformに対してトランジションを適用 */
 }
 
 .p-footer__icon-wrap a:hover {
   opacity: 0.5;
   transform: scale(1.2);
-}
-
-.p-footer__icon-wrap ul:nth-of-type(1) li {
-  width: 2.3rem;
-  margin-right: 1.23rem;
-}
-
-.p-footer__icon-wrap ul:nth-of-type(2) li {
-  width: 2.3rem;
-  margin-right: 1.42rem;
-}
-
-.p-footer__icon-wrap ul:nth-of-type(3) li {
-  width: 2.3rem;
-  margin-right: 1rem;
-}
-
-.p-footer__icon-wrap ul:nth-of-type(4) li {
-  width: 2.3rem;
-  height: 2rem;
-}
-
-.p-footer__icon-wrap a {
-  width: 100%;
 }
 
 .p-footer-nav {
