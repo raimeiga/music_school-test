@@ -26,10 +26,12 @@
  font-size: 1.8rem;
  font-weight: 600;
  line-height: calc(33 / 18);
- padding: 10px 0 7px 30px;
+ // padding: 10px 0 7px 30px;
+ padding: 1rem 0 0.7rem 3rem;
  text-align: left;
  @include sp {
   text-align: center;
-  padding: 10px 0 7px 0;
+  // padding: 10px 0 7px 0;
+  padding: 1rem 0 0.7rem 0;
  }
 }

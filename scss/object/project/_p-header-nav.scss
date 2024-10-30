@@ -22,8 +22,7 @@
  
  .p-header-nav__lists  {
   height: inherit;
-  display: flex;    
-  // column-gap: 33px;  
+  display: flex;
   column-gap: 3.3rem; 
   @include sp {
    height: 17.4rem;

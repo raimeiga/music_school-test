@@ -54,11 +54,11 @@
 
  .c-btn--fixed.fixed-position-con {
   position: absolute;  
-  bottom: 27.4rem; 
+  bottom: 27.5rem; 
   right: 0;
   @include sp {  
    right: 2rem;
-   bottom: 30.2rem;
+   bottom: 30.5rem;
   }   
  }
 
@@ -81,13 +81,13 @@
 
 .c-btn--plan::after {
  content: '+'; /* プラスマークを表示 */
- font-size: 30px; /* プラスマークのサイズを指定 */
+ font-size: 3rem; /* プラスマークのサイズを指定 */
  font-weight: bold; /* 太さを指定 */
  position: absolute;
  top: 29%; /* 垂直中央に配置 */
  left: 48.7%; /* ボタンの右側に配置 */  
- width: 18.5px; /* 幅を指定 */
- height: 18.5px; /* 高さを指定 */  
+ width: 1.85rem; /* 幅を指定 */
+ height: 1.85rem; /* 高さを指定 */  
  color: #000;
  @include sp {
   position: absolute;
