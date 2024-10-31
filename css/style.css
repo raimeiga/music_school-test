@@ -195,13 +195,13 @@ a {
 
 .c-btn--fixed.fixed-position-con {
   position: absolute;
-  bottom: 27.4rem;
+  bottom: 27.6rem;
   right: 0;
 }
 @media only screen and (max-width: 767px) {
   .c-btn--fixed.fixed-position-con {
     right: 2rem;
-    bottom: 30.4rem;
+    bottom: 30.3rem;
   }
 }
 
@@ -338,7 +338,7 @@ a {
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--91-79.fixed-position-long {
     right: 2rem;
-    bottom: 38.1rem;
+    bottom: 38rem;
   }
 }
 
@@ -1184,7 +1184,6 @@ a {
 
 .p-voice-list__image img {
   transition: transform 0.2s;
-  width: 100%;
   aspect-ratio: 273/192;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1571,11 +1570,16 @@ a {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   border-bottom: 0.05rem solid;
+  transition: opacity 0.4s;
 }
 @media only screen and (max-width: 767px) {
   .p-blog__link {
     position: initial;
   }
+}
+
+.p-blog__link:hover {
+  opacity: 0.5;
 }
 
 .p-blog-list__image {
@@ -2366,7 +2370,7 @@ a {
 }
 
 .p-footer__inner {
-  padding-block: 4.5rem 5rem;
+  padding-block: 4.6rem 5rem;
   color: #fff;
 }
 
@@ -2403,14 +2407,13 @@ a {
 }
 
 .p-footer__icon-wrap {
-  height: 2.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (max-width: 767px) {
   .p-footer__icon-wrap {
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
   }
 }
 
@@ -2422,7 +2425,7 @@ a {
 .p-footer__icon-wrap a {
   display: inline-block; /* インライン要素だとtransformが効かないため、ブロックかインラインブロックに */
   width: 3.5rem;
-  padding: 1rem 0.6rem;
+  padding: 0 0.6rem;
   transition: opacity 0.3s ease, transform 0.3s ease; /* opacityとtransformに対してトランジションを適用 */
 }
 

@@ -2,7 +2,6 @@
 @use '../../foundation/mixin' as *;
 
 
-
 .p-voice-list {
   // width: 27rem; 
   // slick使うと、スライドの幅はslickが決めて
@@ -14,10 +13,10 @@
 }
 
 // 親（p-voice-list__image）の幅はslickが勝手
-// に決めているっぽいので、親にwidth書かずともOKと判断
+// に決めているっぽいので、親にwidthを書かずともOKと判断
 .p-voice-list__image img {
   transition: transform .2s;
-  width: 100%;
+  // width: 100%;
   aspect-ratio: 273 / 192;
   object-fit: cover; 
   @include sp {

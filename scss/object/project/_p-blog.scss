@@ -87,8 +87,13 @@
  font-size: 1.8rem;
  line-height: calc(30 / 18);
  border-bottom: 0.05rem solid;
+ transition: opacity .4s;
  @include sp {
   position: initial;
  }
 }
 
+
+.p-blog__link:hover {
+ opacity: 0.5;
+}
