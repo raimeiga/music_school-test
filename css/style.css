@@ -195,13 +195,13 @@ a {
 
 .c-btn--fixed.fixed-position-con {
   position: absolute;
-  bottom: 27.6rem;
+  bottom: 28.2rem;
   right: 0;
 }
 @media only screen and (max-width: 767px) {
   .c-btn--fixed.fixed-position-con {
     right: 2rem;
-    bottom: 30.3rem;
+    bottom: 30.9rem;
   }
 }
 
@@ -333,7 +333,7 @@ a {
 .c-top-back-btn--91-79.fixed-position-long {
   position: absolute;
   right: 10rem;
-  bottom: 36.7rem;
+  bottom: 37.5rem;
 }
 @media only screen and (max-width: 767px) {
   .c-top-back-btn--91-79.fixed-position-long {
@@ -1106,6 +1106,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-voice__inner {
+    width: 33.5rem;
     padding-inline: 0;
     padding-block: 4.8rem 5rem;
   }
@@ -1126,6 +1127,7 @@ a {
     width: 100%;
     padding-top: 3.7rem;
     margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -1142,7 +1144,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .slick-prev, .slick-next {
-    top: 48%;
+    top: 52%;
     transform: translateY(-50%); /* 中央に合わせる */
     opacity: 1;
     z-index: 10;
@@ -1181,6 +1183,10 @@ a {
   }
 }
 
+.slick-slider .slick-track, .slick-slider .slick-list {
+  width: 37.5rem;
+}
+
 .p-voice-list__image img {
   transition: transform 0.2s;
   aspect-ratio: 270/190;
@@ -1189,7 +1195,10 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-voice-list__image img {
+    width: 100%;
     aspect-ratio: 335/200;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1564,7 +1573,7 @@ a {
 .p-blog__link {
   width: 10.8rem;
   position: absolute;
-  bottom: 20.5rem;
+  bottom: 20rem;
   right: 3.1rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
