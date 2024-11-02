@@ -371,7 +371,12 @@ a {
   width: 43%;
 }
 
+.c-breadcrumb-wrap {
+  background: #e8e8e8;
+}
+
 .c-breadcrumb {
+  max-width: 88rem;
   width: 100%;
   background: #e8e8e8;
   display: flex;
@@ -379,13 +384,7 @@ a {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   flex-wrap: wrap;
-  padding-inline: 10rem 10rem;
   margin: 0 auto;
-}
-@media only screen and (max-width: 1024px) {
-  .c-breadcrumb {
-    padding-inline: 7rem 6rem;
-  }
 }
 @media only screen and (max-width: 767px) {
   .c-breadcrumb {
