@@ -1106,7 +1106,6 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-voice__inner {
-    width: 33.5rem;
     padding-inline: 0;
     padding-block: 4.8rem 5rem;
   }
@@ -1127,7 +1126,6 @@ a {
     width: 100%;
     padding-top: 3.7rem;
     margin: 0 auto;
-    position: relative;
   }
 }
 
@@ -1144,7 +1142,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .slick-prev, .slick-next {
-    top: 52%;
+    top: 48%;
     transform: translateY(-50%); /* 中央に合わせる */
     opacity: 1;
     z-index: 10;
@@ -1183,10 +1181,6 @@ a {
   }
 }
 
-.slick-slider .slick-track, .slick-slider .slick-list {
-  width: 37.5rem;
-}
-
 .p-voice-list__image img {
   transition: transform 0.2s;
   aspect-ratio: 270/190;
@@ -1195,10 +1189,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .p-voice-list__image img {
-    width: 100%;
     aspect-ratio: 335/200;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
