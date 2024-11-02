@@ -1,10 +1,12 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
+.p-sidebar-category__name  { 
+ border-bottom: 0.05rem solid; 
+}
 
-.p-sidebar-category__name {
- // height: 4.6rem;
- border-bottom: 0.05rem solid;
+.p-sidebar-category__name a {
+ // height: 4.6rem; 
  display: flex;
  align-items: center;
  padding-block: 1.2rem 0.7rem;
@@ -14,6 +16,7 @@
  transition: opacity .4s;
 }
 
-.p-sidebar-category__name:hover {
+.p-sidebar-category__name a:hover {
  opacity: 0.5;
 }
+

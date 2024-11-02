@@ -35,10 +35,15 @@
  margin-top: 3rem;
  transition: opacity .4s;
  position: relative;
+ cursor: pointer;
  @include sp {
   column-gap: 2rem;
   margin-top: 2.2rem;
  }
+}
+
+.p-blog-details-main-related-article__list:hover {
+ opacity: 0.5;
 }
 
 .p-blog-details-main-related-article__image {
@@ -73,6 +78,3 @@
   }
 }
 
-.p-blog-details-main-related-article__list:hover {
- opacity: 0.5;
-}

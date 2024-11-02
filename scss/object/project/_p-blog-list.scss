@@ -2,22 +2,6 @@
 @use '../../foundation/mixin' as *;
 
 
-// .p-blog-list__image {
-//  width: 26rem;
-//  height: 20rem;
-//  overflow: hidden;
-//  @include sp {
-//   width: 33.5rem;
-//   height: 20rem;
-//  }
-// }
-
-// .p-blog-list__image img {
-//   width: 100%;
-//   height: 100%; 
-//   object-fit: cover;
-// }
-
 .p-blog-list__image {
  width: 26rem;
  overflow: hidden;
@@ -33,8 +17,6 @@
   aspect-ratio: 335 / 200;
  }
 }
-
-
 
 // ブログ一覧のみ
 .p-blog-list__image-height-longer {
