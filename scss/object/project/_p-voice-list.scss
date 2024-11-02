@@ -8,7 +8,7 @@
   // くるので、widthを上書きできない
   margin-inline: 1.2rem;   
   @include sp {   
-    margin-inline: 0;     
+    margin-inline: 0;      
   }
 }
 

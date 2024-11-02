@@ -10,6 +10,15 @@
   justify-content: center;
 }
 
+.c-pagination__item--active {
+ background-color: #000;
+ color: #fff;
+}
+
+.c-pagination__item:first-of-type a {
+ color: #fff;
+}
+
 .c-pagination__item {
  margin-right: 1rem;
 }
@@ -27,6 +36,8 @@
   line-height: calc(30 / 18);
   transition: all .4s;
 }
+
+
 
 .c-pagination__item:last-of-type {
  margin-right:0;
