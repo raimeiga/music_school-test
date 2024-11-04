@@ -10,13 +10,22 @@
   justify-content: center;
 }
 
-.c-pagination__item--active a {
+// .c-pagination__item--active a {
  cursor: default; /* 最初のリンクにデフォルトカーソルを適用 */
-}
+// }
 
-.c-pagination__item--active {
- background-color: #000;
- color: #fff;
+.c-pagination__item--active { 
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  padding-top: 1rem;  
+  text-decoration: none;
+  // border: 0.1rem solid #000;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: calc(30 / 18);
 }
 
 .c-pagination__item:first-of-type a {
