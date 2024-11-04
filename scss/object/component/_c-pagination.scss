@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.c-pagination__item--active a {
+ cursor: default; /* 最初のリンクにデフォルトカーソルを適用 */
+}
+
 .c-pagination__item--active {
  background-color: #000;
  color: #fff;
