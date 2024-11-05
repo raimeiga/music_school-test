@@ -10,10 +10,6 @@
   justify-content: center;
 }
 
-// .c-pagination__item--active a {
- cursor: default; /* 最初のリンクにデフォルトカーソルを適用 */
-// }
-
 .c-pagination__item--active { 
   display: block;
   width: 5rem;
@@ -26,10 +22,6 @@
   font-size: 1.8rem;
   font-weight: 600;
   line-height: calc(30 / 18);
-}
-
-.c-pagination__item:first-of-type a {
- color: #fff;
 }
 
 .c-pagination__item {
