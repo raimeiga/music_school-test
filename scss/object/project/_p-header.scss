@@ -8,9 +8,8 @@
  display: flex;
  justify-content: space-between;
  @include sp {
-   height: 5rem;
-   padding: 0;
-   padding-left: 2rem;
+   height: 5rem;   
+   padding-inline: 2rem 0;
  }  
 }
 
