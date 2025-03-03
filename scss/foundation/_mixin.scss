@@ -1,24 +1,31 @@
+// ↓ 768pxは変数を使用しても良い
 @mixin pc {
-  @media only screen and (min-width: 768px) { //768pxは変数を使用しても良い
+  @media only screen and (min-width: 768px) { 
     @content;
   }
 }
+// 呼び出すときは、@include pc { }
 
+// ↓ 767pxは変数を使用しても良い
 @mixin sp {
-  @media only screen and (max-width: 767px) { //767pxは変数を使用しても良い
+  @media only screen and (max-width: 767px) { 
     @content;
   }
 }
+// 呼び出すときは、@include sp { }
 
+//768pxや767px以外の、任意の数値でつくりたい場合は↓のように引数入れて使う。
 @mixin min($width) {
   @media only screen and (min-width: #{$width}) {
     @content;
   }
 }
+//呼び出すときは、@include min(768) { /* スタイル */ }
 
 @mixin max($width) {
   @media only screen and (max-width: #{$width}) {
     @content;
   }
 }
+//呼び出すときは、@include max(767) { /* スタイル */ }
 

@@ -27,11 +27,15 @@ $color-red: #CB0000;
 @function vw($pixelSize, $baseWidth: 1080) {
   @return calc($pixelSize / $baseWidth * 100vw);
 }
+// vw関数を呼び出すとき場合、vw(500)とかって、引数を入れて関数を呼び出す感じ。
 
 
 // $pixelSizeにfont-sizeの拡大最大値を入れると、その値以上に拡大しない
 @function hvw($pixelSize) {
   @return min(calc($pixelSize / 940 * 100vw), $pixelSize * 1px);
 }
+
+// 100vw＝画面に表示されるサイトの横幅(width）。
+// なので、画面幅width:400pxなら、100vw＝400pxってこと。
 
 
